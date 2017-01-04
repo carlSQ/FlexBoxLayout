@@ -63,6 +63,18 @@ UIKIT_EXTERN NSString *CSSAspectRatioAttributeName;
 
 @property(nonatomic, copy) NSDictionary *CSSStyles;
 
+- (void)addChild:(id<CSSLayoutProtocol>)layout;
+
+- (void)addChildren:(NSArray<id<CSSLayoutProtocol>> *)children;
+
+- (void)insertChild:(id<CSSLayoutProtocol>)layout atIndex:(NSInteger)index;
+
+- (id<CSSLayoutProtocol>)childLayoutAtIndex:(NSUInteger)index;
+
+- (void)removeChild:(id<CSSLayoutProtocol>)layout;
+
+- (void)removeAllChildren;
+
 - (void)applyLayoutToViewHierachy;
 
 - (void)setDirection:(CSSDirection)direction;

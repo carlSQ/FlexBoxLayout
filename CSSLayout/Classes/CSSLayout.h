@@ -131,7 +131,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)insertChild:(CSSLayout *)layout atIndex:(NSInteger)index;
 
-- (CSSLayout *)childLayoutAtIndex:(NSUInteger)idex;
+- (CSSLayout *)childLayoutAtIndex:(NSUInteger)index;
 
 - (void)removeChild:(CSSLayout *)layout;
 

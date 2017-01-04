@@ -27,7 +27,11 @@ extern void YGSetMesure(CSSLayout *layout);
   if ([self children] == children) {
     return;
   }
+  
   objc_setAssociatedObject(self, @selector(children), children, OBJC_ASSOCIATION_COPY_NONATOMIC);
+  
+  [[self layout] removeAllChildren];
+  
   for (id<CSSLayoutProtocol> layoutElement in children) {
     NSAssert([layoutElement conformsToProtocol:NSProtocolFromString(@"CSSLayoutProtocol")], @"child %@ has no conformsToProtocol CSSLayoutProtocol", self);
     [[self layout] addChild:layoutElement.layout];
@@ -35,10 +39,44 @@ extern void YGSetMesure(CSSLayout *layout);
 
 }
 
+- (void)addChild:(id<CSSLayoutProtocol>)layout {
+  NSAssert([layout conformsToProtocol:NSProtocolFromString(@"CSSLayoutProtocol")], @"child %@ has no conformsToProtocol CSSLayoutProtocol", self);
+  NSMutableArray *newChildren = [[self children] mutableCopy];
+  [newChildren addObject:layout];
+  self.children = newChildren;
+}
+
+- (void)addChildren:(NSArray<id<CSSLayoutProtocol>> *)children {
+  NSAssert([children conformsToProtocol:NSProtocolFromString(@"CSSLayoutProtocol")], @"child %@ has no conformsToProtocol CSSLayoutProtocol", self);
+  NSMutableArray *newChildren = [[self children] mutableCopy];
+  [newChildren addObjectsFromArray:children];
+  self.children = newChildren;
+}
+
+- (void)insertChild:(id<CSSLayoutProtocol>)layout atIndex:(NSInteger)index {
+  NSAssert([layout conformsToProtocol:NSProtocolFromString(@"CSSLayoutProtocol")], @"child %@ has no conformsToProtocol CSSLayoutProtocol", self);
+  NSMutableArray *newChildren = [[self children] mutableCopy];
+  [newChildren insertObject:layout atIndex:index];
+  self.children = newChildren;
+}
+
+- (id<CSSLayoutProtocol>)childLayoutAtIndex:(NSUInteger)index {
+  return [self.children objectAtIndex:index];
+}
+
+- (void)removeChild:(id<CSSLayoutProtocol>)layout {
+  NSMutableArray *newChildren = [[self children] mutableCopy];
+  [newChildren removeObject:layout];
+  self.children = newChildren;
+}
+
+- (void)removeAllChildren {
+  self.children = nil;
+}
+
 - (NSArray *)children {
   return objc_getAssociatedObject(self, _cmd);
 }
-
 
 - (void)setDirection:(CSSDirection)direction {
   [[self layout] setDirection:direction];

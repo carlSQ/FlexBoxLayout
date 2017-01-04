@@ -61,7 +61,6 @@ static CGFloat CSSRoundPixelValue(CGFloat value)
   return round(value * scale) / scale;
 }
 
-#if 1
 static CGFloat YGSanitizeMeasurement(
                                      CGFloat constrainedSize,
                                      CGFloat measuredSize,
@@ -109,7 +108,6 @@ void YGSetMesure(CSSLayout *layout) {
     YGNodeSetMeasureFunc(layout.cssNode, NULL);
   }
 }
-#endif
 
 @interface CSSLayout()
 

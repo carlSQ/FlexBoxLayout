@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07A678E4B507F3B84DFC9CC5 /* Pods_CSSLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DC2FE7479FD607DCE17A8F /* Pods_CSSLayout_Example.framework */; };
+		1B8D9B8E1E1CB0A90078B3B2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8D9B8D1E1CB0A90078B3B2 /* Launch Screen.storyboard */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		068C0B79AF1323F8E288905F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		18D4B89CF6E54D1B702F9867 /* Pods-CSSLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSLayout_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSLayout_Example/Pods-CSSLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1B8D9B8D1E1CB0A90078B3B2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		28FD6B95245F63FD5FE35E42 /* Pods_CSSLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		292FC21B24FA1B08B43F517C /* Pods-CSSLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSLayout_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSLayout_Tests/Pods-CSSLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		52EC424DC9D27ECAAB290F40 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				6003F59C195388D20070C39A /* CSSAppDelegate.h */,
 				6003F59D195388D20070C39A /* CSSAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				1B8D9B8D1E1CB0A90078B3B2 /* Launch Screen.storyboard */,
 				6003F5A5195388D20070C39A /* CSSViewController.h */,
 				6003F5A6195388D20070C39A /* CSSViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -278,6 +281,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				1B8D9B8E1E1CB0A90078B3B2 /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +533,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -545,6 +550,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

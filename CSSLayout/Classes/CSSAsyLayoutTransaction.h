@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CSSAsyLayoutTransaction : NSObject
 
 + (void)addCalculateTransaction:(dispatch_block_t)transaction
-                       complete:(dispatch_block_t)complete;
+                       complete:(nullable dispatch_block_t)complete;
 
 @end
 NS_ASSUME_NONNULL_END

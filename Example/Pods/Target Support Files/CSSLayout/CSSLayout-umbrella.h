@@ -4,7 +4,6 @@
 #import "CSSLayout.h"
 #import "CSSLayoutDiv.h"
 #import "CSSLayoutProtocol.h"
-#import "UILabel+Wrap.h"
 #import "UIView+CSSLayout.h"
 #import "UIView+Yoga.h"
 #import "YGEnums.h"

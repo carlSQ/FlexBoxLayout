@@ -104,11 +104,10 @@
   [div2 setWidth:150];
   [div2 setMargin:20 forEdge:CSSEdgeTop];
   root.children = @[div1,div2];
+  [root removeChild:div1];
+  [root addChild:div1];
   [root asyApplyLayoutWithSize:[UIScreen mainScreen].bounds];
   
-  for (int i =0; i<1000; i++) {
-    
-  }
 }
 
 
