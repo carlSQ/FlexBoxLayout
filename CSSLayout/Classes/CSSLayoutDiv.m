@@ -11,31 +11,30 @@
 
 @interface CSSLayoutDiv(){
   
-  NSMutableArray *_children;
+  NSMutableArray *_css_children;
   NSDictionary *_CSSStyles;
   
 }
 
-@property(nonatomic, strong) CSSLayout *layout;
+@property(nonatomic, strong) CSSLayout *css_layout;
 
 @end
 
 @implementation CSSLayoutDiv
 
-@dynamic children;
-
+@dynamic css_children;
 
 - (instancetype)init {
   if (self = [super init]) {
-    _layout = [CSSLayout new];
-    _layout.context = self;
+    _css_layout = [CSSLayout new];
+    _css_layout.context = self;
   }
   return self;
 }
 
 - (void)setCSSStyles:(NSDictionary *)CSSStyles {
   _CSSStyles = CSSStyles;
-  _layout.CSSStyles = CSSStyles;
+  _css_layout.CSSStyles = CSSStyles;
 }
 
 - (NSDictionary *)CSSStyles {
@@ -44,7 +43,7 @@
 
 + (instancetype)layoutDivWithFlexDirection:(CSSFlexDirection)direction {
   CSSLayoutDiv *layoutDiv = [self new];
-  [layoutDiv setFlexDirection:direction];
+  [layoutDiv css_setFlexDirection:direction];
   return layoutDiv;
 }
 
@@ -53,190 +52,193 @@
                                 alignItems:(CSSAlign)alignItems
                                   children:(NSArray <id<CSSLayoutProtocol>>*)children {
   CSSLayoutDiv *layoutDiv = [self new];
-  [layoutDiv setFlexDirection:direction];
-  [layoutDiv setJustifyContent:justifyContent];
-  [layoutDiv setAlignItems:alignItems];
-  [layoutDiv setChildren:children];
+  [layoutDiv css_setFlexDirection:direction];
+  [layoutDiv css_setJustifyContent:justifyContent];
+  [layoutDiv css_setAlignItems:alignItems];
+  [layoutDiv setCss_children:children];
   return layoutDiv;
 }
 
-- (void)setChildren:(NSArray <id<CSSLayoutProtocol>>*)children {
-  if (_children == children) {
+#pragma mark - children
+
+- (void)setCss_children:(NSArray <id<CSSLayoutProtocol>>*)children {
+  if (_css_children == children) {
     return;
   }
-  _children = [children mutableCopy];
-  [_layout removeAllChildren];
-  for (id<CSSLayoutProtocol> layoutElement in _children) {
+  _css_children = [children mutableCopy];
+  [_css_layout removeAllChildren];
+  for (id<CSSLayoutProtocol> layoutElement in _css_children) {
     NSAssert([layoutElement conformsToProtocol:NSProtocolFromString(@"CSSLayoutProtocol")], @"child %@ has no conformsToProtocol CSSLayoutProtocol", self);
-    [_layout addChild:layoutElement.layout];
+    [_css_layout addChild:layoutElement.css_layout];
   }
 }
 
-- (void)addChild:(id<CSSLayoutProtocol>)layout {
+- (void)css_addChild:(id<CSSLayoutProtocol>)layout {
   NSAssert([layout conformsToProtocol:NSProtocolFromString(@"CSSLayoutProtocol")], @"child %@ has no conformsToProtocol CSSLayoutProtocol", self);
-  NSMutableArray *newChildren = [[self children] mutableCopy];
+  NSMutableArray *newChildren = [[self css_children] mutableCopy];
   [newChildren addObject:layout];
-  self.children = newChildren;
+  self.css_children = newChildren;
 }
 
-- (void)addChildren:(NSArray<id<CSSLayoutProtocol>> *)children {
+- (void)css_addChildren:(NSArray<id<CSSLayoutProtocol>> *)children {
   NSAssert([children conformsToProtocol:NSProtocolFromString(@"CSSLayoutProtocol")], @"child %@ has no conformsToProtocol CSSLayoutProtocol", self);
-  NSMutableArray *newChildren = [[self children] mutableCopy];
+  NSMutableArray *newChildren = [[self css_children] mutableCopy];
   [newChildren addObjectsFromArray:children];
-  self.children = newChildren;
+  self.css_children = newChildren;
 }
 
-- (void)insertChild:(id<CSSLayoutProtocol>)layout atIndex:(NSInteger)index {
+- (void)css_insertChild:(id<CSSLayoutProtocol>)layout atIndex:(NSInteger)index {
   NSAssert([layout conformsToProtocol:NSProtocolFromString(@"CSSLayoutProtocol")], @"child %@ has no conformsToProtocol CSSLayoutProtocol", self);
-  NSMutableArray *newChildren = [[self children] mutableCopy];
+  NSMutableArray *newChildren = [[self css_children] mutableCopy];
   [newChildren insertObject:layout atIndex:index];
-  self.children = newChildren;
+  self.css_children = newChildren;
 }
 
-- (id<CSSLayoutProtocol>)childLayoutAtIndex:(NSUInteger)index {
-  return [self.children objectAtIndex:index];
+- (id<CSSLayoutProtocol>)css_childLayoutAtIndex:(NSUInteger)index {
+  return [self.css_children objectAtIndex:index];
 }
 
-- (void)removeChild:(id<CSSLayoutProtocol>)layout {
-  NSMutableArray *newChildren = [[self children] mutableCopy];
+- (void)css_removeChild:(id<CSSLayoutProtocol>)layout {
+  NSMutableArray *newChildren = [[self css_children] mutableCopy];
   [newChildren removeObject:layout];
-  self.children = newChildren;
+  self.css_children = newChildren;
 }
 
-- (void)removeAllChildren {
-  self.children = nil;
+- (void)css_removeAllChildren {
+  self.css_children = nil;
 }
 
-- (NSArray *)children {
-  return [_children copy];
+- (NSArray *)css_children {
+  return [_css_children copy];
 }
 
 - (CGRect)frame {
   return _frame;
 }
+
 #pragma mark - layout
 
-- (void)applyLayouWithSize:(CGRect)frame {
-  _frame = frame;
-  [_layout calculateLayoutWithSize:frame.size];
-  [self applyLayoutToViewHierachy];
+- (void)css_applyLayouWithSize:(CGSize)size {
+  [_css_layout calculateLayoutWithSize:size];
+  _frame = _css_layout.frame;
+  [self css_applyLayoutToViewHierachy];
 }
 
 
-- (void)asyApplyLayoutWithSize:(CGRect)frame {
-  _frame = frame;
+- (void)css_asyApplyLayoutWithSize:(CGSize)size {
   [CSSAsyLayoutTransaction addCalculateTransaction:^{
-     [_layout calculateLayoutWithSize:frame.size];
+    [_css_layout calculateLayoutWithSize:size];
   } complete:^{
-    [self applyLayoutToViewHierachy];
+    _frame = _css_layout.frame;
+    [self css_applyLayoutToViewHierachy];
   }];
 }
 
 
-- (void)applyLayoutToViewHierachy {
+- (void)css_applyLayoutToViewHierachy {
   
-  for (id<CSSLayoutProtocol> layoutElement in _children) {
+  for (id<CSSLayoutProtocol> layoutElement in _css_children) {
     
     layoutElement.frame = (CGRect) {
       .origin = {
-        .x = _frame.origin.x + layoutElement.layout.frame.origin.x,
-        .y = _frame.origin.y + layoutElement.layout.frame.origin.y,
+        .x = _frame.origin.x + layoutElement.css_layout.frame.origin.x,
+        .y = _frame.origin.y + layoutElement.css_layout.frame.origin.y,
       },
       .size = {
-        .width = layoutElement.layout.frame.size.width,
-        .height = layoutElement.layout.frame.size.height,
+        .width = layoutElement.css_layout.frame.size.width,
+        .height = layoutElement.css_layout.frame.size.height,
       },
     };
     
-    [layoutElement applyLayoutToViewHierachy];
+    [layoutElement css_applyLayoutToViewHierachy];
   }
   
 }
 
 #pragma mark - CSSStyle
 
-- (void)setDirection:(CSSDirection)direction {
-  [_layout setDirection:direction];
+- (void)css_setDirection:(CSSDirection)direction {
+  [_css_layout setDirection:direction];
 }
 
-- (void)setFlexDirection:(CSSFlexDirection)flexDirection {
-  [_layout setFlexDirection:flexDirection];
+- (void)css_setFlexDirection:(CSSFlexDirection)flexDirection {
+  [_css_layout setFlexDirection:flexDirection];
 }
 
-- (void)setJustifyContent:(CSSJustify)justifyContent {
-  [_layout setJustifyContent:justifyContent];
+- (void)css_setJustifyContent:(CSSJustify)justifyContent {
+  [_css_layout setJustifyContent:justifyContent];
 }
 
-- (void)setAlignContent:(CSSAlign)alignContent {
-  [_layout setAlignContent:alignContent];
+- (void)css_setAlignContent:(CSSAlign)alignContent {
+  [_css_layout setAlignContent:alignContent];
 }
 
-- (void)setAlignItems:(CSSAlign)alignItems {
-  [_layout setAlignItems:alignItems];
+- (void)css_setAlignItems:(CSSAlign)alignItems {
+  [_css_layout setAlignItems:alignItems];
 }
 
-- (void)setAlignSelf:(CSSAlign)alignSelf {
-  [_layout setAlignSelf:alignSelf];
+- (void)css_setAlignSelf:(CSSAlign)alignSelf {
+  [_css_layout setAlignSelf:alignSelf];
 }
 
-- (void)setPositionType:(CSSPositionType)positionType {
-  [_layout setPositionType:positionType];
+- (void)css_setPositionType:(CSSPositionType)positionType {
+  [_css_layout setPositionType:positionType];
 }
 
-- (void)setFlexWrap:(CSSWrap)flexWrap {
-  [_layout setFlexWrap:flexWrap];
+- (void)css_setFlexWrap:(CSSWrap)flexWrap {
+  [_css_layout setFlexWrap:flexWrap];
 }
 
-- (void)setFlexGrow:(CGFloat)flexGrow {
-  [_layout setFlexGrow:flexGrow];
+- (void)css_setFlexGrow:(CGFloat)flexGrow {
+  [_css_layout setFlexGrow:flexGrow];
 }
 
-- (void)setFlexShrink:(CGFloat)flexShrink {
-  [_layout setFlexShrink:flexShrink];
+- (void)css_setFlexShrink:(CGFloat)flexShrink {
+  [_css_layout setFlexShrink:flexShrink];
 }
 
-- (void)setFlexBasis:(CGFloat)flexBasis {
-  [_layout setFlexBasis:flexBasis];
+- (void)css_setFlexBasis:(CGFloat)flexBasis {
+  [_css_layout setFlexBasis:flexBasis];
 }
 
-- (void)setPosition:(CGFloat)position forEdge:(CSSEdge)edge {
-  [_layout setPosition:position forEdge:edge];
+- (void)css_setPosition:(CGFloat)position forEdge:(CSSEdge)edge {
+  [_css_layout setPosition:position forEdge:edge];
 }
 
-- (void)setMargin:(CGFloat)margin forEdge:(CSSEdge)edge {
-  [_layout setMargin:margin forEdge:edge];
+- (void)css_setMargin:(CGFloat)margin forEdge:(CSSEdge)edge {
+  [_css_layout setMargin:margin forEdge:edge];
 }
 
-- (void)setPadding:(CGFloat)padding forEdge:(CSSEdge)edge {
-  [_layout setPadding:padding forEdge:edge];
+- (void)css_setPadding:(CGFloat)padding forEdge:(CSSEdge)edge {
+  [_css_layout setPadding:padding forEdge:edge];
 }
 
-- (void)setWidth:(CGFloat)width {
-  [_layout setWidth:width];
+- (void)css_setWidth:(CGFloat)width {
+  [_css_layout setWidth:width];
 }
 
-- (void)setHeight:(CGFloat)height {
-  [_layout setHeight:height];
+- (void)css_setHeight:(CGFloat)height {
+  [_css_layout setHeight:height];
 }
 
-- (void)setMinWidth:(CGFloat)minWidth {
-  [_layout setMinWidth:minWidth];
+- (void)css_setMinWidth:(CGFloat)minWidth {
+  [_css_layout setMinWidth:minWidth];
 }
 
-- (void)setMinHeight:(CGFloat)minHeight {
-  [_layout setMinHeight:minHeight];
+- (void)css_setMinHeight:(CGFloat)minHeight {
+  [_css_layout setMinHeight:minHeight];
 }
 
-- (void)setMaxWidth:(CGFloat)maxWidth {
-  [_layout setMaxWidth:maxWidth];
+- (void)css_setMaxWidth:(CGFloat)maxWidth {
+  [_css_layout setMaxWidth:maxWidth];
 }
 
-- (void)setMaxHeight:(CGFloat)maxHeight {
-  [_layout setMaxHeight:maxHeight];
+- (void)css_setMaxHeight:(CGFloat)maxHeight {
+  [_css_layout setMaxHeight:maxHeight];
 }
 
-- (void)setAspectRatio:(CGFloat)aspectRatio {
-  [[self layout] setAspectRatio:aspectRatio];
+- (void)css_setAspectRatio:(CGFloat)aspectRatio {
+  [_css_layout setAspectRatio:aspectRatio];
 }
 
 

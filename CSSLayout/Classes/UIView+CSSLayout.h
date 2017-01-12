@@ -12,12 +12,6 @@
 
 @interface UIView (CSSLayout)<CSSLayoutProtocol>
 
-- (CSSLayout *)layout;
-
-- (void)wrapContent;
-
-- (void)applyLayouWithSize:(CGRect)frame;
-
-- (void)asyApplyLayoutWithSize:(CGRect)frame;
+- (void)css_wrapContent;
 
 @end

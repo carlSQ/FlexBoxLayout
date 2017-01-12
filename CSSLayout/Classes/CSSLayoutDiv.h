@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CSSLayoutDiv : NSObject<CSSLayoutProtocol>
 
-@property(nonatomic, assign ) CGRect frame;
+@property(nonatomic)CGRect frame;
 
 + (instancetype)layoutDivWithFlexDirection:(CSSFlexDirection)direction;
 
@@ -21,10 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
                             justifyContent:(CSSJustify)justifyContent
                                 alignItems:(CSSAlign)alignItems
                                   children:(NSArray<id<CSSLayoutProtocol>>*)children;
-
-- (void)applyLayouWithSize:(CGRect)frame;
-
-- (void)asyApplyLayoutWithSize:(CGRect)frame;
 
 @end
 

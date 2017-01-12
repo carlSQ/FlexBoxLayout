@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## CSSLayout
+## FlexBoxLayout
 
 Copyright (c) 2017 qiang.shen <qiang..shen@ele.me>
 

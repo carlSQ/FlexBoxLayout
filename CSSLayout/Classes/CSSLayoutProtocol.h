@@ -51,72 +51,80 @@ UIKIT_EXTERN NSString *CSSMaxHeightAttributeName;
 
 UIKIT_EXTERN NSString *CSSAspectRatioAttributeName;
 
+extern const CGSize css_undefinedSize;
+
+extern const CGFloat css_undefined;
+
 @protocol CSSLayoutProtocol <NSObject>
 
 @required
 
-@property(nonatomic, strong, readonly) CSSLayout *layout;
+@property(nonatomic, strong, readonly) CSSLayout *css_layout;
 
 @property(nonatomic, assign ) CGRect frame;
 
-@property(nonatomic, copy) NSArray<id<CSSLayoutProtocol>> *children;
+@property(nonatomic, copy) NSArray<id<CSSLayoutProtocol>> *css_children;
 
 @property(nonatomic, copy) NSDictionary *CSSStyles;
 
-- (void)addChild:(id<CSSLayoutProtocol>)layout;
+- (void)css_addChild:(id<CSSLayoutProtocol>)layout;
 
-- (void)addChildren:(NSArray<id<CSSLayoutProtocol>> *)children;
+- (void)css_addChildren:(NSArray<id<CSSLayoutProtocol>> *)children;
 
-- (void)insertChild:(id<CSSLayoutProtocol>)layout atIndex:(NSInteger)index;
+- (void)css_insertChild:(id<CSSLayoutProtocol>)layout atIndex:(NSInteger)index;
 
-- (id<CSSLayoutProtocol>)childLayoutAtIndex:(NSUInteger)index;
+- (id<CSSLayoutProtocol>)css_childLayoutAtIndex:(NSUInteger)index;
 
-- (void)removeChild:(id<CSSLayoutProtocol>)layout;
+- (void)css_removeChild:(id<CSSLayoutProtocol>)layout;
 
-- (void)removeAllChildren;
+- (void)css_removeAllChildren;
 
-- (void)applyLayoutToViewHierachy;
+- (void)css_applyLayoutToViewHierachy;
 
-- (void)setDirection:(CSSDirection)direction;
+- (void)css_applyLayouWithSize:(CGSize)size;
 
-- (void)setFlexDirection:(CSSFlexDirection)flexDirection;
+- (void)css_asyApplyLayoutWithSize:(CGSize)size;
 
-- (void)setJustifyContent:(CSSJustify)justifyContent;
+- (void)css_setDirection:(CSSDirection)direction;
 
-- (void)setAlignContent:(CSSAlign)alignContent;
+- (void)css_setFlexDirection:(CSSFlexDirection)flexDirection;
 
-- (void)setAlignItems:(CSSAlign)alignItems;
+- (void)css_setJustifyContent:(CSSJustify)justifyContent;
 
-- (void)setAlignSelf:(CSSAlign)alignSelf;
+- (void)css_setAlignContent:(CSSAlign)alignContent;
 
-- (void)setPositionType:(CSSPositionType)positionType;
+- (void)css_setAlignItems:(CSSAlign)alignItems;
 
-- (void)setFlexWrap:(CSSWrap)flexWrap;
+- (void)css_setAlignSelf:(CSSAlign)alignSelf;
 
-- (void)setFlexGrow:(CGFloat)flexGrow;
+- (void)css_setPositionType:(CSSPositionType)positionType;
 
-- (void)setFlexShrink:(CGFloat)flexShrink;
+- (void)css_setFlexWrap:(CSSWrap)flexWrap;
 
-- (void)setFlexBasis:(CGFloat)flexBasis;
+- (void)css_setFlexGrow:(CGFloat)flexGrow;
 
-- (void)setPosition:(CGFloat)position forEdge:(CSSEdge)edge;
+- (void)css_setFlexShrink:(CGFloat)flexShrink;
 
-- (void)setMargin:(CGFloat)margin forEdge:(CSSEdge)edge;
+- (void)css_setFlexBasis:(CGFloat)flexBasis;
 
-- (void)setPadding:(CGFloat)padding forEdge:(CSSEdge)edge;
+- (void)css_setPosition:(CGFloat)position forEdge:(CSSEdge)edge;
 
-- (void)setWidth:(CGFloat)width;
+- (void)css_setMargin:(CGFloat)margin forEdge:(CSSEdge)edge;
 
-- (void)setHeight:(CGFloat)height;
+- (void)css_setPadding:(CGFloat)padding forEdge:(CSSEdge)edge;
 
-- (void)setMinWidth:(CGFloat)minWidth;
+- (void)css_setWidth:(CGFloat)width;
 
-- (void)setMinHeight:(CGFloat)minHeight;
+- (void)css_setHeight:(CGFloat)height;
 
-- (void)setMaxWidth:(CGFloat)maxWidth;
+- (void)css_setMinWidth:(CGFloat)minWidth;
 
-- (void)setMaxHeight:(CGFloat)maxHeight;
+- (void)css_setMinHeight:(CGFloat)minHeight;
 
-- (void)setAspectRatio:(CGFloat)aspectRatio;
+- (void)css_setMaxWidth:(CGFloat)maxWidth;
+
+- (void)css_setMaxHeight:(CGFloat)maxHeight;
+
+- (void)css_setAspectRatio:(CGFloat)aspectRatio;
 
 @end

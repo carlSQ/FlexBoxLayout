@@ -176,13 +176,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setHeight:(CGFloat)height;
 
+- (void)setSize:(CGSize)size;
+
 - (void)setMinWidth:(CGFloat)minWidth;
 
 - (void)setMinHeight:(CGFloat)minHeight;
 
+- (void)setMinSize:(CGSize)minSize;
+
 - (void)setMaxWidth:(CGFloat)maxWidth;
 
 - (void)setMaxHeight:(CGFloat)maxHeight;
+
+- (void)setMaxSize:(CGSize)maxSize;
 
 - (void)setAspectRatio:(CGFloat)aspectRatio;
 

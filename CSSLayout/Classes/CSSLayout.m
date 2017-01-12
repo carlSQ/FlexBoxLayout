@@ -142,6 +142,7 @@ void YGSetMesure(CSSLayout *layout) {
                     CSSRoundPixelValue(YGNodeLayoutGetHeight(_cssNode)));
 }
 
+#pragma mark - children
 
 - (NSArray *)allChildren {
   return [_children copy];
@@ -188,6 +189,9 @@ void YGSetMesure(CSSLayout *layout) {
   }
 }
 
+
+#pragma mark - calculate
+
 - (void)calculateLayoutWithSize:(CGSize)size {
 
   YGNodeCalculateLayout(_cssNode,
@@ -195,6 +199,8 @@ void YGSetMesure(CSSLayout *layout) {
                         size.height,
                         YGNodeStyleGetDirection(_cssNode));
 }
+
+#pragma mark - css styles
 
 #define CSS_STYLE_FILL(key)\
 do {\
@@ -327,6 +333,11 @@ if (value) {\
   YGNodeStyleSetHeight(_cssNode, height);
 }
 
+- (void)setSize:(CGSize)size {
+  YGNodeStyleSetWidth(_cssNode, size.width);
+  YGNodeStyleSetHeight(_cssNode, size.height);
+}
+
 - (void)setMinWidth:(CGFloat)minWidth
 {
   YGNodeStyleSetMinWidth(_cssNode, minWidth);
@@ -337,6 +348,11 @@ if (value) {\
   YGNodeStyleSetMinHeight(_cssNode, minHeight);
 }
 
+- (void)setMinSize:(CGSize)minSize {
+  YGNodeStyleSetMinWidth(_cssNode, minSize.width);
+  YGNodeStyleSetMinHeight(_cssNode, minSize.height);
+}
+
 - (void)setMaxWidth:(CGFloat)maxWidth
 {
   YGNodeStyleSetMaxWidth(_cssNode, maxWidth);
@@ -345,6 +361,11 @@ if (value) {\
 - (void)setMaxHeight:(CGFloat)maxHeight
 {
   YGNodeStyleSetMaxHeight(_cssNode, maxHeight);
+}
+
+- (void)setMaxSize:(CGSize)maxSize {
+  YGNodeStyleSetMaxWidth(_cssNode, maxSize.width);
+  YGNodeStyleSetMaxHeight(_cssNode, maxSize.height);
 }
 
 - (void)setAspectRatio:(CGFloat)aspectRatio

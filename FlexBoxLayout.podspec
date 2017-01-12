@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-  s.name             = 'CSSLayout'
+  s.name             = 'FlexBoxLayout'
   s.version          = '0.1.0'
   s.summary          = 'iOS Flexbox layout'
 
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/carlSQ/CSSLayout'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'qiang.shen' => 'qiang..shen@ele.me' }
-  s.source           = { :git => 'git@github.com:carlSQ/CSSLayout.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/carlSQ/CSSLayout.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '7.0'
 

@@ -1,0 +1,6 @@
+framework module FlexBoxLayout {
+  umbrella header "FlexBoxLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}
