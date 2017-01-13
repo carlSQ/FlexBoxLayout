@@ -149,12 +149,20 @@ const CGFloat css_undefined = YGUndefined;
   [[self css_layout] setHeight:height];
 }
 
+- (void)css_setSize:(CGSize)size {
+  [[self css_layout] setSize:size];
+}
+
 - (void)css_setMinWidth:(CGFloat)minWidth {
   [[self css_layout] setMinWidth:minWidth];
 }
 
 - (void)css_setMinHeight:(CGFloat)minHeight {
   [[self css_layout] setMinHeight:minHeight];
+}
+
+- (void)css_setMinSize:(CGSize)minSize {
+  [[self css_layout] setMinSize:minSize];
 }
 
 - (void)css_setMaxWidth:(CGFloat)maxWidth {
@@ -164,6 +172,11 @@ const CGFloat css_undefined = YGUndefined;
 - (void)css_setMaxHeight:(CGFloat)maxHeight {
   [[self css_layout] setMaxHeight:maxHeight];
 }
+
+- (void)css_setMaxSize:(CGSize)maxSize {
+  [[self css_layout] setMaxSize:maxSize];
+}
+
 
 - (void)css_setAspectRatio:(CGFloat)aspectRatio {
   [[self css_layout] setAspectRatio:aspectRatio];

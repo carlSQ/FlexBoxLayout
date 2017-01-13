@@ -79,7 +79,7 @@ static NSString *kCellIdentifier = @"css_kCellIdentifier";
   return cell;
 }
 
-#define CACHE_CONTENT_VIEW objc_getAssociatedObject(self, @selector(cacheContentView:))
+#define CACHE_CONTENT_VIEW objc_getAssociatedObject(self, @selector(css_cacheContentView:))
 
 - (UIView *)css_cacheContentView:(NSIndexPath *)indexPath {
   
@@ -169,6 +169,7 @@ static NSString *kCellIdentifier = @"css_kCellIdentifier";
 }
 
 - (void)css_moveCacheContentViewsAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath {
+  
   NSMutableArray *cacheContentViews = CACHE_CONTENT_VIEW;
   
   UIView *view1 = cacheContentViews[indexPath.section][indexPath.row];
@@ -176,7 +177,9 @@ static NSString *kCellIdentifier = @"css_kCellIdentifier";
   UIView *view2 = cacheContentViews[newIndexPath.section][newIndexPath.row];
   
   cacheContentViews[indexPath.section][indexPath.row] = view2;
+  
   cacheContentViews[newIndexPath.section][newIndexPath.row] = view1;
+  
 }
 
 - (void)css_configContentView:(UIView *)contentView forCell:(UITableViewCell *)cell{
@@ -251,7 +254,7 @@ static NSString *kCellIdentifier = @"css_kCellIdentifier";
 }
 
 - (void)css_moveRowAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath {
-  [self moveRowAtIndexPath:indexPath toIndexPath:newIndexPath];
+  [self css_moveCacheContentViewsAtIndexPath:indexPath toIndexPath:newIndexPath];
   [self css_moveRowAtIndexPath:indexPath toIndexPath:newIndexPath];
 }
 

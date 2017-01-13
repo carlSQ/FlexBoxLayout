@@ -221,6 +221,10 @@
   [_css_layout setHeight:height];
 }
 
+- (void)css_setSize:(CGSize)size {
+  [_css_layout setSize:size];
+}
+
 - (void)css_setMinWidth:(CGFloat)minWidth {
   [_css_layout setMinWidth:minWidth];
 }
@@ -229,12 +233,20 @@
   [_css_layout setMinHeight:minHeight];
 }
 
+- (void)css_setMinSize:(CGSize)minSize {
+  [_css_layout setMinSize:minSize];
+}
+
 - (void)css_setMaxWidth:(CGFloat)maxWidth {
   [_css_layout setMaxWidth:maxWidth];
 }
 
 - (void)css_setMaxHeight:(CGFloat)maxHeight {
   [_css_layout setMaxHeight:maxHeight];
+}
+
+- (void)css_setMaxSize:(CGSize)maxSize {
+  [_css_layout setMaxSize:maxSize];
 }
 
 - (void)css_setAspectRatio:(CGFloat)aspectRatio {

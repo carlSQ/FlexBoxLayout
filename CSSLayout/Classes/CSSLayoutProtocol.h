@@ -117,13 +117,19 @@ extern const CGFloat css_undefined;
 
 - (void)css_setHeight:(CGFloat)height;
 
+- (void)css_setSize:(CGSize)size;
+
 - (void)css_setMinWidth:(CGFloat)minWidth;
 
 - (void)css_setMinHeight:(CGFloat)minHeight;
 
+- (void)css_setMinSize:(CGSize)minSize;
+
 - (void)css_setMaxWidth:(CGFloat)maxWidth;
 
 - (void)css_setMaxHeight:(CGFloat)maxHeight;
+
+- (void)css_setMaxSize:(CGSize)maxSize;
 
 - (void)css_setAspectRatio:(CGFloat)aspectRatio;
 
