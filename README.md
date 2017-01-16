@@ -181,6 +181,26 @@ This align-self property allows the default alignment (or the one specified by a
 ```
 ![align-self](https://cask.scotch.io/2015/04/flexbox-align-self.jpg)
 
+### CSSLayoutDiv
+
+CSSLayoutDiv is virtual view, split view to a different area, avoid too much view.
+
+```objc
+
+CSSLayoutDiv *div1 = [CSSLayoutDiv layoutDivWithFlexDirection:CSSFlexDirectionColumn
+                                               justifyContent:CSSJustifySpaceBetween
+                                                   alignItems:CSSAlignCenter
+                                                     children:@[child1, child2,child3]];
+                                
+CSSLayoutDiv *div2 =[CSSLayoutDiv layoutDivWithFlexDirection:CSSFlexDirectionColumn
+                                              justifyContent:CSSJustifySpaceAround
+                                                  alignItems:CSSAlignCenter
+                                                    children:@[child5,child6,child7,child8]];
+root.css_children = @[div1,div2];                                
+                                                       
+```
+
+
 ### UITableView+CSSLayout
 
  UITableView+CSSLayout is category of UITableView. It support auto cell height of csslayout and easy use.
