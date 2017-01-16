@@ -8,7 +8,8 @@
 
 #import "CSSAsyLayoutTransaction.h"
 #import <objc/message.h>
-#include <libkern/OSSpinLockDeprecated.h>
+#import <libkern/OSSpinLockDeprecated.h>
+#import <os/lock.h>
 
 static NSMutableArray *messageQueue = nil;
 
@@ -25,10 +26,34 @@ static dispatch_queue_t calculate_creation_queue() {
 }
 
 static void display_Locked(dispatch_block_t block) {
-  static OSSpinLock display_lock = OS_SPINLOCK_INIT;
-  OSSpinLockLock(&display_lock);
-  block();
-  OSSpinLockUnlock(&display_lock);
+  
+  if ([UIDevice currentDevice].systemVersion.floatValue >= 10.0) {
+    
+    static os_unfair_lock lockToken = OS_UNFAIR_LOCK_INIT;
+    
+    os_unfair_lock_lock(&lockToken);
+    
+    block();
+    
+    os_unfair_lock_unlock(&lockToken);
+    
+  } else {
+    
+#pragma clang diagnostic push
+    
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    
+    static OSSpinLock lockToken = OS_SPINLOCK_INIT;
+    
+    OSSpinLockLock(&lockToken);
+    
+    block();
+    
+    OSSpinLockUnlock(&lockToken);
+    
+#pragma clang diagnostic pop
+  }
+
 }
 
 

@@ -187,7 +187,7 @@ const CGFloat css_undefined = YGUndefined;
                   alignItems:(CSSAlign)alignItems
                     children:(NSArray<id<CSSLayoutProtocol>>*)children {
   
-  [self css_setDirection:direction];
+  [self css_setFlexDirection:direction];
   [self css_setJustifyContent:justifyContent];
   [self css_setAlignItems:alignItems];
   [self setCss_children:children];

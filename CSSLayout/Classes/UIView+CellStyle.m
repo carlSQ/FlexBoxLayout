@@ -16,7 +16,7 @@
 }
 
 - (UITableViewCellSelectionStyle)css_selectionStyle {
-  return [objc_getAssociatedObject(self, @selector(setCss_selectionStyle)) integerValue];;
+  return [objc_getAssociatedObject(self, @selector(setCss_selectionStyle:)) integerValue];;
 }
 
 @end
