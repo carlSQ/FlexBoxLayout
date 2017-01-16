@@ -5,7 +5,5 @@ target 'CSSLayout_Example' do
 
   target 'CSSLayout_Tests' do
     inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
   end
 end

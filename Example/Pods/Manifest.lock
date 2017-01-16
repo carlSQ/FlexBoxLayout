@@ -1,13 +1,7 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - FlexBoxLayout (0.1.0)
+  - FlexBoxLayout (0.1.1)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - FlexBoxLayout (from `../`)
 
 EXTERNAL SOURCES:
@@ -15,9 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  FlexBoxLayout: ed336392984d7da57acf8e245c9c00698694afab
+  FlexBoxLayout: 060cba9d0233f46dc7c24c42f7748d9851790c55
 
-PODFILE CHECKSUM: 084a939c99515bc3248f12ff061978b6b5c583dc
+PODFILE CHECKSUM: a380b3683161be994bc7f53f08750f99a7cf1c71
 
 COCOAPODS: 1.0.1
