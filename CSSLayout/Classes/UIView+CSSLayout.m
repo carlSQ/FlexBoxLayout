@@ -182,6 +182,18 @@ const CGFloat css_undefined = YGUndefined;
   [[self css_layout] setAspectRatio:aspectRatio];
 }
 
+- (void)css_setFlexDirection:(CSSFlexDirection)direction
+              justifyContent:(CSSJustify)justifyContent
+                  alignItems:(CSSAlign)alignItems
+                    children:(NSArray<id<CSSLayoutProtocol>>*)children {
+  
+  [self css_setDirection:direction];
+  [self css_setJustifyContent:justifyContent];
+  [self css_setAlignItems:alignItems];
+  [self setCss_children:children];
+  
+}
+
 - (void)css_wrapContent {
   YGSetMesure([self css_layout]);
 }

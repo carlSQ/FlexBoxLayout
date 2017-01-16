@@ -14,4 +14,9 @@
 
 - (void)css_wrapContent;
 
+- (void)css_setFlexDirection:(CSSFlexDirection)direction
+              justifyContent:(CSSJustify)justifyContent
+                  alignItems:(CSSAlign)alignItems
+                    children:(NSArray<id<CSSLayoutProtocol>>*)children;
+
 @end
