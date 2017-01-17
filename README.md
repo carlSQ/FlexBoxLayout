@@ -1,9 +1,9 @@
 # CSSLayout
 
 [![CI Status](http://img.shields.io/travis/carlSQ/CSSLayout.svg?style=flat)](https://travis-ci.org/carlSQ/CSSLayout)
-[![Version](https://img.shields.io/cocoapods/v/CSSLayout.svg?style=flat)](http://cocoapods.org/pods/CSSLayout)
-[![License](https://img.shields.io/cocoapods/l/CSSLayout.svg?style=flat)](http://cocoapods.org/pods/CSSLayout)
-[![Platform](https://img.shields.io/cocoapods/p/CSSLayout.svg?style=flat)](http://cocoapods.org/pods/CSSLayout)
+[![Version](https://img.shields.io/cocoapods/v/FlexBoxLayout.svg?style=flat)](http://cocoapods.org/pods/FlexBoxLayout)
+[![License](https://img.shields.io/cocoapods/l/FlexBoxLayout.svg?style=flat)](http://cocoapods.org/pods/FlexBoxLayout)
+[![Platform](https://img.shields.io/cocoapods/p/FlexBoxLayout.svg?style=flat)](http://cocoapods.org/pods/FlexBoxLayout)
 
 ## Overview
 ![Demo Overview](https://github.com/carlSQ/CSSLayout/blob/master/Example/CSSLayout/show.gif)
