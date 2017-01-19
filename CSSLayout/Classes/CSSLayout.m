@@ -113,6 +113,8 @@ void YGSetMesure(CSSLayout *layout) {
 
 @property(nonatomic, strong) NSMutableArray *children;
 
+@property(nonatomic, strong) NSMutableArray *styleNames;
+
 @end
 
 @implementation CSSLayout
@@ -121,6 +123,7 @@ void YGSetMesure(CSSLayout *layout) {
   if (self = [super init]) {
     _cssNode = YGNodeNew();
     _children = [NSMutableArray array];
+    _styleNames = [NSMutableArray array];
   }
   return self;
 }
@@ -221,6 +224,13 @@ if (value) {\
 }\
 } while(0);
 
+#define CSS_STYLE_FILL_ALL_SIZE(key) \
+do {\
+  id value = _CSSStyles[@"CSS"#key"AttributeName"];\
+  if (value) {\
+    [self set##key:[(NSValue *)value CGSizeValue]];\
+  }\
+} while(0);
 
 - (void)setCSSStyles:(NSDictionary *)CSSStyles {
   
@@ -249,7 +259,9 @@ if (value) {\
   CSS_STYLE_FILL(MaxWidth)
   CSS_STYLE_FILL(MaxHeight)
   CSS_STYLE_FILL(AspectRatio)
-  
+  CSS_STYLE_FILL_ALL_SIZE(Size)
+  CSS_STYLE_FILL_ALL_SIZE(MinSize)
+  CSS_STYLE_FILL_ALL_SIZE(MaxSize)
 }
 
 
@@ -373,5 +385,136 @@ if (value) {\
   YGNodeStyleSetAspectRatio(_cssNode, aspectRatio);
 }
 
+#define CACHE_STYLES_NAME(name)  [_styleNames addObject:@""#name]; \
+return self;
+
+- (CSSLayout *)flexDirection {
+  CACHE_STYLES_NAME(FlexDirection)
+}
+
+- (CSSLayout *)justifyContent {
+  CACHE_STYLES_NAME(JustifyContent)
+}
+
+- (CSSLayout *)alignContent {
+   CACHE_STYLES_NAME(AlignContent)
+}
+
+- (CSSLayout *)alignItems {
+  CACHE_STYLES_NAME(AlignItems)
+}
+
+- (CSSLayout *)alignSelf {
+  CACHE_STYLES_NAME(AlignSelf)
+}
+
+- (CSSLayout *)positionType {
+  CACHE_STYLES_NAME(PositionType)
+}
+
+- (CSSLayout *)flexWrap {
+  CACHE_STYLES_NAME(FlexWrap)
+}
+
+- (CSSLayout *)flexGrow {
+  CACHE_STYLES_NAME(FlexGrow)
+}
+
+- (CSSLayout *)flexShrink {
+  CACHE_STYLES_NAME(FlexShrink)
+}
+
+- (CSSLayout *)flexBasiss {
+  CACHE_STYLES_NAME(FlexBasiss)
+}
+
+- (CSSLayout *)margin {
+  CACHE_STYLES_NAME(Margin)
+}
+
+- (CSSLayout *)padding {
+  CACHE_STYLES_NAME(Padding)
+}
+
+- (CSSLayout *)width {
+  CACHE_STYLES_NAME(Width)
+}
+
+- (CSSLayout *)height {
+  CACHE_STYLES_NAME(Height)
+}
+
+- (CSSLayout *)size {
+  CACHE_STYLES_NAME(Size)
+}
+
+#define CSS_STYLE_FILL(key, value)\
+do {\
+if ([_styleNames containsObject:@""#key]) {\
+[self set##key:[(NSNumber *)value floatValue]];\
+}\
+} while(0);
+
+#define CSS_STYLE_FILL_ALL_DIRECTION(key, value) \
+do {\
+if ([_styleNames containsObject:@""#key]) {\
+[self set##key:value.left forEdge:CSSEdgeLeft];\
+[self set##key:value.top forEdge:CSSEdgeTop];\
+[self set##key:value.right forEdge:CSSEdgeRight];\
+[self set##key:value.bottom forEdge:CSSEdgeBottom];\
+}\
+} while(0);
+
+#define CSS_STYLE_FILL_ALL_SIZE(key, value) \
+do {\
+  if ([_styleNames containsObject:@""#key]) {\
+    [self set##key:value];\
+  }\
+} while(0);
+
+- (CSSLayout * (^)(id attr))equalTo {
+  return ^CSSLayout* (id attr) {
+    CSS_STYLE_FILL(Direction,attr)
+    CSS_STYLE_FILL(FlexDirection,attr)
+    CSS_STYLE_FILL(JustifyContent,attr)
+    CSS_STYLE_FILL(AlignContent,attr)
+    CSS_STYLE_FILL(AlignItems,attr)
+    CSS_STYLE_FILL(AlignSelf,attr)
+    CSS_STYLE_FILL(PositionType,attr)
+    CSS_STYLE_FILL(FlexWrap,attr)
+    CSS_STYLE_FILL(FlexGrow,attr)
+    CSS_STYLE_FILL(FlexShrink,attr)
+    CSS_STYLE_FILL(FlexBasis,attr)
+    CSS_STYLE_FILL(Width,attr)
+    CSS_STYLE_FILL(Height,attr)
+    CSS_STYLE_FILL(MinWidth,attr)
+    CSS_STYLE_FILL(MinHeight,attr)
+    CSS_STYLE_FILL(MaxWidth,attr)
+    CSS_STYLE_FILL(MaxHeight,attr)
+    CSS_STYLE_FILL(AspectRatio,attr)
+    [self.styleNames removeAllObjects];
+    return self;
+  };
+}
+
+- (CSSLayout * (^)(CGSize attr))equalToSize {
+  return ^CSSLayout* (CGSize attr) {
+    CSS_STYLE_FILL_ALL_SIZE(Size,attr)
+    CSS_STYLE_FILL_ALL_SIZE(MinSize,attr)
+    CSS_STYLE_FILL_ALL_SIZE(MaxSize,attr)
+    [self.styleNames removeAllObjects];
+    return self;
+  };
+}
+
+- (CSSLayout * (^)(UIEdgeInsets attr))equalToEdgeInsets {
+  return ^CSSLayout* (UIEdgeInsets attr) {
+    CSS_STYLE_FILL_ALL_DIRECTION(Position,attr)
+    CSS_STYLE_FILL_ALL_DIRECTION(Margin,attr)
+    CSS_STYLE_FILL_ALL_DIRECTION(Padding,attr)
+    [self.styleNames removeAllObjects];
+    return self;
+  };
+}
 
 @end

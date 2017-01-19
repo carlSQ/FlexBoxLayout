@@ -144,6 +144,59 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CSSLayout (CSSStyle)
 
+- (CSSLayout *)flexDirection;
+
+- (CSSLayout *)justifyContent;
+
+- (CSSLayout *)alignContent;
+
+- (CSSLayout *)alignItems;
+
+- (CSSLayout *)alignSelf;
+
+- (CSSLayout *)positionType;
+
+- (CSSLayout *)flexWrap;
+
+- (CSSLayout *)flexGrow;
+
+- (CSSLayout *)flexShrink;
+
+- (CSSLayout *)flexBasiss;
+
+- (CSSLayout *)position;
+
+- (CSSLayout *)margin;
+
+- (CSSLayout *)padding;
+
+- (CSSLayout *)width;
+
+- (CSSLayout *)height;
+
+- (CSSLayout *)minWidth;
+
+- (CSSLayout *)minHeight;
+
+- (CSSLayout *)maxWidth;
+
+- (CSSLayout *)maxHeight;
+
+- (CSSLayout *)size;
+
+- (CSSLayout *)maxSize;
+
+- (CSSLayout *)minSize;
+
+- (CSSLayout *)aspectRatio;
+
+- (CSSLayout * (^)(id attr))equalTo;
+
+- (CSSLayout * (^)(CGSize attr))equalToSize;
+
+- (CSSLayout * (^)(UIEdgeInsets attr))equalToEdgeInsets;
+
+
 - (void)setDirection:(CSSDirection)direction;
 
 - (void)setFlexDirection:(CSSFlexDirection)flexDirection;

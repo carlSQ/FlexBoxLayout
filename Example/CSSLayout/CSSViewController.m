@@ -21,24 +21,28 @@
   
   [super viewDidLoad];
   
-  UIView *root = [UIView new];
-  [self.view addSubview:root];
-  
+  UIView *root = self.view;
   root.backgroundColor = [UIColor redColor];
-  [root css_setFlexDirection:CSSFlexDirectionRow];
-
-  [root css_setAlignItems:CSSAlignCenter];
-  [root css_setJustifyContent:CSSJustifySpaceAround];
+  
+  [root css_makeLayout:^(CSSLayout *layout) {
+    layout.flexDirection.equalTo(@(CSSFlexDirectionRow));
+    layout.alignItems.equalTo(@(CSSAlignCenter));
+    layout.justifyContent.equalTo(@(CSSJustifySpaceAround));
+  }];
+  
   
   UIView *child1 = [UIView new];
   child1.backgroundColor = [UIColor blueColor];
   
-  [child1 css_setWidth:100];
-  [child1 css_setHeight:100];
+  [child1 css_makeLayout:^(CSSLayout *layout) {
+    layout.width.height.equalTo(@100);
+  }];
+  
   UIView *child2 = [UIView new];
   child2.backgroundColor = [UIColor greenColor];
-  [child2 css_setWidth:100];
-  [child2 css_setHeight:100];
+  [child2 css_makeLayout:^(CSSLayout *layout) {
+    layout.width.height.equalTo(@100);
+  }];
   
   
   UILabel *child3 = [UILabel new];
@@ -58,9 +62,12 @@
                                                        children:@[child1, child2,child3]];
   
   
-  [div1 css_setMargin:20 forEdge:CSSEdgeTop];
   
-  [div1 css_setWidth:150];
+  [div1 css_makeLayout:^(CSSLayout *layout) {
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(20, 0, 0, 0));
+    layout.width.equalTo(@(150));
+  }];
+  
   
   UIView *child5 = [UIView new];
   child5.backgroundColor = [UIColor blueColor];
@@ -77,7 +84,10 @@
                        CSSMarginAttributeName:[NSValue valueWithUIEdgeInsets:UIEdgeInsetsMake(0, 0, 10, 0)],
                        CSSFlexGrowAttributeName:@2.0};
   
-  [child6 css_setMargin:10 forEdge:CSSEdgeAll];
+  [child6 css_makeLayout:^(CSSLayout *layout) {
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 10, 10, 10));
+  }];
+  
   UIView *child7 = [UIView new];
   child7.backgroundColor = [UIColor yellowColor];
   child7.CSSStyles = @{CSSWidthAttributeName:@(50),
@@ -101,11 +111,13 @@
                                                 justifyContent:CSSJustifySpaceAround
                                                     alignItems:CSSAlignCenter
                                                       children:@[child5,child6,child7,child8]];
-  [div2 css_setWidth:150];
-  [div2 css_setMargin:20 forEdge:CSSEdgeTop];
+  [div2 css_makeLayout:^(CSSLayout *layout) {
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(20, 0, 0, 0));
+    layout.width.equalTo(@(150));
+  }];
   root.css_children = @[div1,div2];
 
-  [root css_asyApplyLayoutWithSize:css_undefinedSize];
+  [root css_asyApplyLayoutWithSize:[UIScreen mainScreen].bounds.size];
   
 }
 

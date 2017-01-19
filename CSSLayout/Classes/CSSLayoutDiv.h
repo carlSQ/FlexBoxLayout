@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
                                 alignItems:(CSSAlign)alignItems
                                   children:(NSArray<id<CSSLayoutProtocol>>*)children;
 
+- (CSSLayout *)css_makeLayout:(void(^)(CSSLayout *layout))layout;
+
 @end
 
 NS_ASSUME_NONNULL_END

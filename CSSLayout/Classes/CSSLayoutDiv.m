@@ -43,7 +43,9 @@
 
 + (instancetype)layoutDivWithFlexDirection:(CSSFlexDirection)direction {
   CSSLayoutDiv *layoutDiv = [self new];
-  [layoutDiv css_setFlexDirection:direction];
+  [layoutDiv css_makeLayout:^(CSSLayout *layout) {
+    [layout setFlexDirection:direction];
+  }];
   return layoutDiv;
 }
 
@@ -52,9 +54,11 @@
                                 alignItems:(CSSAlign)alignItems
                                   children:(NSArray <id<CSSLayoutProtocol>>*)children {
   CSSLayoutDiv *layoutDiv = [self new];
-  [layoutDiv css_setFlexDirection:direction];
-  [layoutDiv css_setJustifyContent:justifyContent];
-  [layoutDiv css_setAlignItems:alignItems];
+  [layoutDiv css_makeLayout:^(CSSLayout *layout) {
+    [layout setFlexDirection:direction];
+    [layout setJustifyContent:justifyContent];
+    [layout setAlignItems:alignItems];
+  }];
   [layoutDiv setCss_children:children];
   return layoutDiv;
 }
@@ -116,6 +120,13 @@
   return _frame;
 }
 
+- (CSSLayout *)css_makeLayout:(void(^)(CSSLayout *layout))layout {
+  if (layout) {
+    layout([self css_layout]);
+  }
+  return [self css_layout];
+}
+
 #pragma mark - layout
 
 - (void)css_applyLayouWithSize:(CGSize)size {
@@ -154,104 +165,5 @@
   }
   
 }
-
-#pragma mark - CSSStyle
-
-- (void)css_setDirection:(CSSDirection)direction {
-  [_css_layout setDirection:direction];
-}
-
-- (void)css_setFlexDirection:(CSSFlexDirection)flexDirection {
-  [_css_layout setFlexDirection:flexDirection];
-}
-
-- (void)css_setJustifyContent:(CSSJustify)justifyContent {
-  [_css_layout setJustifyContent:justifyContent];
-}
-
-- (void)css_setAlignContent:(CSSAlign)alignContent {
-  [_css_layout setAlignContent:alignContent];
-}
-
-- (void)css_setAlignItems:(CSSAlign)alignItems {
-  [_css_layout setAlignItems:alignItems];
-}
-
-- (void)css_setAlignSelf:(CSSAlign)alignSelf {
-  [_css_layout setAlignSelf:alignSelf];
-}
-
-- (void)css_setPositionType:(CSSPositionType)positionType {
-  [_css_layout setPositionType:positionType];
-}
-
-- (void)css_setFlexWrap:(CSSWrap)flexWrap {
-  [_css_layout setFlexWrap:flexWrap];
-}
-
-- (void)css_setFlexGrow:(CGFloat)flexGrow {
-  [_css_layout setFlexGrow:flexGrow];
-}
-
-- (void)css_setFlexShrink:(CGFloat)flexShrink {
-  [_css_layout setFlexShrink:flexShrink];
-}
-
-- (void)css_setFlexBasis:(CGFloat)flexBasis {
-  [_css_layout setFlexBasis:flexBasis];
-}
-
-- (void)css_setPosition:(CGFloat)position forEdge:(CSSEdge)edge {
-  [_css_layout setPosition:position forEdge:edge];
-}
-
-- (void)css_setMargin:(CGFloat)margin forEdge:(CSSEdge)edge {
-  [_css_layout setMargin:margin forEdge:edge];
-}
-
-- (void)css_setPadding:(CGFloat)padding forEdge:(CSSEdge)edge {
-  [_css_layout setPadding:padding forEdge:edge];
-}
-
-- (void)css_setWidth:(CGFloat)width {
-  [_css_layout setWidth:width];
-}
-
-- (void)css_setHeight:(CGFloat)height {
-  [_css_layout setHeight:height];
-}
-
-- (void)css_setSize:(CGSize)size {
-  [_css_layout setSize:size];
-}
-
-- (void)css_setMinWidth:(CGFloat)minWidth {
-  [_css_layout setMinWidth:minWidth];
-}
-
-- (void)css_setMinHeight:(CGFloat)minHeight {
-  [_css_layout setMinHeight:minHeight];
-}
-
-- (void)css_setMinSize:(CGSize)minSize {
-  [_css_layout setMinSize:minSize];
-}
-
-- (void)css_setMaxWidth:(CGFloat)maxWidth {
-  [_css_layout setMaxWidth:maxWidth];
-}
-
-- (void)css_setMaxHeight:(CGFloat)maxHeight {
-  [_css_layout setMaxHeight:maxHeight];
-}
-
-- (void)css_setMaxSize:(CGSize)maxSize {
-  [_css_layout setMaxSize:maxSize];
-}
-
-- (void)css_setAspectRatio:(CGFloat)aspectRatio {
-  [_css_layout setAspectRatio:aspectRatio];
-}
-
 
 @end

@@ -85,52 +85,6 @@ extern const CGFloat css_undefined;
 
 - (void)css_asyApplyLayoutWithSize:(CGSize)size;
 
-- (void)css_setDirection:(CSSDirection)direction;
-
-- (void)css_setFlexDirection:(CSSFlexDirection)flexDirection;
-
-- (void)css_setJustifyContent:(CSSJustify)justifyContent;
-
-- (void)css_setAlignContent:(CSSAlign)alignContent;
-
-- (void)css_setAlignItems:(CSSAlign)alignItems;
-
-- (void)css_setAlignSelf:(CSSAlign)alignSelf;
-
-- (void)css_setPositionType:(CSSPositionType)positionType;
-
-- (void)css_setFlexWrap:(CSSWrap)flexWrap;
-
-- (void)css_setFlexGrow:(CGFloat)flexGrow;
-
-- (void)css_setFlexShrink:(CGFloat)flexShrink;
-
-- (void)css_setFlexBasis:(CGFloat)flexBasis;
-
-- (void)css_setPosition:(CGFloat)position forEdge:(CSSEdge)edge;
-
-- (void)css_setMargin:(CGFloat)margin forEdge:(CSSEdge)edge;
-
-- (void)css_setPadding:(CGFloat)padding forEdge:(CSSEdge)edge;
-
-- (void)css_setWidth:(CGFloat)width;
-
-- (void)css_setHeight:(CGFloat)height;
-
-- (void)css_setSize:(CGSize)size;
-
-- (void)css_setMinWidth:(CGFloat)minWidth;
-
-- (void)css_setMinHeight:(CGFloat)minHeight;
-
-- (void)css_setMinSize:(CGSize)minSize;
-
-- (void)css_setMaxWidth:(CGFloat)maxWidth;
-
-- (void)css_setMaxHeight:(CGFloat)maxHeight;
-
-- (void)css_setMaxSize:(CGSize)maxSize;
-
-- (void)css_setAspectRatio:(CGFloat)aspectRatio;
+- (CSSLayout *)css_makeLayout:(void(^)(CSSLayout *layout))layout;
 
 @end

@@ -85,113 +85,17 @@ const CGFloat css_undefined = YGUndefined;
   return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)css_setDirection:(CSSDirection)direction {
-  [[self css_layout] setDirection:direction];
-}
-
-- (void)css_setFlexDirection:(CSSFlexDirection)flexDirection {
-  [[self css_layout] setFlexDirection:flexDirection];
-}
-
-- (void)css_setJustifyContent:(CSSJustify)justifyContent {
-  [[self css_layout] setJustifyContent:justifyContent];
-}
-
-- (void)css_setAlignContent:(CSSAlign)alignContent {
-  [[self css_layout] setAlignContent:alignContent];
-}
-
-- (void)css_setAlignItems:(CSSAlign)alignItems {
-  [[self css_layout] setAlignItems:alignItems];
-}
-
-- (void)css_setAlignSelf:(CSSAlign)alignSelf {
-  [[self css_layout] setAlignSelf:alignSelf];
-}
-
-- (void)css_setPositionType:(CSSPositionType)positionType {
-  [[self css_layout] setPositionType:positionType];
-}
-
-- (void)css_setFlexWrap:(CSSWrap)flexWrap {
-  [[self css_layout] setFlexWrap:flexWrap];
-}
-
-- (void)css_setFlexGrow:(CGFloat)flexGrow {
-  [[self css_layout] setFlexGrow:flexGrow];
-}
-
-- (void)css_setFlexShrink:(CGFloat)flexShrink {
-  [[self css_layout] setFlexShrink:flexShrink];
-}
-
-- (void)css_setFlexBasis:(CGFloat)flexBasis {
-  [[self css_layout] setFlexBasis:flexBasis];
-}
-
-- (void)css_setPosition:(CGFloat)position forEdge:(CSSEdge)edge {
-  [[self css_layout] setPosition:position forEdge:edge];
-}
-
-- (void)css_setMargin:(CGFloat)margin forEdge:(CSSEdge)edge {
-  [[self css_layout] setMargin:margin forEdge:edge];
-}
-
-- (void)css_setPadding:(CGFloat)padding forEdge:(CSSEdge)edge {
-  [[self css_layout] setPadding:padding forEdge:edge];
-}
-
-- (void)css_setWidth:(CGFloat)width {
-  [[self css_layout] setWidth:width];
-}
-
-- (void)css_setHeight:(CGFloat)height {
-  [[self css_layout] setHeight:height];
-}
-
-- (void)css_setSize:(CGSize)size {
-  [[self css_layout] setSize:size];
-}
-
-- (void)css_setMinWidth:(CGFloat)minWidth {
-  [[self css_layout] setMinWidth:minWidth];
-}
-
-- (void)css_setMinHeight:(CGFloat)minHeight {
-  [[self css_layout] setMinHeight:minHeight];
-}
-
-- (void)css_setMinSize:(CGSize)minSize {
-  [[self css_layout] setMinSize:minSize];
-}
-
-- (void)css_setMaxWidth:(CGFloat)maxWidth {
-  [[self css_layout] setMaxWidth:maxWidth];
-}
-
-- (void)css_setMaxHeight:(CGFloat)maxHeight {
-  [[self css_layout] setMaxHeight:maxHeight];
-}
-
-- (void)css_setMaxSize:(CGSize)maxSize {
-  [[self css_layout] setMaxSize:maxSize];
-}
-
-
-- (void)css_setAspectRatio:(CGFloat)aspectRatio {
-  [[self css_layout] setAspectRatio:aspectRatio];
-}
-
 - (void)css_setFlexDirection:(CSSFlexDirection)direction
               justifyContent:(CSSJustify)justifyContent
                   alignItems:(CSSAlign)alignItems
                     children:(NSArray<id<CSSLayoutProtocol>>*)children {
   
-  [self css_setFlexDirection:direction];
-  [self css_setJustifyContent:justifyContent];
-  [self css_setAlignItems:alignItems];
+  [self css_makeLayout:^(CSSLayout *layout) {
+    [layout setFlexDirection:direction];
+    [layout setFlexDirection:justifyContent];
+    [layout setFlexDirection:alignItems];
+  }];
   [self setCss_children:children];
-  
 }
 
 - (void)css_wrapContent {
@@ -241,6 +145,13 @@ const CGFloat css_undefined = YGUndefined;
     [layoutElement css_applyLayoutToViewHierachy];
   }
   
+}
+
+- (CSSLayout *)css_makeLayout:(void(^)(CSSLayout *layout))layout {
+  if (layout) {
+    layout([self css_layout]);
+  }
+  return [self css_layout];
 }
 
 

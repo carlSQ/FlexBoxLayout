@@ -69,20 +69,26 @@
 
 - (void)layoutView {
   
-  [self css_setFlexDirection:CSSFlexDirectionColumn];
+  [self css_makeLayout:^(CSSLayout *layout) {
+    layout.flexDirection.equalTo(@(CSSFlexDirectionColumn));
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(0, 15, 0, 15));
+    layout.alignItems.equalTo(@(CSSAlignFlexStart));
+  }];
   
-  [self css_setMargin:15 forEdge:CSSEdgeHorizontal];
-  
-  [self css_setAlignItems:CSSAlignFlexStart];
-  
-  [_titleLabel css_setMargin:10 forEdge:CSSEdgeTop];
+  [_titleLabel css_makeLayout:^(CSSLayout *layout) {
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0));
+  }];
   
   [_titleLabel css_wrapContent];
   
-  [_contentLabel css_setMargin:10 forEdge:CSSEdgeTop];
+  [_contentLabel css_makeLayout:^(CSSLayout *layout) {
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0));
+  }];
   [_contentLabel css_wrapContent];
   
-  [_contentImageView css_setMargin:10 forEdge:CSSEdgeTop];
+  [_contentImageView css_makeLayout:^(CSSLayout *layout) {
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0));
+  }];
   [_contentImageView css_wrapContent];
   
 
@@ -91,14 +97,20 @@
   [_timeLabel css_wrapContent];
   
   CSSLayoutDiv *usernameDiv = [CSSLayoutDiv layoutDivWithFlexDirection:CSSFlexDirectionRow justifyContent:CSSJustifyFlexStart alignItems:CSSAlignFlexStart children:@[_usernameLabel]];
-  [usernameDiv css_setFlexGrow:1.0];
+  [usernameDiv css_makeLayout:^(CSSLayout * _Nonnull layout) {
+    layout.flexGrow.equalTo(@(1.0));
+  }];
   
   CSSLayoutDiv *timeDiv = [CSSLayoutDiv layoutDivWithFlexDirection:CSSFlexDirectionRow justifyContent:CSSJustifyFlexEnd alignItems:CSSAlignFlexEnd children:@[_timeLabel]];
-   [timeDiv css_setFlexGrow:1.0];
+  [timeDiv css_makeLayout:^(CSSLayout * _Nonnull layout) {
+    layout.flexGrow.equalTo(@(1.0));
+  }];
   
   CSSLayoutDiv *div = [CSSLayoutDiv layoutDivWithFlexDirection:CSSFlexDirectionRow justifyContent:CSSJustifySpaceBetween alignItems:CSSAlignFlexStart children:@[usernameDiv,timeDiv]];
 
-  [div css_setMargin:10 forEdge:CSSEdgeTop];
+  [div css_makeLayout:^(CSSLayout *layout) {
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0));
+  }];
   
   self.css_children =@[_titleLabel,_contentLabel,_contentImageView,div];
 }
