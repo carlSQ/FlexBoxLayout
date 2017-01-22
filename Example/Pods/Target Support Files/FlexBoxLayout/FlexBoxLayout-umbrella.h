@@ -4,6 +4,7 @@
 #import "CSSLayout.h"
 #import "CSSLayoutDiv.h"
 #import "CSSLayoutProtocol.h"
+#import "UIScrollView+CSSLayout.h"
 #import "UITableView+CSSLayout.h"
 #import "UIView+CellStyle.h"
 #import "UIView+CSSLayout.h"

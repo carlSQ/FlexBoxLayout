@@ -111,6 +111,7 @@ typedef enum CSSAlign {
 } CSSAlign;
 
 NS_ASSUME_NONNULL_BEGIN
+
 @interface CSSLayout : NSObject
 
 @property(nonatomic, weak) id context;
@@ -246,4 +247,5 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setAspectRatio:(CGFloat)aspectRatio;
 
 @end
+
 NS_ASSUME_NONNULL_END

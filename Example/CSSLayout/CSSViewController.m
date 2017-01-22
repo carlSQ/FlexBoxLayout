@@ -9,6 +9,7 @@
 #import "CSSViewController.h"
 #import "UIView+CSSLayout.h"
 #import "CSSLayoutDiv.h"
+#import "UIScrollView+CSSLayout.h"
 
 @interface CSSViewController ()
 
@@ -21,14 +22,10 @@
   
   [super viewDidLoad];
   
-  UIView *root = self.view;
-  root.backgroundColor = [UIColor redColor];
-  
-  [root css_makeLayout:^(CSSLayout *layout) {
-    layout.flexDirection.equalTo(@(CSSFlexDirectionRow));
-    layout.alignItems.equalTo(@(CSSAlignCenter));
-    layout.justifyContent.equalTo(@(CSSJustifySpaceAround));
-  }];
+
+  UIScrollView *contentView = [UIScrollView new];
+  contentView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-44);
+  [self.view addSubview:contentView];
   
   
   UIView *child1 = [UIView new];
@@ -51,9 +48,9 @@
   [child3 css_wrapContent];
   [child3 setAttributedText:[[NSAttributedString alloc] initWithString:@"testfdsfdsfdsfdsfdsfdsafdsafdsafasdkkk" attributes:@{NSFontAttributeName :[UIFont systemFontOfSize:18]}] ];
   
-  [root addSubview:child1];
-  [root addSubview:child2];
-  [root addSubview:child3];
+  [contentView addSubview:child1];
+  [contentView addSubview:child2];
+  [contentView addSubview:child3];
   
   
   CSSLayoutDiv *div1 = [CSSLayoutDiv layoutDivWithFlexDirection:CSSFlexDirectionColumn
@@ -102,11 +99,6 @@
                        CSSHeightAttributeName:@(50),
                        CSSFlexGrowAttributeName:@1.0};
   
-  [root addSubview:child5];
-  [root addSubview:child6];
-  [root addSubview:child7];
-  [root addSubview:child8];
-  
   CSSLayoutDiv *div2 =[CSSLayoutDiv layoutDivWithFlexDirection:CSSFlexDirectionColumn
                                                 justifyContent:CSSJustifySpaceAround
                                                     alignItems:CSSAlignCenter
@@ -115,8 +107,18 @@
     layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(20, 0, 0, 0));
     layout.width.equalTo(@(150));
   }];
-  root.css_children = @[div1,div2];
-
+  
+  [contentView addSubview:child5];
+  [contentView addSubview:child6];
+  [contentView addSubview:child7];
+  [contentView addSubview:child8];
+  
+  CSSLayoutDiv *root = [CSSLayoutDiv layoutDivWithFlexDirection:CSSFlexDirectionRow
+                                                 justifyContent:CSSJustifySpaceAround
+                                                     alignItems:CSSAlignCenter
+                                                       children:@[div1,div2]];
+  
+  contentView.css_contentDiv = root;
   [root css_asyApplyLayoutWithSize:[UIScreen mainScreen].bounds.size];
   
 }
@@ -126,7 +128,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
