@@ -476,14 +476,14 @@ return self;
   CACHE_STYLES_NAME(Size)
 }
 
-#define CSS_STYLE_FILL(key, value)\
+#define CSS_STYLE(key, value)\
 do {\
 if ([_styleNames containsObject:@""#key]) {\
 [self set##key:[(NSNumber *)value floatValue]];\
 }\
 } while(0);
 
-#define CSS_STYLE_FILL_ALL_DIRECTION(key, value) \
+#define CSS_STYLE_ALL_DIRECTION(key, value) \
 do {\
 if ([_styleNames containsObject:@""#key]) {\
 [self set##key:value.left forEdge:CSSEdgeLeft];\
@@ -493,7 +493,7 @@ if ([_styleNames containsObject:@""#key]) {\
 }\
 } while(0);
 
-#define CSS_STYLE_FILL_ALL_SIZE(key, value) \
+#define CSS_STYLE_ALL_SIZE(key, value) \
 do {\
   if ([_styleNames containsObject:@""#key]) {\
     [self set##key:value];\
@@ -506,24 +506,24 @@ do {\
       YGNodeCopyStyle(self.cssNode, [(id<CSSLayoutProtocol>)attr css_layout].cssNode);
       return self;
     }
-    CSS_STYLE_FILL(Direction,attr)
-    CSS_STYLE_FILL(FlexDirection,attr)
-    CSS_STYLE_FILL(JustifyContent,attr)
-    CSS_STYLE_FILL(AlignContent,attr)
-    CSS_STYLE_FILL(AlignItems,attr)
-    CSS_STYLE_FILL(AlignSelf,attr)
-    CSS_STYLE_FILL(PositionType,attr)
-    CSS_STYLE_FILL(FlexWrap,attr)
-    CSS_STYLE_FILL(FlexGrow,attr)
-    CSS_STYLE_FILL(FlexShrink,attr)
-    CSS_STYLE_FILL(FlexBasis,attr)
-    CSS_STYLE_FILL(Width,attr)
-    CSS_STYLE_FILL(Height,attr)
-    CSS_STYLE_FILL(MinWidth,attr)
-    CSS_STYLE_FILL(MinHeight,attr)
-    CSS_STYLE_FILL(MaxWidth,attr)
-    CSS_STYLE_FILL(MaxHeight,attr)
-    CSS_STYLE_FILL(AspectRatio,attr)
+    CSS_STYLE(Direction,attr)
+    CSS_STYLE(FlexDirection,attr)
+    CSS_STYLE(JustifyContent,attr)
+    CSS_STYLE(AlignContent,attr)
+    CSS_STYLE(AlignItems,attr)
+    CSS_STYLE(AlignSelf,attr)
+    CSS_STYLE(PositionType,attr)
+    CSS_STYLE(FlexWrap,attr)
+    CSS_STYLE(FlexGrow,attr)
+    CSS_STYLE(FlexShrink,attr)
+    CSS_STYLE(FlexBasis,attr)
+    CSS_STYLE(Width,attr)
+    CSS_STYLE(Height,attr)
+    CSS_STYLE(MinWidth,attr)
+    CSS_STYLE(MinHeight,attr)
+    CSS_STYLE(MaxWidth,attr)
+    CSS_STYLE(MaxHeight,attr)
+    CSS_STYLE(AspectRatio,attr)
     [self.styleNames removeAllObjects];
     return self;
   };
@@ -531,9 +531,9 @@ do {\
 
 - (CSSLayout * (^)(CGSize attr))equalToSize {
   return ^CSSLayout* (CGSize attr) {
-    CSS_STYLE_FILL_ALL_SIZE(Size,attr)
-    CSS_STYLE_FILL_ALL_SIZE(MinSize,attr)
-    CSS_STYLE_FILL_ALL_SIZE(MaxSize,attr)
+    CSS_STYLE_ALL_SIZE(Size,attr)
+    CSS_STYLE_ALL_SIZE(MinSize,attr)
+    CSS_STYLE_ALL_SIZE(MaxSize,attr)
     [self.styleNames removeAllObjects];
     return self;
   };
@@ -541,9 +541,9 @@ do {\
 
 - (CSSLayout * (^)(UIEdgeInsets attr))equalToEdgeInsets {
   return ^CSSLayout* (UIEdgeInsets attr) {
-    CSS_STYLE_FILL_ALL_DIRECTION(Position,attr)
-    CSS_STYLE_FILL_ALL_DIRECTION(Margin,attr)
-    CSS_STYLE_FILL_ALL_DIRECTION(Padding,attr)
+    CSS_STYLE_ALL_DIRECTION(Position,attr)
+    CSS_STYLE_ALL_DIRECTION(Margin,attr)
+    CSS_STYLE_ALL_DIRECTION(Padding,attr)
     [self.styleNames removeAllObjects];
     return self;
   };
