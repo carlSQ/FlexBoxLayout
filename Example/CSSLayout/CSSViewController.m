@@ -38,7 +38,7 @@
   UIView *child2 = [UIView new];
   child2.backgroundColor = [UIColor greenColor];
   [child2 css_makeLayout:^(CSSLayout *layout) {
-    layout.width.height.equalTo(@100);
+    layout.equalTo(child1);
   }];
   
   
@@ -76,28 +76,25 @@
   
   UIView *child6 = [UIView new];
   child6.backgroundColor = [UIColor greenColor];
-  child6.CSSStyles = @{CSSWidthAttributeName:@(50),
-                       CSSHeightAttributeName:@(100),
-                       CSSMarginAttributeName:[NSValue valueWithUIEdgeInsets:UIEdgeInsetsMake(0, 0, 10, 0)],
-                       CSSFlexGrowAttributeName:@2.0};
-  
   [child6 css_makeLayout:^(CSSLayout *layout) {
-    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 10, 10, 10));
+    layout.equalTo(child5);
+    layout.flexGrow.equalTo(@(2.0));
+     layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 10, 10, 10));
   }];
+
   
   UIView *child7 = [UIView new];
   child7.backgroundColor = [UIColor yellowColor];
-  child7.CSSStyles = @{CSSWidthAttributeName:@(50),
-                       CSSHeightAttributeName:@(50),
-                       CSSMarginAttributeName:[NSValue valueWithUIEdgeInsets:UIEdgeInsetsMake(0, 0, 10, 0)],
-                       CSSFlexGrowAttributeName:@1.0};
+  [child7 css_makeLayout:^(CSSLayout *layout) {
+    layout.equalTo(child5);
+  }];
   
   UIView *child8 = [UIView new];
   child8.backgroundColor = [UIColor blackColor];
   
-  child8.CSSStyles = @{CSSWidthAttributeName:@(50),
-                       CSSHeightAttributeName:@(50),
-                       CSSFlexGrowAttributeName:@1.0};
+  [child8 css_makeLayout:^(CSSLayout *layout) {
+    layout.equalTo(child5);
+  }];
   
   CSSLayoutDiv *div2 =[CSSLayoutDiv layoutDivWithFlexDirection:CSSFlexDirectionColumn
                                                 justifyContent:CSSJustifySpaceAround

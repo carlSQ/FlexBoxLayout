@@ -30,7 +30,7 @@
   }
 }
  
-- (void)clearLayout {
+- (void)css_clearLayout {
   [self setCss_contentDiv:nil];
 }
 

@@ -13,6 +13,6 @@
 
 @property(nonatomic, strong) CSSLayoutDiv *css_contentDiv;
 
-- (void)clearLayout;
+- (void)css_clearLayout;
 
 @end

@@ -6,7 +6,7 @@
 //
 
 #import "CSSLayout.h"
-
+#import "CSSLayoutProtocol.h"
 
 NSString *CSSDirectiontAttributeName = @"CSSDirectiontAttributeName";
 
@@ -444,6 +444,34 @@ return self;
   CACHE_STYLES_NAME(Height)
 }
 
+- (CSSLayout *)minWidth {
+  CACHE_STYLES_NAME(MinWidth)
+}
+
+- (CSSLayout *)minHeight {
+  CACHE_STYLES_NAME(MinHeight)
+}
+
+- (CSSLayout *)maxWidth {
+  CACHE_STYLES_NAME(MaxWidth)
+}
+
+- (CSSLayout *)maxHeight {
+  CACHE_STYLES_NAME(MaxHeight)
+}
+
+- (CSSLayout *)maxSize {
+  CACHE_STYLES_NAME(MaxSize)
+}
+
+- (CSSLayout *)minSize {
+  CACHE_STYLES_NAME(MinSize)
+}
+
+- (CSSLayout *)aspectRatio {
+  CACHE_STYLES_NAME(AspectRatio)
+}
+
 - (CSSLayout *)size {
   CACHE_STYLES_NAME(Size)
 }
@@ -474,6 +502,10 @@ do {\
 
 - (CSSLayout * (^)(id attr))equalTo {
   return ^CSSLayout* (id attr) {
+    if ([attr conformsToProtocol:NSProtocolFromString(@"CSSLayoutProtocol")]) {
+      YGNodeCopyStyle(self.cssNode, [(id<CSSLayoutProtocol>)attr css_layout].cssNode);
+      return self;
+    }
     CSS_STYLE_FILL(Direction,attr)
     CSS_STYLE_FILL(FlexDirection,attr)
     CSS_STYLE_FILL(JustifyContent,attr)
