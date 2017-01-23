@@ -92,8 +92,8 @@ const CGFloat css_undefined = YGUndefined;
   
   [self css_makeLayout:^(CSSLayout *layout) {
     [layout setFlexDirection:direction];
-    [layout setFlexDirection:justifyContent];
-    [layout setFlexDirection:alignItems];
+    [layout setJustifyContent:justifyContent];
+    [layout setAlignItems:alignItems];
   }];
   [self setCss_children:children];
 }
