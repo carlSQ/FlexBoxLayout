@@ -15,21 +15,18 @@ typedef enum CSSFlexDirection {
   CSSFlexDirectionColumnReverse,
   CSSFlexDirectionRow,
   CSSFlexDirectionRowReverse,
-  CSSFlexDirectionCount,
 } CSSFlexDirection;
 
 typedef enum CSSMeasureMode {
   CSSMeasureModeUndefined,
   CSSMeasureModeExactly,
   CSSMeasureModeAtMost,
-  CSSMeasureModeCount,
 } CSSMeasureMode;
 
 typedef enum CSSPrintOptions {
   CSSPrintOptionsLayout = 1,
   CSSPrintOptionsStyle = 2,
   CSSPrintOptionsChildren = 4,
-  CSSPrintOptionsCount,
 } CSSPrintOptions;
 
 typedef enum CSSEdge {
@@ -42,19 +39,16 @@ typedef enum CSSEdge {
   CSSEdgeHorizontal,
   CSSEdgeVertical,
   CSSEdgeAll,
-  CSSEdgeCount,
 } CSSEdge;
 
 typedef enum CSSPositionType {
   CSSPositionTypeRelative,
   CSSPositionTypeAbsolute,
-  CSSPositionTypeCount,
 } CSSPositionType;
 
 typedef enum CSSDimension {
   CSSDimensionWidth,
   CSSDimensionHeight,
-  CSSDimensionCount,
 } CSSDimension;
 
 typedef enum CSSJustify {
@@ -63,14 +57,12 @@ typedef enum CSSJustify {
   CSSJustifyFlexEnd,
   CSSJustifySpaceBetween,
   CSSJustifySpaceAround,
-  CSSJustifyCount,
 } CSSJustify;
 
 typedef enum CSSDirection {
   CSSDirectionInherit,
   CSSDirectionLTR,
   CSSDirectionRTL,
-  CSSDirectionCount,
 } CSSDirection;
 
 typedef enum CSSLogLevel {
@@ -79,7 +71,6 @@ typedef enum CSSLogLevel {
   CSSLogLevelInfo,
   CSSLogLevelDebug,
   CSSLogLevelVerbose,
-  CSSLogLevelCount,
 } CSSLogLevel;
 
 typedef enum CSSWrap {
@@ -92,13 +83,11 @@ typedef enum CSSOverflow {
   CSSOverflowVisible,
   CSSOverflowHidden,
   CSSOverflowScroll,
-  CSSOverflowCount,
 } CSSOverflow;
 
 typedef enum CSSExperimentalFeature {
   CSSExperimentalFeatureRounding,
   CSSExperimentalFeatureWebFlexBasis,
-  CSSExperimentalFeatureCount,
 } CSSExperimentalFeature;
 
 typedef enum CSSAlign {
@@ -107,7 +96,6 @@ typedef enum CSSAlign {
   CSSAlignCenter,
   CSSAlignFlexEnd,
   CSSAlignStretch,
-  CSSAlignCount,
 } CSSAlign;
 
 NS_ASSUME_NONNULL_BEGIN
