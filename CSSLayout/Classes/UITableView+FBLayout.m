@@ -111,7 +111,7 @@ static NSString *kCellIdentifier = @"fb_kCellIdentifier";
   
   if (!cellContentView || [cellContentView isEqual:[NSNull null]]) {
     
-    FBCellBlock cellBlock = objc_getAssociatedObject(self, @selector(fb_cellContnetViewBlockForIndexPath:));
+    FBCellBlock cellBlock = objc_getAssociatedObject(self, @selector(fb_setCellContnetViewBlockForIndexPath:));
     
     if (cellBlock) {
       cellContentView = cellBlock(indexPath);
