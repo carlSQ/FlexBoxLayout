@@ -1,5 +1,5 @@
 PODS:
-  - FlexBoxLayout (0.1.1)
+  - FlexBoxLayout (0.2.0)
 
 DEPENDENCIES:
   - FlexBoxLayout (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FlexBoxLayout: 060cba9d0233f46dc7c24c42f7748d9851790c55
+  FlexBoxLayout: d7d40a72d63fddc11a9d8505069424d615521cb8
 
-PODFILE CHECKSUM: a380b3683161be994bc7f53f08750f99a7cf1c71
+PODFILE CHECKSUM: 563595e05458b8ce7ab28f8ac979ece9951b1a2d
 
 COCOAPODS: 1.0.1

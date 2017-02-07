@@ -10,6 +10,6 @@
 
 @interface UIView (CellStyle)
 
-@property(nonatomic) UITableViewCellSelectionStyle css_selectionStyle;
+@property(nonatomic) UITableViewCellSelectionStyle fb_selectionStyle;
 
 @end

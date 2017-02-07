@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'CSSLayout_Example' do
+target 'FlexBoxLayout_Example' do
   pod 'FlexBoxLayout', :path => '../'
 
-  target 'CSSLayout_Tests' do
+  target 'FlexBoxLayout_Tests' do
     inherit! :search_paths
   end
 end

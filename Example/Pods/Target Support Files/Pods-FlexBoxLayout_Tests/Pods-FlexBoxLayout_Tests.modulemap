@@ -1,0 +1,6 @@
+framework module Pods_FlexBoxLayout_Tests {
+  umbrella header "Pods-FlexBoxLayout_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

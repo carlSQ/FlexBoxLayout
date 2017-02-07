@@ -1,6 +1,0 @@
-framework module Pods_CSSLayout_Tests {
-  umbrella header "Pods-CSSLayout_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

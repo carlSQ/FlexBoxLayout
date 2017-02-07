@@ -11,12 +11,12 @@
 
 @implementation UIView (CellStyle)
 
-- (void)setCss_selectionStyle:(UITableViewCellSelectionStyle)css_selectionStyle {
-  objc_setAssociatedObject(self, _cmd, @(css_selectionStyle), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setFb_selectionStyle:(UITableViewCellSelectionStyle)fb_selectionStyle {
+  objc_setAssociatedObject(self, _cmd, @(fb_selectionStyle), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (UITableViewCellSelectionStyle)css_selectionStyle {
-  return [objc_getAssociatedObject(self, @selector(setCss_selectionStyle:)) integerValue];;
+- (UITableViewCellSelectionStyle)fb_selectionStyle {
+  return [objc_getAssociatedObject(self, @selector(setFb_selectionStyle:)) integerValue];;
 }
 
 @end
