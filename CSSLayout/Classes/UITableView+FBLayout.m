@@ -55,7 +55,7 @@ static NSString *kCellIdentifier = @"fb_kCellIdentifier";
   return [self fb_cacheCellForIndexPath:indexPath];
 }
 
-- (void)fb_cellContnetViewBlockForIndexPath:(FBCellBlock)cellBlock {
+- (void)fb_setCellContnetViewBlockForIndexPath:(FBCellBlock)cellBlock {
   static dispatch_once_t token;
   dispatch_once(&token, ^{
     [self registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];

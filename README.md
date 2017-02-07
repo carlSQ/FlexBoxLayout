@@ -308,7 +308,7 @@ root.fb_children = @[div1,div2];
  
  ```objc
 
-  [self.tableView fb_cellContnetViewBlockForIndexPath:^UIView *(NSIndexPath *indexPath) {
+  [self.tableView fb_setCellContnetViewBlockForIndexPath:^UIView *(NSIndexPath *indexPath) {
     return [[FBFeedView alloc]initWithModel:weakSelf.sections[indexPath.section][indexPath.row]];
   }];
   

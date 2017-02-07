@@ -21,7 +21,7 @@ typedef UIView *_Nonnull (^FBCellBlock)(NSIndexPath * _Nonnull indexPath);
 
 - (UITableViewCell *)fb_cellForIndexPath:(NSIndexPath *)indexPath;
 
-- (void)fb_cellContnetViewBlockForIndexPath:(FBCellBlock)cellBlock;
+- (void)fb_setCellContnetViewBlockForIndexPath:(FBCellBlock)cellBlock;
 
 @end
 
