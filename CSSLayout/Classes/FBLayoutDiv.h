@@ -11,9 +11,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+/**
+ FBLayoutDiv is virtual view, split view to a different area, avoid too much view.
+ */
+
 @interface FBLayoutDiv : NSObject<FBLayoutProtocol>
 
 @property(nonatomic)CGRect frame;
+
 
 + (instancetype)layoutDivWithFlexDirection:(FBFlexDirection)direction;
 
@@ -22,7 +28,6 @@ NS_ASSUME_NONNULL_BEGIN
                                 alignItems:(FBAlign)alignItems
                                   children:(NSArray<id<FBLayoutProtocol>>*)children;
 
-- (FBLayout *)fb_makeLayout:(void(^)(FBLayout *layout))layout;
 
 @end
 

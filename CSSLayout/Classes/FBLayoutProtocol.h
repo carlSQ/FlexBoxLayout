@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FBLayout.h"
+#import "FBLayout+Private.h"
 
 UIKIT_EXTERN NSString *FBDirectiontAttributeName;
 
@@ -51,7 +52,7 @@ UIKIT_EXTERN NSString *FBMaxHeightAttributeName;
 
 UIKIT_EXTERN NSString *FBAspectRatioAttributeName;
 
-extern const CGSize fb_undefinedSize;
+extern const CGSize fb_undefinedSize; 
 
 extern const CGFloat fb_undefined;
 
@@ -61,10 +62,21 @@ extern const CGFloat fb_undefined;
 
 @property(nonatomic, strong, readonly) FBLayout *fb_layout;
 
+/**
+  the frame after calculates the layout
+ */
 @property(nonatomic, assign ) CGRect frame;
 
+
+/**
+ children layout node
+ */
 @property(nonatomic, copy) NSArray<id<FBLayoutProtocol>> *fb_children;
 
+
+/**
+ styles of layout
+ */
 @property(nonatomic, copy) NSDictionary *fbStyles;
 
 - (void)fb_addChild:(id<FBLayoutProtocol>)layout;
@@ -79,12 +91,31 @@ extern const CGFloat fb_undefined;
 
 - (void)fb_removeAllChildren;
 
+
 - (void)fb_applyLayoutToViewHierachy;
 
+
+/**
+ calculates the layout
+
+ @param root layout size
+ */
 - (void)fb_applyLayouWithSize:(CGSize)size;
 
+
+/**
+ calculates the layout asynchronously
+
+ @param root layout size
+ */
 - (void)fb_asyApplyLayoutWithSize:(CGSize)size;
 
+
+/**
+ setting layout properties
+ @param layout
+ @return  chained calls are supported
+ */
 - (FBLayout *)fb_makeLayout:(void(^)(FBLayout *layout))layout;
 
 @end

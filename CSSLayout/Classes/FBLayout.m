@@ -6,7 +6,9 @@
 //
 
 #import "FBLayout.h"
+#import "FBLayout+Private.h"
 #import "FBLayoutProtocol.h"
+#import "Yoga.h"
 
 NSString *FBDirectiontAttributeName = @"FBDirectiontAttributeName";
 
@@ -114,6 +116,16 @@ void YGSetMesure(FBLayout *layout) {
 @property(nonatomic, strong) NSMutableArray *children;
 
 @property(nonatomic, strong) NSMutableArray *styleNames;
+
+@property(nonatomic, weak) id context;
+
+@property(nonatomic, weak) FBLayout *parent;
+
+@property(nonatomic, copy)NSDictionary *fbStyles;
+
+@property(nonatomic, readonly, assign) YGNodeRef fbNode;
+
+@property(nonatomic, readonly, assign) CGRect frame;
 
 @end
 

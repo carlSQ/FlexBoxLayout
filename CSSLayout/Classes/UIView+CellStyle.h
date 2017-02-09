@@ -10,6 +10,10 @@
 
 @interface UIView (CellStyle)
 
+
+/**
+ set cell selectionStyle if view add to the cell.
+ */
 @property(nonatomic) UITableViewCellSelectionStyle fb_selectionStyle;
 
 @end

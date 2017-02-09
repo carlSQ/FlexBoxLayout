@@ -7,9 +7,8 @@
 //
 
 #import "FBViewController.h"
-#import "UIView+FBLayout.h"
-#import "FBLayoutDiv.h"
-#import "UIScrollView+FBLayout.h"
+
+#import "FlexBoxLayout.h"
 
 @interface FBViewController ()
 
@@ -116,7 +115,7 @@
                                                        children:@[div1,div2]];
   
   contentView.fb_contentDiv = root;
-  [root fb_applyLayouWithSize:[UIScreen mainScreen].bounds.size];
+  [root fb_asyApplyLayoutWithSize:[UIScreen mainScreen].bounds.size];
   
 }
 

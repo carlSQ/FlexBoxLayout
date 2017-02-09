@@ -11,6 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface FBAsyLayoutTransaction : NSObject
 
+/**
+ asy calculate transaction
+ @param transaction transaction task
+ @param complete task complete
+ */
 + (void)addCalculateTransaction:(dispatch_block_t)transaction
                        complete:(nullable dispatch_block_t)complete;
 

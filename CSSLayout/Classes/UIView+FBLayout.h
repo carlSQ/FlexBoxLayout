@@ -12,11 +12,24 @@
 
 @interface UIView (FBLayout)<FBLayoutProtocol>
 
+
+/**
+  fit view size to content size
+ */
 - (void)fb_wrapContent;
 
+
+/**
+ set view layout properties
+
+ @param direction
+ @param justifyContent
+ @param alignItems
+ @param children
+ */
 - (void)fb_setFlexDirection:(FBFlexDirection)direction
-              justifyContent:(FBJustify)justifyContent
-                  alignItems:(FBAlign)alignItems
-                    children:(NSArray<id<FBLayoutProtocol>>*)children;
+             justifyContent:(FBJustify)justifyContent
+                 alignItems:(FBAlign)alignItems
+                   children:(NSArray<id<FBLayoutProtocol>>*)children;
 
 @end

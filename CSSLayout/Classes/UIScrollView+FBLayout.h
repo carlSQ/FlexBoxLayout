@@ -11,8 +11,16 @@
 
 @interface UIScrollView (FBLayout)
 
+
+/**
+ ScrollView layout div make contentSize  auto size
+ */
 @property(nonatomic, strong) FBLayoutDiv *fb_contentDiv;
 
+
+/**
+ remove layout
+ */
 - (void)fb_clearLayout;
 
 @end
