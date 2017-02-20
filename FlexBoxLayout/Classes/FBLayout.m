@@ -440,6 +440,10 @@ return self;
   CACHE_STYLES_NAME(FlexBasiss)
 }
 
+- (FBLayout *)position {
+  CACHE_STYLES_NAME(Position)
+}
+
 - (FBLayout *)margin {
   CACHE_STYLES_NAME(Margin)
 }
