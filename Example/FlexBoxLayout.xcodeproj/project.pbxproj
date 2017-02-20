@@ -7,27 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07A678E4B507F3B84DFC9CC5 /* Pods_CSSLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DC2FE7479FD607DCE17A8F /* Pods_CSSLayout_Example.framework */; };
-		1B4BD9BE1E26291C00365D68 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B4BD9BD1E26291C00365D68 /* data.json */; };
-		1B4BD9C11E262ACD00365D68 /* FBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BD9C01E262ACD00365D68 /* FBTableViewController.m */; };
-		1B4BD9C41E262DAC00365D68 /* FBFeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BD9C31E262DAC00365D68 /* FBFeedView.m */; };
-		1B4BD9C71E262DCD00365D68 /* FBFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BD9C61E262DCD00365D68 /* FBFeedModel.m */; };
-		1B4BD9CA1E26504300365D68 /* FBFPSGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4BD9C91E26504300365D68 /* FBFPSGraph.m */; };
-		1B8D9B8E1E1CB0A90078B3B2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8D9B8D1E1CB0A90078B3B2 /* Launch Screen.storyboard */; };
+		1B4F7D4F1E5B15B500EA6EDD /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D391E5B15B500EA6EDD /* data.json */; };
+		1B4F7D501E5B15B500EA6EDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D3A1E5B15B500EA6EDD /* InfoPlist.strings */; };
+		1B4F7D511E5B15B500EA6EDD /* FBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D3D1E5B15B500EA6EDD /* FBAppDelegate.m */; };
+		1B4F7D521E5B15B500EA6EDD /* FBFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D3F1E5B15B500EA6EDD /* FBFeedModel.m */; };
+		1B4F7D531E5B15B500EA6EDD /* FBFeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D411E5B15B500EA6EDD /* FBFeedView.m */; };
+		1B4F7D541E5B15B500EA6EDD /* FBFPSGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D431E5B15B500EA6EDD /* FBFPSGraph.m */; };
+		1B4F7D551E5B15B500EA6EDD /* FBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D451E5B15B500EA6EDD /* FBTableViewController.m */; };
+		1B4F7D561E5B15B500EA6EDD /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D471E5B15B500EA6EDD /* FBViewController.m */; };
+		1B4F7D571E5B15B500EA6EDD /* FlexBoxLayout-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D481E5B15B500EA6EDD /* FlexBoxLayout-Info.plist */; };
+		1B4F7D581E5B15B500EA6EDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D4A1E5B15B500EA6EDD /* Images.xcassets */; };
+		1B4F7D591E5B15B500EA6EDD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D4B1E5B15B500EA6EDD /* Launch Screen.storyboard */; };
+		1B4F7D5A1E5B15B500EA6EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D4C1E5B15B500EA6EDD /* main.m */; };
+		1B4F7D5B1E5B15B500EA6EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D4D1E5B15B500EA6EDD /* Main.storyboard */; };
+		1B4F7D5C1E5B15B500EA6EDD /* show.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D4E1E5B15B500EA6EDD /* show.gif */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* FBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* FBAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* FBViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B5B68B60067C1C8B9BFFD7F7 /* Pods_FlexBoxLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6764F96706C8B51001BC1C37 /* Pods_FlexBoxLayout_Example.framework */; };
 		E01EC6B795C9A60747C3FB42 /* Pods_CSSLayout_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD6B95245F63FD5FE35E42 /* Pods_CSSLayout_Tests.framework */; };
 		F3153B8C0BD5351F97BF4F63 /* Pods_FlexBoxLayout_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49EF148E22F0F64A0AB1B2B /* Pods_FlexBoxLayout_Tests.framework */; };
@@ -46,16 +47,27 @@
 /* Begin PBXFileReference section */
 		068C0B79AF1323F8E288905F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		18D4B89CF6E54D1B702F9867 /* Pods-CSSLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSLayout_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSLayout_Example/Pods-CSSLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1B4BD9BD1E26291C00365D68 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		1B4BD9BF1E262ACD00365D68 /* FBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTableViewController.h; sourceTree = "<group>"; };
-		1B4BD9C01E262ACD00365D68 /* FBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTableViewController.m; sourceTree = "<group>"; };
-		1B4BD9C21E262DAC00365D68 /* FBFeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFeedView.h; sourceTree = "<group>"; };
-		1B4BD9C31E262DAC00365D68 /* FBFeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFeedView.m; sourceTree = "<group>"; };
-		1B4BD9C51E262DCD00365D68 /* FBFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFeedModel.h; sourceTree = "<group>"; };
-		1B4BD9C61E262DCD00365D68 /* FBFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFeedModel.m; sourceTree = "<group>"; };
-		1B4BD9C81E26504300365D68 /* FBFPSGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFPSGraph.h; sourceTree = "<group>"; };
-		1B4BD9C91E26504300365D68 /* FBFPSGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFPSGraph.m; sourceTree = "<group>"; };
-		1B8D9B8D1E1CB0A90078B3B2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1B4F7D391E5B15B500EA6EDD /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		1B4F7D3B1E5B15B500EA6EDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B4F7D3C1E5B15B500EA6EDD /* FBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBAppDelegate.h; sourceTree = "<group>"; };
+		1B4F7D3D1E5B15B500EA6EDD /* FBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBAppDelegate.m; sourceTree = "<group>"; };
+		1B4F7D3E1E5B15B500EA6EDD /* FBFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFeedModel.h; sourceTree = "<group>"; };
+		1B4F7D3F1E5B15B500EA6EDD /* FBFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFeedModel.m; sourceTree = "<group>"; };
+		1B4F7D401E5B15B500EA6EDD /* FBFeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFeedView.h; sourceTree = "<group>"; };
+		1B4F7D411E5B15B500EA6EDD /* FBFeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFeedView.m; sourceTree = "<group>"; };
+		1B4F7D421E5B15B500EA6EDD /* FBFPSGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFPSGraph.h; sourceTree = "<group>"; };
+		1B4F7D431E5B15B500EA6EDD /* FBFPSGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFPSGraph.m; sourceTree = "<group>"; };
+		1B4F7D441E5B15B500EA6EDD /* FBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTableViewController.h; sourceTree = "<group>"; };
+		1B4F7D451E5B15B500EA6EDD /* FBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTableViewController.m; sourceTree = "<group>"; };
+		1B4F7D461E5B15B500EA6EDD /* FBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBViewController.h; sourceTree = "<group>"; };
+		1B4F7D471E5B15B500EA6EDD /* FBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBViewController.m; sourceTree = "<group>"; };
+		1B4F7D481E5B15B500EA6EDD /* FlexBoxLayout-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FlexBoxLayout-Info.plist"; sourceTree = "<group>"; };
+		1B4F7D491E5B15B500EA6EDD /* FlexBoxLayout-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlexBoxLayout-Prefix.pch"; sourceTree = "<group>"; };
+		1B4F7D4A1E5B15B500EA6EDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B4F7D4B1E5B15B500EA6EDD /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1B4F7D4C1E5B15B500EA6EDD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B4F7D4D1E5B15B500EA6EDD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1B4F7D4E1E5B15B500EA6EDD /* show.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = show.gif; sourceTree = "<group>"; };
 		28FD6B95245F63FD5FE35E42 /* Pods_CSSLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		292FC21B24FA1B08B43F517C /* Pods-CSSLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSLayout_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSLayout_Tests/Pods-CSSLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3212EEC1552C4000D2191436 /* Pods-FlexBoxLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexBoxLayout_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexBoxLayout_Example/Pods-FlexBoxLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,15 +76,6 @@
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* FlexBoxLayout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlexBoxLayout-Info.plist"; sourceTree = "<group>"; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* FlexBoxLayout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlexBoxLayout-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* FBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* FBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* FBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* FBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* FlexBoxLayout_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexBoxLayout_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
@@ -81,7 +84,6 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6764F96706C8B51001BC1C37 /* Pods_FlexBoxLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexBoxLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D099FB4ACC9803FF52C67AC /* FlexBoxLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FlexBoxLayout.podspec; path = ../FlexBoxLayout.podspec; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A0D4C00CEF45E50075D739C6 /* Pods-FlexBoxLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexBoxLayout_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlexBoxLayout_Example/Pods-FlexBoxLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B7A0145C4CAFFE471C48D6A1 /* Pods-CSSLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSLayout_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSSLayout_Tests/Pods-CSSLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9CF66F3893828F1349FC4B1 /* Pods-FlexBoxLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexBoxLayout_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexBoxLayout_Tests/Pods-FlexBoxLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,7 +101,6 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				07A678E4B507F3B84DFC9CC5 /* Pods_CSSLayout_Example.framework in Frameworks */,
 				B5B68B60067C1C8B9BFFD7F7 /* Pods_FlexBoxLayout_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +120,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4F7D381E5B15B500EA6EDD /* Example for FlexBoxLayout */ = {
+			isa = PBXGroup;
+			children = (
+				1B4F7D391E5B15B500EA6EDD /* data.json */,
+				1B4F7D3A1E5B15B500EA6EDD /* InfoPlist.strings */,
+				1B4F7D3C1E5B15B500EA6EDD /* FBAppDelegate.h */,
+				1B4F7D3D1E5B15B500EA6EDD /* FBAppDelegate.m */,
+				1B4F7D3E1E5B15B500EA6EDD /* FBFeedModel.h */,
+				1B4F7D3F1E5B15B500EA6EDD /* FBFeedModel.m */,
+				1B4F7D401E5B15B500EA6EDD /* FBFeedView.h */,
+				1B4F7D411E5B15B500EA6EDD /* FBFeedView.m */,
+				1B4F7D421E5B15B500EA6EDD /* FBFPSGraph.h */,
+				1B4F7D431E5B15B500EA6EDD /* FBFPSGraph.m */,
+				1B4F7D441E5B15B500EA6EDD /* FBTableViewController.h */,
+				1B4F7D451E5B15B500EA6EDD /* FBTableViewController.m */,
+				1B4F7D461E5B15B500EA6EDD /* FBViewController.h */,
+				1B4F7D471E5B15B500EA6EDD /* FBViewController.m */,
+				1B4F7D481E5B15B500EA6EDD /* FlexBoxLayout-Info.plist */,
+				1B4F7D491E5B15B500EA6EDD /* FlexBoxLayout-Prefix.pch */,
+				1B4F7D4A1E5B15B500EA6EDD /* Images.xcassets */,
+				1B4F7D4B1E5B15B500EA6EDD /* Launch Screen.storyboard */,
+				1B4F7D4C1E5B15B500EA6EDD /* main.m */,
+				1B4F7D4D1E5B15B500EA6EDD /* Main.storyboard */,
+				1B4F7D4E1E5B15B500EA6EDD /* show.gif */,
+			);
+			path = "Example for FlexBoxLayout";
+			sourceTree = "<group>";
+		};
 		5CAF783DFE8EA55D73A1D59A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +166,8 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				1B4F7D381E5B15B500EA6EDD /* Example for FlexBoxLayout */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for CSSLayout */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
@@ -168,42 +197,6 @@
 				C49EF148E22F0F64A0AB1B2B /* Pods_FlexBoxLayout_Tests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6003F593195388D20070C39A /* Example for CSSLayout */ = {
-			isa = PBXGroup;
-			children = (
-				1B4BD9BD1E26291C00365D68 /* data.json */,
-				6003F59C195388D20070C39A /* FBAppDelegate.h */,
-				6003F59D195388D20070C39A /* FBAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				1B8D9B8D1E1CB0A90078B3B2 /* Launch Screen.storyboard */,
-				6003F5A5195388D20070C39A /* FBViewController.h */,
-				6003F5A6195388D20070C39A /* FBViewController.m */,
-				1B4BD9BF1E262ACD00365D68 /* FBTableViewController.h */,
-				1B4BD9C01E262ACD00365D68 /* FBTableViewController.m */,
-				1B4BD9C21E262DAC00365D68 /* FBFeedView.h */,
-				1B4BD9C31E262DAC00365D68 /* FBFeedView.m */,
-				1B4BD9C51E262DCD00365D68 /* FBFeedModel.h */,
-				1B4BD9C61E262DCD00365D68 /* FBFeedModel.m */,
-				1B4BD9C81E26504300365D68 /* FBFPSGraph.h */,
-				1B4BD9C91E26504300365D68 /* FBFPSGraph.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
-				6003F594195388D20070C39A /* Supporting Files */,
-			);
-			name = "Example for CSSLayout";
-			path = CSSLayout;
-			sourceTree = "<group>";
-		};
-		6003F594195388D20070C39A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6003F595195388D20070C39A /* FlexBoxLayout-Info.plist */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
-				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* FlexBoxLayout-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6003F5B5195388D20070C39A /* Tests */ = {
@@ -322,11 +315,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				1B8D9B8E1E1CB0A90078B3B2 /* Launch Screen.storyboard in Resources */,
-				1B4BD9BE1E26291C00365D68 /* data.json in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				1B4F7D571E5B15B500EA6EDD /* FlexBoxLayout-Info.plist in Resources */,
+				1B4F7D581E5B15B500EA6EDD /* Images.xcassets in Resources */,
+				1B4F7D4F1E5B15B500EA6EDD /* data.json in Resources */,
+				1B4F7D5B1E5B15B500EA6EDD /* Main.storyboard in Resources */,
+				1B4F7D591E5B15B500EA6EDD /* Launch Screen.storyboard in Resources */,
+				1B4F7D5C1E5B15B500EA6EDD /* show.gif in Resources */,
+				1B4F7D501E5B15B500EA6EDD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,13 +433,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B4BD9C41E262DAC00365D68 /* FBFeedView.m in Sources */,
-				1B4BD9C71E262DCD00365D68 /* FBFeedModel.m in Sources */,
-				6003F59E195388D20070C39A /* FBAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* FBViewController.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
-				1B4BD9CA1E26504300365D68 /* FBFPSGraph.m in Sources */,
-				1B4BD9C11E262ACD00365D68 /* FBTableViewController.m in Sources */,
+				1B4F7D531E5B15B500EA6EDD /* FBFeedView.m in Sources */,
+				1B4F7D551E5B15B500EA6EDD /* FBTableViewController.m in Sources */,
+				1B4F7D561E5B15B500EA6EDD /* FBViewController.m in Sources */,
+				1B4F7D511E5B15B500EA6EDD /* FBAppDelegate.m in Sources */,
+				1B4F7D541E5B15B500EA6EDD /* FBFPSGraph.m in Sources */,
+				1B4F7D5A1E5B15B500EA6EDD /* main.m in Sources */,
+				1B4F7D521E5B15B500EA6EDD /* FBFeedModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,10 +462,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+		1B4F7D3A1E5B15B500EA6EDD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6003F597195388D20070C39A /* en */,
+				1B4F7D3B1E5B15B500EA6EDD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -577,8 +572,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = CNS46A8385;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CSSLayout/FlexBoxLayout-Prefix.pch";
-				INFOPLIST_FILE = "CSSLayout/FlexBoxLayout-Info.plist";
+				GCC_PREFIX_HEADER = "Example for FlexBoxLayout/FlexBoxLayout-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Example for FlexBoxLayout/FlexBoxLayout-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -595,8 +590,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = CNS46A8385;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CSSLayout/FlexBoxLayout-Prefix.pch";
-				INFOPLIST_FILE = "CSSLayout/FlexBoxLayout-Info.plist";
+				GCC_PREFIX_HEADER = "Example for FlexBoxLayout/FlexBoxLayout-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Example for FlexBoxLayout/FlexBoxLayout-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

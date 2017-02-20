@@ -18,5 +18,5 @@
   "platforms": {
     "ios": "7.0"
   },
-  "source_files": "CSSLayout/Classes/**/*"
+  "source_files": "FlexBoxLayout/Classes/**/*"
 }
