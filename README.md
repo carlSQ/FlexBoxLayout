@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/FlexBoxLayout.svg?style=flat)](http://cocoapods.org/pods/FlexBoxLayout)
 
 ## Overview
-![Demo Overview](https://github.com/carlSQ/CSSLayout/blob/master/Example/CSSLayout/show.gif)
+![Demo Overview](https://github.com/carlSQ/CSSLayout/blob/master/Example/Example for FlexBoxLayout/show.gif)
 
 ## Example
 
