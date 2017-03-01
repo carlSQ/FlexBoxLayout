@@ -21,6 +21,8 @@
 
 @property(nonatomic, readonly, assign) CGRect frame;
 
+@property(nonatomic, assign) CGSize mesureSize;
+
 - (NSArray *)allChildren;
 
 - (void)addChild:(FBLayout *)layout;

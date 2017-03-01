@@ -1,2161 +1,789 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>010225AD3590FF8208B0BD404284469C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>396140B1B9F47B20CAD8860A9682690D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>01B0EA786538FE2AC847B3A22827AC04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>27ED377E9598486ECB94AFED48E7468C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>0200BDDC4BC6ABA4998ACDBBFA319842</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4D6A815680415E320B2A15C537857BBE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>022C81912EE236CCCE2B188B83EF05FD</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EDAF3B101CEFAFA639154DF67F00CAEC</string>
-			<key>buildPhases</key>
-			<array>
-				<string>3B7357B3A4051F536C918AB91FD9D504</string>
-				<string>F3EABC04E578B5062FD016E58910E7AF</string>
-				<string>A4E20477633BFF31C651FE0053BE6149</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-FlexBoxLayout_Tests</string>
-			<key>productName</key>
-			<string>Pods-FlexBoxLayout_Tests</string>
-			<key>productReference</key>
-			<string>7C918EAC464D825B50D7323CE03CCBF4</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>02A253C134F5A622108421714E633DE7</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>FlexBoxLayout</string>
-			<key>target</key>
-			<string>12A6D1356271D6629530E5E1D2A1AEF1</string>
-			<key>targetProxy</key>
-			<string>69637151D1A49EC58361E829CC4456B6</string>
-		</dict>
-		<key>04AEA6E46A7EA4996DAFDACF7B25653A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A222E55213C1D9645B413C2215FA4A9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>09FFE3CB2868E2B3E114ACB11B0E1E6B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0ACDCBCB0B6796575F46FFA2F5410C6B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_RELEASE=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0C9084A67D7B86FC58E270D2AABAAE78</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FlexBoxLayout-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F2B37A4C37240E41B5901E3874A841E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIScrollView+FBLayout.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F67AE20FB0E26BC49F0E89AE142981C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>36626C1DDBD9A3A99161CFB983523EFB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>0F9BE7063CD0336BA363A0E6C1CC9153</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Example-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>10625033B79ABEBC7F041CF33206E29F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIView+CellStyle.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>11693F161764DCCC31686DE141DF5E10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>440BABDC6EABA0843A6FA9B830BD7AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>12A6D1356271D6629530E5E1D2A1AEF1</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>7EE590DC07147650A1359BFB1176CDDC</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BCA78E4E09A16D5898B8780C4970C0AC</string>
-				<string>9E740BFFAABEFC454E4B11ECF42A94E2</string>
-				<string>F3E6C54E0F62A80CE0C3524933997BDE</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>FlexBoxLayout</string>
-			<key>productName</key>
-			<string>FlexBoxLayout</string>
-			<key>productReference</key>
-			<string>1FE6805B5D87366AFBDEFD27C98B290C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>17F6D9A6F1EF8E7A670D4AF0CD80247E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIScrollView+FBLayout.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1BE404FD801880E7E29E07564F3D16D3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FC891E72F428CB9F6B41F67F1BB86A90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>1CBD2F367681F493A4C00FCB62B33A1B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>38CE59C10AC0CC0EA93345FC32BCA922</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>1D3CC9E2C1C782884FC6F6DE3B968747</key>
-		<dict>
-			<key>fileRef</key>
-			<string>82B36A10792E5098DB6ADA2C16E54514</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>1FE6805B5D87366AFBDEFD27C98B290C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FlexBoxLayout.framework</string>
-			<key>path</key>
-			<string>FlexBoxLayout.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>24B90BF78B18F510EAD3461DAF5C8DB7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FBLayout.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>27ED377E9598486ECB94AFED48E7468C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YGMacros.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>28799937EA34AF8CF5B57876B4563D2D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Example-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>29AED821E5159B1A2C303369131DE3FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>61F66BF5054C5C6CDBECC3F5F1C83CEA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D3E3D092A3FF7311A98E44BBA36FFD12</string>
-				<string>0ACDCBCB0B6796575F46FFA2F5410C6B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2E850BB230370E235ADAAF66108DAE56</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Yoga.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2E9B74FD5D6DAD1D5324B3D23E70830E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8F4959EAED01689B386DC3C0BB87E704</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-FlexBoxLayout_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-FlexBoxLayout_Example/Pods-FlexBoxLayout_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_FlexBoxLayout_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>2EB2964BB26268A3B1A6D7C0B083B3BB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D74DF5226816EB01C4A7DABD9D0FCF48</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FlexBoxLayout/FlexBoxLayout-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/FlexBoxLayout/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/FlexBoxLayout/FlexBoxLayout.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>FlexBoxLayout</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>32F624D5B8896078AB2DE2728829CE32</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Example-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>36161CBDE3D94EB050FB810F7298ECC1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YGEnums.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>36626C1DDBD9A3A99161CFB983523EFB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FlexBoxLayout-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>38054A9669674D6DB29CCAFE6E019ABE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7D1C51FE19C5C98E1B964339605BDBD4</string>
-				<string>8FD7CE6C2D8E50482EA1277D191A372A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>38CE59C10AC0CC0EA93345FC32BCA922</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FBLayoutDiv.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>396140B1B9F47B20CAD8860A9682690D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Example-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3AF27C6B69F0829C2309EC4C256D2205</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9C9EF063E05064AC26458CAFDC18FF29</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3B7357B3A4051F536C918AB91FD9D504</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A2E9CDE62638ABFBAE3DEB0E3C374E54</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3D2E3D18131369EE2DEBEC4AAD3CA31F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Example-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E1E1CD56DA4FBF6D6263A5E65BFAC3C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FlexBoxLayout.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>427B2E8A3E544BCF05921B57D8589560</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>42C31426F1C91D5EA1E22EBBF38B995C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9FEC0F579DB5BCC1BA51458BB545DC54</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>440BABDC6EABA0843A6FA9B830BD7AD0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UITableView+FBLayout.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4645AE3E94A37F08BF0C0AA0770E9A3A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46CF8A40E109826EA4BBA49783F0E2CC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F2B37A4C37240E41B5901E3874A841E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>47ADD558F1F4AECA4B8C2262D3262981</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A7D821747D8DAAC9DAEF7AB0DEBFF95E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4A1020F9F9C0D899AEFEA83E0D7E04B2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4B8A702DD37D2BE30BE6EB8BCB999BAC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Example.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4BB6D1B8F700CF5DC570A7647478471D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4A1020F9F9C0D899AEFEA83E0D7E04B2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-FlexBoxLayout_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-FlexBoxLayout_Tests/Pods-FlexBoxLayout_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_FlexBoxLayout_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>4D6A815680415E320B2A15C537857BBE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FBAsyLayoutTransaction.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4E7D9658379D464A876DA681D20BAB4B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5291E0156247D0EA2FE84C4F847DA894</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_FlexBoxLayout_Example.framework</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Example.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>5B857A94BB24F38EF74FC7A54FEEDEA9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>61F66BF5054C5C6CDBECC3F5F1C83CEA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FlexBoxLayout-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>627A2F09FE2B20E5E9E91C69697DB0E4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>010225AD3590FF8208B0BD404284469C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6839554B552FE7D916FB17BBED22C318</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7D537BF5AE405F391380ACE2167BE9CA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>69637151D1A49EC58361E829CC4456B6</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>12A6D1356271D6629530E5E1D2A1AEF1</string>
-			<key>remoteInfo</key>
-			<string>FlexBoxLayout</string>
-		</dict>
-		<key>71E3E8658D351B22E6D3478672BF6AC6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Example.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7250699FE0546BDA8DFE27522AB84154</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4D6A815680415E320B2A15C537857BBE</string>
-				<string>9FEC0F579DB5BCC1BA51458BB545DC54</string>
-				<string>F33EFAFCDC0EB5BAE7D934B8C6930C30</string>
-				<string>24B90BF78B18F510EAD3461DAF5C8DB7</string>
-				<string>7D537BF5AE405F391380ACE2167BE9CA</string>
-				<string>38CE59C10AC0CC0EA93345FC32BCA922</string>
-				<string>AA2E016718CABBB613164C9E9A28056C</string>
-				<string>9A222E55213C1D9645B413C2215FA4A9</string>
-				<string>3E1E1CD56DA4FBF6D6263A5E65BFAC3C</string>
-				<string>0F2B37A4C37240E41B5901E3874A841E</string>
-				<string>17F6D9A6F1EF8E7A670D4AF0CD80247E</string>
-				<string>440BABDC6EABA0843A6FA9B830BD7AD0</string>
-				<string>9E2E1F9C8AC2FC5D378E6E60B2A75459</string>
-				<string>FC891E72F428CB9F6B41F67F1BB86A90</string>
-				<string>10625033B79ABEBC7F041CF33206E29F</string>
-				<string>CAEF7B0B733054F9A25866B47F2B3945</string>
-				<string>9C51B97D3F84488D34014C64228AE5E1</string>
-				<string>36161CBDE3D94EB050FB810F7298ECC1</string>
-				<string>27ED377E9598486ECB94AFED48E7468C</string>
-				<string>A7D821747D8DAAC9DAEF7AB0DEBFF95E</string>
-				<string>82B36A10792E5098DB6ADA2C16E54514</string>
-				<string>2E850BB230370E235ADAAF66108DAE56</string>
-				<string>B40B66557077D58877B6CAE02A84E299</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7BE75048F5C814C67818D3257C5D7197</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C357814E862C610C61BB18E6C23900DB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>7C918EAC464D825B50D7323CE03CCBF4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_FlexBoxLayout_Tests.framework</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7D1C51FE19C5C98E1B964339605BDBD4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4645AE3E94A37F08BF0C0AA0770E9A3A</string>
-				<string>4B8A702DD37D2BE30BE6EB8BCB999BAC</string>
-				<string>32F624D5B8896078AB2DE2728829CE32</string>
-				<string>28799937EA34AF8CF5B57876B4563D2D</string>
-				<string>0F9BE7063CD0336BA363A0E6C1CC9153</string>
-				<string>9ED33EABB16F66CD0433B628C6F03997</string>
-				<string>3D2E3D18131369EE2DEBEC4AAD3CA31F</string>
-				<string>396140B1B9F47B20CAD8860A9682690D</string>
-				<string>71E3E8658D351B22E6D3478672BF6AC6</string>
-				<string>8F4959EAED01689B386DC3C0BB87E704</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-FlexBoxLayout_Example</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-FlexBoxLayout_Example</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7D31310903384B719B78AD21D8A19623</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1FE6805B5D87366AFBDEFD27C98B290C</string>
-				<string>5291E0156247D0EA2FE84C4F847DA894</string>
-				<string>7C918EAC464D825B50D7323CE03CCBF4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7D537BF5AE405F391380ACE2167BE9CA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FBLayout+Private.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>B95BED24702431F451C7256E2AD83A00</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>7D31310903384B719B78AD21D8A19623</string>
-				<string>38054A9669674D6DB29CCAFE6E019ABE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7EE590DC07147650A1359BFB1176CDDC</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2EB2964BB26268A3B1A6D7C0B083B3BB</string>
-				<string>FD481114065F788DAA24AE24D21FF41D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>817D348E5B50DF3A8DE35504ED28D286</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Tests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>82B36A10792E5098DB6ADA2C16E54514</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YGNodeList.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>833539FA1F1C25C14EBD82CE11FBC909</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AA2E016718CABBB613164C9E9A28056C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8941616EC45BDB185A65992DB896F403</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E1E1CD56DA4FBF6D6263A5E65BFAC3C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>8D127835AD39AC773F6A5AD356713D78</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F33EFAFCDC0EB5BAE7D934B8C6930C30</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>8F4959EAED01689B386DC3C0BB87E704</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Example.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8F6C67489B1695FC199A6E67355C8302</key>
-		<dict>
-			<key>fileRef</key>
-			<string>36161CBDE3D94EB050FB810F7298ECC1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>8FD7CE6C2D8E50482EA1277D191A372A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FB7D827C09FBE4FCA4BBE09D0E8312D5</string>
-				<string>DD72CDDD3D1420A4A75174336C718820</string>
-				<string>5B857A94BB24F38EF74FC7A54FEEDEA9</string>
-				<string>FA50A67FCE08977DED0458ECCEFB4585</string>
-				<string>427B2E8A3E544BCF05921B57D8589560</string>
-				<string>817D348E5B50DF3A8DE35504ED28D286</string>
-				<string>4E7D9658379D464A876DA681D20BAB4B</string>
-				<string>EAAD176CF890EF4FF992414450204767</string>
-				<string>4A1020F9F9C0D899AEFEA83E0D7E04B2</string>
-				<string>09FFE3CB2868E2B3E114ACB11B0E1E6B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-FlexBoxLayout_Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-FlexBoxLayout_Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>92120844BB11D9261970398ADAA2C4D2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EAAD176CF890EF4FF992414450204767</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>text.script.ruby</string>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>9A222E55213C1D9645B413C2215FA4A9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FBLayoutProtocol.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C51B97D3F84488D34014C64228AE5E1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIView+FBLayout.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C9EF063E05064AC26458CAFDC18FF29</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9E2E1F9C8AC2FC5D378E6E60B2A75459</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UITableView+FBLayout.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9E740BFFAABEFC454E4B11ECF42A94E2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E6CDBC4C848ABF34F099AEE8FBA84CBC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9ED33EABB16F66CD0433B628C6F03997</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Example-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9FEC0F579DB5BCC1BA51458BB545DC54</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FBAsyLayoutTransaction.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A1BF0B64E1FFEDD82FBFF7EF637E3BCE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A2E9CDE62638ABFBAE3DEB0E3C374E54</key>
-		<dict>
-			<key>fileRef</key>
-			<string>427B2E8A3E544BCF05921B57D8589560</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A4724059ABC15A44CB5C00033AE21568</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A6EC6C752DD6A451F31D25C709386B8B</string>
-				<string>B7D3992B6609E97AD6876286EB05EFCB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>FlexBoxLayout</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A4E20477633BFF31C651FE0053BE6149</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>92120844BB11D9261970398ADAA2C4D2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A6EC6C752DD6A451F31D25C709386B8B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7250699FE0546BDA8DFE27522AB84154</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>FlexBoxLayout</string>
-			<key>path</key>
-			<string>FlexBoxLayout</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A7D821747D8DAAC9DAEF7AB0DEBFF95E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>YGNodeList.c</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA2E016718CABBB613164C9E9A28056C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FBLayoutDiv.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB12791CC9D49C94E412B6FCC0CDB13F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10625033B79ABEBC7F041CF33206E29F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AD14AB6C9924D2B636AECB9CC64A6874</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B40B66557077D58877B6CAE02A84E299</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Yoga.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B7D3992B6609E97AD6876286EB05EFCB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE65672997E67FA519708A07BF706603</string>
-				<string>D74DF5226816EB01C4A7DABD9D0FCF48</string>
-				<string>61F66BF5054C5C6CDBECC3F5F1C83CEA</string>
-				<string>0C9084A67D7B86FC58E270D2AABAAE78</string>
-				<string>36626C1DDBD9A3A99161CFB983523EFB</string>
-				<string>A1BF0B64E1FFEDD82FBFF7EF637E3BCE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/FlexBoxLayout</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B95BED24702431F451C7256E2AD83A00</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A4724059ABC15A44CB5C00033AE21568</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3DCAB2B7CDE207B3958B6CB957FCC758</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BCA78E4E09A16D5898B8780C4970C0AC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>42C31426F1C91D5EA1E22EBBF38B995C</string>
-				<string>E96A24B52662189512B293E3C41BA0A2</string>
-				<string>833539FA1F1C25C14EBD82CE11FBC909</string>
-				<string>29AED821E5159B1A2C303369131DE3FF</string>
-				<string>BD694D742509FCA90C9791FDDD2CC49C</string>
-				<string>EAF10A8B150C87824577E67095D7EE84</string>
-				<string>AB12791CC9D49C94E412B6FCC0CDB13F</string>
-				<string>F985E378700692C215D092DDA766B197</string>
-				<string>47ADD558F1F4AECA4B8C2262D3262981</string>
-				<string>DF6C533E8F65DB2C8D6C286A624C5E90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BD694D742509FCA90C9791FDDD2CC49C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>17F6D9A6F1EF8E7A670D4AF0CD80247E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C357814E862C610C61BB18E6C23900DB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F9BE7063CD0336BA363A0E6C1CC9153</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CA536B4B8E7BDFF11EB29AEFB205D504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D005010C83EC7129D883DFF4C1129B0A</string>
-				<string>2E9B74FD5D6DAD1D5324B3D23E70830E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CAEF7B0B733054F9A25866B47F2B3945</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIView+FBLayout.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CEC22C73C1608DFA5D5D78BDCB218219</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D005010C83EC7129D883DFF4C1129B0A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>71E3E8658D351B22E6D3478672BF6AC6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-FlexBoxLayout_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-FlexBoxLayout_Example/Pods-FlexBoxLayout_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_FlexBoxLayout_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D3E3D092A3FF7311A98E44BBA36FFD12</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_DEBUG=1</string>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>7D31310903384B719B78AD21D8A19623</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>12A6D1356271D6629530E5E1D2A1AEF1</string>
-				<string>E6314BE697B844ACCA128CBE9D19D094</string>
-				<string>022C81912EE236CCCE2B188B83EF05FD</string>
-			</array>
-		</dict>
-		<key>D74DF5226816EB01C4A7DABD9D0FCF48</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>FlexBoxLayout.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DD72CDDD3D1420A4A75174336C718820</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Tests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF6C533E8F65DB2C8D6C286A624C5E90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2E850BB230370E235ADAAF66108DAE56</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E233F64C15B0403B59E99411E7C5C0F9</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>09FFE3CB2868E2B3E114ACB11B0E1E6B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-FlexBoxLayout_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-FlexBoxLayout_Tests/Pods-FlexBoxLayout_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_FlexBoxLayout_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E6314BE697B844ACCA128CBE9D19D094</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CA536B4B8E7BDFF11EB29AEFB205D504</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7BE75048F5C814C67818D3257C5D7197</string>
-				<string>3AF27C6B69F0829C2309EC4C256D2205</string>
-				<string>627A2F09FE2B20E5E9E91C69697DB0E4</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>02A253C134F5A622108421714E633DE7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-FlexBoxLayout_Example</string>
-			<key>productName</key>
-			<string>Pods-FlexBoxLayout_Example</string>
-			<key>productReference</key>
-			<string>5291E0156247D0EA2FE84C4F847DA894</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>E6CDBC4C848ABF34F099AEE8FBA84CBC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E96A24B52662189512B293E3C41BA0A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24B90BF78B18F510EAD3461DAF5C8DB7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EAAD176CF890EF4FF992414450204767</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Tests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAF10A8B150C87824577E67095D7EE84</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9E2E1F9C8AC2FC5D378E6E60B2A75459</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDAF3B101CEFAFA639154DF67F00CAEC</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>4BB6D1B8F700CF5DC570A7647478471D</string>
-				<string>E233F64C15B0403B59E99411E7C5C0F9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EDE6D9B14FA1B278E81B71B9116ED0D4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B40B66557077D58877B6CAE02A84E299</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>F33EFAFCDC0EB5BAE7D934B8C6930C30</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FBLayout.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F3E6C54E0F62A80CE0C3524933997BDE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0200BDDC4BC6ABA4998ACDBBFA319842</string>
-				<string>6839554B552FE7D916FB17BBED22C318</string>
-				<string>8D127835AD39AC773F6A5AD356713D78</string>
-				<string>1CBD2F367681F493A4C00FCB62B33A1B</string>
-				<string>04AEA6E46A7EA4996DAFDACF7B25653A</string>
-				<string>0F67AE20FB0E26BC49F0E89AE142981C</string>
-				<string>8941616EC45BDB185A65992DB896F403</string>
-				<string>46CF8A40E109826EA4BBA49783F0E2CC</string>
-				<string>11693F161764DCCC31686DE141DF5E10</string>
-				<string>1BE404FD801880E7E29E07564F3D16D3</string>
-				<string>F942CD55FA6F0B4C11D04D20B84F4C4C</string>
-				<string>8F6C67489B1695FC199A6E67355C8302</string>
-				<string>01B0EA786538FE2AC847B3A22827AC04</string>
-				<string>1D3CC9E2C1C782884FC6F6DE3B968747</string>
-				<string>EDE6D9B14FA1B278E81B71B9116ED0D4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F3EABC04E578B5062FD016E58910E7AF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AD14AB6C9924D2B636AECB9CC64A6874</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F942CD55FA6F0B4C11D04D20B84F4C4C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CAEF7B0B733054F9A25866B47F2B3945</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>F985E378700692C215D092DDA766B197</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9C51B97D3F84488D34014C64228AE5E1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FA50A67FCE08977DED0458ECCEFB4585</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-FlexBoxLayout_Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FB7D827C09FBE4FCA4BBE09D0E8312D5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FC891E72F428CB9F6B41F67F1BB86A90</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIView+CellStyle.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FD481114065F788DAA24AE24D21FF41D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D74DF5226816EB01C4A7DABD9D0FCF48</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FlexBoxLayout/FlexBoxLayout-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/FlexBoxLayout/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/FlexBoxLayout/FlexBoxLayout.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>FlexBoxLayout</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FE65672997E67FA519708A07BF706603</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>FlexBoxLayout.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010225AD3590FF8208B0BD404284469C /* Pods-FlexBoxLayout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 396140B1B9F47B20CAD8860A9682690D /* Pods-FlexBoxLayout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01B0EA786538FE2AC847B3A22827AC04 /* YGMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ED377E9598486ECB94AFED48E7468C /* YGMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0200BDDC4BC6ABA4998ACDBBFA319842 /* FBAsyLayoutTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6A815680415E320B2A15C537857BBE /* FBAsyLayoutTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04AEA6E46A7EA4996DAFDACF7B25653A /* FBLayoutProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A222E55213C1D9645B413C2215FA4A9 /* FBLayoutProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F67AE20FB0E26BC49F0E89AE142981C /* FlexBoxLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36626C1DDBD9A3A99161CFB983523EFB /* FlexBoxLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11693F161764DCCC31686DE141DF5E10 /* UITableView+FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 440BABDC6EABA0843A6FA9B830BD7AD0 /* UITableView+FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B504D6D1E62CC17005F39BA /* FBLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B504D6B1E62CC17005F39BA /* FBLayer.h */; };
+		1B504D6E1E62CC17005F39BA /* FBLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B504D6C1E62CC17005F39BA /* FBLayer.m */; };
+		1B504DA81E6679A9005F39BA /* FBSentinel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B504DA61E6679A8005F39BA /* FBSentinel.h */; };
+		1B504DA91E6679A9005F39BA /* FBSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B504DA71E6679A8005F39BA /* FBSentinel.m */; };
+		1BE404FD801880E7E29E07564F3D16D3 /* UIView+CellStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = FC891E72F428CB9F6B41F67F1BB86A90 /* UIView+CellStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CBD2F367681F493A4C00FCB62B33A1B /* FBLayoutDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CE59C10AC0CC0EA93345FC32BCA922 /* FBLayoutDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D3CC9E2C1C782884FC6F6DE3B968747 /* YGNodeList.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B36A10792E5098DB6ADA2C16E54514 /* YGNodeList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29AED821E5159B1A2C303369131DE3FF /* FlexBoxLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F66BF5054C5C6CDBECC3F5F1C83CEA /* FlexBoxLayout-dummy.m */; };
+		42C31426F1C91D5EA1E22EBBF38B995C /* FBAsyLayoutTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC0F579DB5BCC1BA51458BB545DC54 /* FBAsyLayoutTransaction.m */; };
+		46CF8A40E109826EA4BBA49783F0E2CC /* UIScrollView+FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2B37A4C37240E41B5901E3874A841E /* UIScrollView+FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47ADD558F1F4AECA4B8C2262D3262981 /* YGNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = A7D821747D8DAAC9DAEF7AB0DEBFF95E /* YGNodeList.c */; };
+		6839554B552FE7D916FB17BBED22C318 /* FBLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D537BF5AE405F391380ACE2167BE9CA /* FBLayout+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		833539FA1F1C25C14EBD82CE11FBC909 /* FBLayoutDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2E016718CABBB613164C9E9A28056C /* FBLayoutDiv.m */; };
+		8941616EC45BDB185A65992DB896F403 /* FlexBoxLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E1E1CD56DA4FBF6D6263A5E65BFAC3C /* FlexBoxLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D127835AD39AC773F6A5AD356713D78 /* FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F33EFAFCDC0EB5BAE7D934B8C6930C30 /* FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F6C67489B1695FC199A6E67355C8302 /* YGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 36161CBDE3D94EB050FB810F7298ECC1 /* YGEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92120844BB11D9261970398ADAA2C4D2 /* Pods-FlexBoxLayout_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAAD176CF890EF4FF992414450204767 /* Pods-FlexBoxLayout_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C9EF063E05064AC26458CAFDC18FF29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A2E9CDE62638ABFBAE3DEB0E3C374E54 /* Pods-FlexBoxLayout_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B2E8A3E544BCF05921B57D8589560 /* Pods-FlexBoxLayout_Tests-dummy.m */; };
+		AB12791CC9D49C94E412B6FCC0CDB13F /* UIView+CellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 10625033B79ABEBC7F041CF33206E29F /* UIView+CellStyle.m */; };
+		AD14AB6C9924D2B636AECB9CC64A6874 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		BD694D742509FCA90C9791FDDD2CC49C /* UIScrollView+FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F6D9A6F1EF8E7A670D4AF0CD80247E /* UIScrollView+FBLayout.m */; };
+		C357814E862C610C61BB18E6C23900DB /* Pods-FlexBoxLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9BE7063CD0336BA363A0E6C1CC9153 /* Pods-FlexBoxLayout_Example-dummy.m */; };
+		DF6C533E8F65DB2C8D6C286A624C5E90 /* Yoga.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E850BB230370E235ADAAF66108DAE56 /* Yoga.c */; };
+		E6CDBC4C848ABF34F099AEE8FBA84CBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E96A24B52662189512B293E3C41BA0A2 /* FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B90BF78B18F510EAD3461DAF5C8DB7 /* FBLayout.m */; };
+		EAF10A8B150C87824577E67095D7EE84 /* UITableView+FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E1F9C8AC2FC5D378E6E60B2A75459 /* UITableView+FBLayout.m */; };
+		EDE6D9B14FA1B278E81B71B9116ED0D4 /* Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = B40B66557077D58877B6CAE02A84E299 /* Yoga.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F942CD55FA6F0B4C11D04D20B84F4C4C /* UIView+FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEF7B0B733054F9A25866B47F2B3945 /* UIView+FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F985E378700692C215D092DDA766B197 /* UIView+FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C51B97D3F84488D34014C64228AE5E1 /* UIView+FBLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69637151D1A49EC58361E829CC4456B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12A6D1356271D6629530E5E1D2A1AEF1;
+			remoteInfo = FlexBoxLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09FFE3CB2868E2B3E114ACB11B0E1E6B /* Pods-FlexBoxLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexBoxLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0C9084A67D7B86FC58E270D2AABAAE78 /* FlexBoxLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexBoxLayout-prefix.pch"; sourceTree = "<group>"; };
+		0F2B37A4C37240E41B5901E3874A841E /* UIScrollView+FBLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FBLayout.h"; sourceTree = "<group>"; };
+		0F9BE7063CD0336BA363A0E6C1CC9153 /* Pods-FlexBoxLayout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlexBoxLayout_Example-dummy.m"; sourceTree = "<group>"; };
+		10625033B79ABEBC7F041CF33206E29F /* UIView+CellStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+CellStyle.m"; sourceTree = "<group>"; };
+		17F6D9A6F1EF8E7A670D4AF0CD80247E /* UIScrollView+FBLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FBLayout.m"; sourceTree = "<group>"; };
+		1B504D6B1E62CC17005F39BA /* FBLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLayer.h; sourceTree = "<group>"; };
+		1B504D6C1E62CC17005F39BA /* FBLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLayer.m; sourceTree = "<group>"; };
+		1B504DA61E6679A8005F39BA /* FBSentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSentinel.h; sourceTree = "<group>"; };
+		1B504DA71E6679A8005F39BA /* FBSentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSentinel.m; sourceTree = "<group>"; };
+		1FE6805B5D87366AFBDEFD27C98B290C /* FlexBoxLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlexBoxLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B90BF78B18F510EAD3461DAF5C8DB7 /* FBLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBLayout.m; sourceTree = "<group>"; };
+		27ED377E9598486ECB94AFED48E7468C /* YGMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YGMacros.h; sourceTree = "<group>"; };
+		28799937EA34AF8CF5B57876B4563D2D /* Pods-FlexBoxLayout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexBoxLayout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E850BB230370E235ADAAF66108DAE56 /* Yoga.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = Yoga.c; sourceTree = "<group>"; };
+		32F624D5B8896078AB2DE2728829CE32 /* Pods-FlexBoxLayout_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlexBoxLayout_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		36161CBDE3D94EB050FB810F7298ECC1 /* YGEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YGEnums.h; sourceTree = "<group>"; };
+		36626C1DDBD9A3A99161CFB983523EFB /* FlexBoxLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexBoxLayout-umbrella.h"; sourceTree = "<group>"; };
+		38CE59C10AC0CC0EA93345FC32BCA922 /* FBLayoutDiv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBLayoutDiv.h; sourceTree = "<group>"; };
+		396140B1B9F47B20CAD8860A9682690D /* Pods-FlexBoxLayout_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlexBoxLayout_Example-umbrella.h"; sourceTree = "<group>"; };
+		3D2E3D18131369EE2DEBEC4AAD3CA31F /* Pods-FlexBoxLayout_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlexBoxLayout_Example-resources.sh"; sourceTree = "<group>"; };
+		3E1E1CD56DA4FBF6D6263A5E65BFAC3C /* FlexBoxLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FlexBoxLayout.h; sourceTree = "<group>"; };
+		427B2E8A3E544BCF05921B57D8589560 /* Pods-FlexBoxLayout_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlexBoxLayout_Tests-dummy.m"; sourceTree = "<group>"; };
+		440BABDC6EABA0843A6FA9B830BD7AD0 /* UITableView+FBLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+FBLayout.h"; sourceTree = "<group>"; };
+		4645AE3E94A37F08BF0C0AA0770E9A3A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A1020F9F9C0D899AEFEA83E0D7E04B2 /* Pods-FlexBoxLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexBoxLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B8A702DD37D2BE30BE6EB8BCB999BAC /* Pods-FlexBoxLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FlexBoxLayout_Example.modulemap"; sourceTree = "<group>"; };
+		4D6A815680415E320B2A15C537857BBE /* FBAsyLayoutTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBAsyLayoutTransaction.h; sourceTree = "<group>"; };
+		4E7D9658379D464A876DA681D20BAB4B /* Pods-FlexBoxLayout_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlexBoxLayout_Tests-resources.sh"; sourceTree = "<group>"; };
+		5291E0156247D0EA2FE84C4F847DA894 /* Pods_FlexBoxLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexBoxLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B857A94BB24F38EF74FC7A54FEEDEA9 /* Pods-FlexBoxLayout_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlexBoxLayout_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		61F66BF5054C5C6CDBECC3F5F1C83CEA /* FlexBoxLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlexBoxLayout-dummy.m"; sourceTree = "<group>"; };
+		71E3E8658D351B22E6D3478672BF6AC6 /* Pods-FlexBoxLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexBoxLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7C918EAC464D825B50D7323CE03CCBF4 /* Pods_FlexBoxLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexBoxLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D537BF5AE405F391380ACE2167BE9CA /* FBLayout+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBLayout+Private.h"; sourceTree = "<group>"; };
+		817D348E5B50DF3A8DE35504ED28D286 /* Pods-FlexBoxLayout_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlexBoxLayout_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		82B36A10792E5098DB6ADA2C16E54514 /* YGNodeList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YGNodeList.h; sourceTree = "<group>"; };
+		8F4959EAED01689B386DC3C0BB87E704 /* Pods-FlexBoxLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexBoxLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A222E55213C1D9645B413C2215FA4A9 /* FBLayoutProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBLayoutProtocol.h; sourceTree = "<group>"; };
+		9C51B97D3F84488D34014C64228AE5E1 /* UIView+FBLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+FBLayout.m"; sourceTree = "<group>"; };
+		9E2E1F9C8AC2FC5D378E6E60B2A75459 /* UITableView+FBLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FBLayout.m"; sourceTree = "<group>"; };
+		9ED33EABB16F66CD0433B628C6F03997 /* Pods-FlexBoxLayout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlexBoxLayout_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9FEC0F579DB5BCC1BA51458BB545DC54 /* FBAsyLayoutTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBAsyLayoutTransaction.m; sourceTree = "<group>"; };
+		A1BF0B64E1FFEDD82FBFF7EF637E3BCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D821747D8DAAC9DAEF7AB0DEBFF95E /* YGNodeList.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = YGNodeList.c; sourceTree = "<group>"; };
+		AA2E016718CABBB613164C9E9A28056C /* FBLayoutDiv.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBLayoutDiv.m; sourceTree = "<group>"; };
+		B40B66557077D58877B6CAE02A84E299 /* Yoga.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Yoga.h; sourceTree = "<group>"; };
+		CAEF7B0B733054F9A25866B47F2B3945 /* UIView+FBLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+FBLayout.h"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D74DF5226816EB01C4A7DABD9D0FCF48 /* FlexBoxLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexBoxLayout.xcconfig; sourceTree = "<group>"; };
+		DD72CDDD3D1420A4A75174336C718820 /* Pods-FlexBoxLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FlexBoxLayout_Tests.modulemap"; sourceTree = "<group>"; };
+		EAAD176CF890EF4FF992414450204767 /* Pods-FlexBoxLayout_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlexBoxLayout_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F33EFAFCDC0EB5BAE7D934B8C6930C30 /* FBLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBLayout.h; sourceTree = "<group>"; };
+		FA50A67FCE08977DED0458ECCEFB4585 /* Pods-FlexBoxLayout_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlexBoxLayout_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB7D827C09FBE4FCA4BBE09D0E8312D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC891E72F428CB9F6B41F67F1BB86A90 /* UIView+CellStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+CellStyle.h"; sourceTree = "<group>"; };
+		FE65672997E67FA519708A07BF706603 /* FlexBoxLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FlexBoxLayout.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AF27C6B69F0829C2309EC4C256D2205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C9EF063E05064AC26458CAFDC18FF29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E740BFFAABEFC454E4B11ECF42A94E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CDBC4C848ABF34F099AEE8FBA84CBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3EABC04E578B5062FD016E58910E7AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD14AB6C9924D2B636AECB9CC64A6874 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38054A9669674D6DB29CCAFE6E019ABE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D1C51FE19C5C98E1B964339605BDBD4 /* Pods-FlexBoxLayout_Example */,
+				8FD7CE6C2D8E50482EA1277D191A372A /* Pods-FlexBoxLayout_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7250699FE0546BDA8DFE27522AB84154 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D6A815680415E320B2A15C537857BBE /* FBAsyLayoutTransaction.h */,
+				9FEC0F579DB5BCC1BA51458BB545DC54 /* FBAsyLayoutTransaction.m */,
+				F33EFAFCDC0EB5BAE7D934B8C6930C30 /* FBLayout.h */,
+				24B90BF78B18F510EAD3461DAF5C8DB7 /* FBLayout.m */,
+				7D537BF5AE405F391380ACE2167BE9CA /* FBLayout+Private.h */,
+				38CE59C10AC0CC0EA93345FC32BCA922 /* FBLayoutDiv.h */,
+				AA2E016718CABBB613164C9E9A28056C /* FBLayoutDiv.m */,
+				9A222E55213C1D9645B413C2215FA4A9 /* FBLayoutProtocol.h */,
+				3E1E1CD56DA4FBF6D6263A5E65BFAC3C /* FlexBoxLayout.h */,
+				0F2B37A4C37240E41B5901E3874A841E /* UIScrollView+FBLayout.h */,
+				17F6D9A6F1EF8E7A670D4AF0CD80247E /* UIScrollView+FBLayout.m */,
+				440BABDC6EABA0843A6FA9B830BD7AD0 /* UITableView+FBLayout.h */,
+				9E2E1F9C8AC2FC5D378E6E60B2A75459 /* UITableView+FBLayout.m */,
+				FC891E72F428CB9F6B41F67F1BB86A90 /* UIView+CellStyle.h */,
+				10625033B79ABEBC7F041CF33206E29F /* UIView+CellStyle.m */,
+				CAEF7B0B733054F9A25866B47F2B3945 /* UIView+FBLayout.h */,
+				9C51B97D3F84488D34014C64228AE5E1 /* UIView+FBLayout.m */,
+				1B504DA61E6679A8005F39BA /* FBSentinel.h */,
+				1B504DA71E6679A8005F39BA /* FBSentinel.m */,
+				1B504D6B1E62CC17005F39BA /* FBLayer.h */,
+				1B504D6C1E62CC17005F39BA /* FBLayer.m */,
+				36161CBDE3D94EB050FB810F7298ECC1 /* YGEnums.h */,
+				27ED377E9598486ECB94AFED48E7468C /* YGMacros.h */,
+				A7D821747D8DAAC9DAEF7AB0DEBFF95E /* YGNodeList.c */,
+				82B36A10792E5098DB6ADA2C16E54514 /* YGNodeList.h */,
+				2E850BB230370E235ADAAF66108DAE56 /* Yoga.c */,
+				B40B66557077D58877B6CAE02A84E299 /* Yoga.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7D1C51FE19C5C98E1B964339605BDBD4 /* Pods-FlexBoxLayout_Example */ = {
+			isa = PBXGroup;
+			children = (
+				4645AE3E94A37F08BF0C0AA0770E9A3A /* Info.plist */,
+				4B8A702DD37D2BE30BE6EB8BCB999BAC /* Pods-FlexBoxLayout_Example.modulemap */,
+				32F624D5B8896078AB2DE2728829CE32 /* Pods-FlexBoxLayout_Example-acknowledgements.markdown */,
+				28799937EA34AF8CF5B57876B4563D2D /* Pods-FlexBoxLayout_Example-acknowledgements.plist */,
+				0F9BE7063CD0336BA363A0E6C1CC9153 /* Pods-FlexBoxLayout_Example-dummy.m */,
+				9ED33EABB16F66CD0433B628C6F03997 /* Pods-FlexBoxLayout_Example-frameworks.sh */,
+				3D2E3D18131369EE2DEBEC4AAD3CA31F /* Pods-FlexBoxLayout_Example-resources.sh */,
+				396140B1B9F47B20CAD8860A9682690D /* Pods-FlexBoxLayout_Example-umbrella.h */,
+				71E3E8658D351B22E6D3478672BF6AC6 /* Pods-FlexBoxLayout_Example.debug.xcconfig */,
+				8F4959EAED01689B386DC3C0BB87E704 /* Pods-FlexBoxLayout_Example.release.xcconfig */,
+			);
+			name = "Pods-FlexBoxLayout_Example";
+			path = "Target Support Files/Pods-FlexBoxLayout_Example";
+			sourceTree = "<group>";
+		};
+		7D31310903384B719B78AD21D8A19623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FE6805B5D87366AFBDEFD27C98B290C /* FlexBoxLayout.framework */,
+				5291E0156247D0EA2FE84C4F847DA894 /* Pods_FlexBoxLayout_Example.framework */,
+				7C918EAC464D825B50D7323CE03CCBF4 /* Pods_FlexBoxLayout_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B95BED24702431F451C7256E2AD83A00 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7D31310903384B719B78AD21D8A19623 /* Products */,
+				38054A9669674D6DB29CCAFE6E019ABE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8FD7CE6C2D8E50482EA1277D191A372A /* Pods-FlexBoxLayout_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D827C09FBE4FCA4BBE09D0E8312D5 /* Info.plist */,
+				DD72CDDD3D1420A4A75174336C718820 /* Pods-FlexBoxLayout_Tests.modulemap */,
+				5B857A94BB24F38EF74FC7A54FEEDEA9 /* Pods-FlexBoxLayout_Tests-acknowledgements.markdown */,
+				FA50A67FCE08977DED0458ECCEFB4585 /* Pods-FlexBoxLayout_Tests-acknowledgements.plist */,
+				427B2E8A3E544BCF05921B57D8589560 /* Pods-FlexBoxLayout_Tests-dummy.m */,
+				817D348E5B50DF3A8DE35504ED28D286 /* Pods-FlexBoxLayout_Tests-frameworks.sh */,
+				4E7D9658379D464A876DA681D20BAB4B /* Pods-FlexBoxLayout_Tests-resources.sh */,
+				EAAD176CF890EF4FF992414450204767 /* Pods-FlexBoxLayout_Tests-umbrella.h */,
+				4A1020F9F9C0D899AEFEA83E0D7E04B2 /* Pods-FlexBoxLayout_Tests.debug.xcconfig */,
+				09FFE3CB2868E2B3E114ACB11B0E1E6B /* Pods-FlexBoxLayout_Tests.release.xcconfig */,
+			);
+			name = "Pods-FlexBoxLayout_Tests";
+			path = "Target Support Files/Pods-FlexBoxLayout_Tests";
+			sourceTree = "<group>";
+		};
+		A4724059ABC15A44CB5C00033AE21568 /* FlexBoxLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A6EC6C752DD6A451F31D25C709386B8B /* FlexBoxLayout */,
+				B7D3992B6609E97AD6876286EB05EFCB /* Support Files */,
+			);
+			name = FlexBoxLayout;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A6EC6C752DD6A451F31D25C709386B8B /* FlexBoxLayout */ = {
+			isa = PBXGroup;
+			children = (
+				7250699FE0546BDA8DFE27522AB84154 /* Classes */,
+			);
+			path = FlexBoxLayout;
+			sourceTree = "<group>";
+		};
+		B7D3992B6609E97AD6876286EB05EFCB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE65672997E67FA519708A07BF706603 /* FlexBoxLayout.modulemap */,
+				D74DF5226816EB01C4A7DABD9D0FCF48 /* FlexBoxLayout.xcconfig */,
+				61F66BF5054C5C6CDBECC3F5F1C83CEA /* FlexBoxLayout-dummy.m */,
+				0C9084A67D7B86FC58E270D2AABAAE78 /* FlexBoxLayout-prefix.pch */,
+				36626C1DDBD9A3A99161CFB983523EFB /* FlexBoxLayout-umbrella.h */,
+				A1BF0B64E1FFEDD82FBFF7EF637E3BCE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FlexBoxLayout";
+			sourceTree = "<group>";
+		};
+		B95BED24702431F451C7256E2AD83A00 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4724059ABC15A44CB5C00033AE21568 /* FlexBoxLayout */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		627A2F09FE2B20E5E9E91C69697DB0E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010225AD3590FF8208B0BD404284469C /* Pods-FlexBoxLayout_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E20477633BFF31C651FE0053BE6149 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92120844BB11D9261970398ADAA2C4D2 /* Pods-FlexBoxLayout_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E6C54E0F62A80CE0C3524933997BDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0200BDDC4BC6ABA4998ACDBBFA319842 /* FBAsyLayoutTransaction.h in Headers */,
+				6839554B552FE7D916FB17BBED22C318 /* FBLayout+Private.h in Headers */,
+				8D127835AD39AC773F6A5AD356713D78 /* FBLayout.h in Headers */,
+				1CBD2F367681F493A4C00FCB62B33A1B /* FBLayoutDiv.h in Headers */,
+				1B504D6D1E62CC17005F39BA /* FBLayer.h in Headers */,
+				04AEA6E46A7EA4996DAFDACF7B25653A /* FBLayoutProtocol.h in Headers */,
+				0F67AE20FB0E26BC49F0E89AE142981C /* FlexBoxLayout-umbrella.h in Headers */,
+				8941616EC45BDB185A65992DB896F403 /* FlexBoxLayout.h in Headers */,
+				46CF8A40E109826EA4BBA49783F0E2CC /* UIScrollView+FBLayout.h in Headers */,
+				11693F161764DCCC31686DE141DF5E10 /* UITableView+FBLayout.h in Headers */,
+				1BE404FD801880E7E29E07564F3D16D3 /* UIView+CellStyle.h in Headers */,
+				F942CD55FA6F0B4C11D04D20B84F4C4C /* UIView+FBLayout.h in Headers */,
+				8F6C67489B1695FC199A6E67355C8302 /* YGEnums.h in Headers */,
+				01B0EA786538FE2AC847B3A22827AC04 /* YGMacros.h in Headers */,
+				1D3CC9E2C1C782884FC6F6DE3B968747 /* YGNodeList.h in Headers */,
+				EDE6D9B14FA1B278E81B71B9116ED0D4 /* Yoga.h in Headers */,
+				1B504DA81E6679A9005F39BA /* FBSentinel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		022C81912EE236CCCE2B188B83EF05FD /* Pods-FlexBoxLayout_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDAF3B101CEFAFA639154DF67F00CAEC /* Build configuration list for PBXNativeTarget "Pods-FlexBoxLayout_Tests" */;
+			buildPhases = (
+				3B7357B3A4051F536C918AB91FD9D504 /* Sources */,
+				F3EABC04E578B5062FD016E58910E7AF /* Frameworks */,
+				A4E20477633BFF31C651FE0053BE6149 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FlexBoxLayout_Tests";
+			productName = "Pods-FlexBoxLayout_Tests";
+			productReference = 7C918EAC464D825B50D7323CE03CCBF4 /* Pods_FlexBoxLayout_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		12A6D1356271D6629530E5E1D2A1AEF1 /* FlexBoxLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EE590DC07147650A1359BFB1176CDDC /* Build configuration list for PBXNativeTarget "FlexBoxLayout" */;
+			buildPhases = (
+				BCA78E4E09A16D5898B8780C4970C0AC /* Sources */,
+				9E740BFFAABEFC454E4B11ECF42A94E2 /* Frameworks */,
+				F3E6C54E0F62A80CE0C3524933997BDE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlexBoxLayout;
+			productName = FlexBoxLayout;
+			productReference = 1FE6805B5D87366AFBDEFD27C98B290C /* FlexBoxLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6314BE697B844ACCA128CBE9D19D094 /* Pods-FlexBoxLayout_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA536B4B8E7BDFF11EB29AEFB205D504 /* Build configuration list for PBXNativeTarget "Pods-FlexBoxLayout_Example" */;
+			buildPhases = (
+				7BE75048F5C814C67818D3257C5D7197 /* Sources */,
+				3AF27C6B69F0829C2309EC4C256D2205 /* Frameworks */,
+				627A2F09FE2B20E5E9E91C69697DB0E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02A253C134F5A622108421714E633DE7 /* PBXTargetDependency */,
+			);
+			name = "Pods-FlexBoxLayout_Example";
+			productName = "Pods-FlexBoxLayout_Example";
+			productReference = 5291E0156247D0EA2FE84C4F847DA894 /* Pods_FlexBoxLayout_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7D31310903384B719B78AD21D8A19623 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12A6D1356271D6629530E5E1D2A1AEF1 /* FlexBoxLayout */,
+				E6314BE697B844ACCA128CBE9D19D094 /* Pods-FlexBoxLayout_Example */,
+				022C81912EE236CCCE2B188B83EF05FD /* Pods-FlexBoxLayout_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B7357B3A4051F536C918AB91FD9D504 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E9CDE62638ABFBAE3DEB0E3C374E54 /* Pods-FlexBoxLayout_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE75048F5C814C67818D3257C5D7197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C357814E862C610C61BB18E6C23900DB /* Pods-FlexBoxLayout_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA78E4E09A16D5898B8780C4970C0AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C31426F1C91D5EA1E22EBBF38B995C /* FBAsyLayoutTransaction.m in Sources */,
+				E96A24B52662189512B293E3C41BA0A2 /* FBLayout.m in Sources */,
+				833539FA1F1C25C14EBD82CE11FBC909 /* FBLayoutDiv.m in Sources */,
+				29AED821E5159B1A2C303369131DE3FF /* FlexBoxLayout-dummy.m in Sources */,
+				BD694D742509FCA90C9791FDDD2CC49C /* UIScrollView+FBLayout.m in Sources */,
+				1B504DA91E6679A9005F39BA /* FBSentinel.m in Sources */,
+				EAF10A8B150C87824577E67095D7EE84 /* UITableView+FBLayout.m in Sources */,
+				AB12791CC9D49C94E412B6FCC0CDB13F /* UIView+CellStyle.m in Sources */,
+				1B504D6E1E62CC17005F39BA /* FBLayer.m in Sources */,
+				F985E378700692C215D092DDA766B197 /* UIView+FBLayout.m in Sources */,
+				47ADD558F1F4AECA4B8C2262D3262981 /* YGNodeList.c in Sources */,
+				DF6C533E8F65DB2C8D6C286A624C5E90 /* Yoga.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02A253C134F5A622108421714E633DE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlexBoxLayout;
+			target = 12A6D1356271D6629530E5E1D2A1AEF1 /* FlexBoxLayout */;
+			targetProxy = 69637151D1A49EC58361E829CC4456B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E9B74FD5D6DAD1D5324B3D23E70830E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F4959EAED01689B386DC3C0BB87E704 /* Pods-FlexBoxLayout_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexBoxLayout_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexBoxLayout_Example/Pods-FlexBoxLayout_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlexBoxLayout_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2EB2964BB26268A3B1A6D7C0B083B3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74DF5226816EB01C4A7DABD9D0FCF48 /* FlexBoxLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FlexBoxLayout/FlexBoxLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexBoxLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlexBoxLayout/FlexBoxLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FlexBoxLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BB6D1B8F700CF5DC570A7647478471D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A1020F9F9C0D899AEFEA83E0D7E04B2 /* Pods-FlexBoxLayout_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexBoxLayout_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexBoxLayout_Tests/Pods-FlexBoxLayout_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlexBoxLayout_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D005010C83EC7129D883DFF4C1129B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71E3E8658D351B22E6D3478672BF6AC6 /* Pods-FlexBoxLayout_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexBoxLayout_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexBoxLayout_Example/Pods-FlexBoxLayout_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlexBoxLayout_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E233F64C15B0403B59E99411E7C5C0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09FFE3CB2868E2B3E114ACB11B0E1E6B /* Pods-FlexBoxLayout_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlexBoxLayout_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlexBoxLayout_Tests/Pods-FlexBoxLayout_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlexBoxLayout_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD481114065F788DAA24AE24D21FF41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74DF5226816EB01C4A7DABD9D0FCF48 /* FlexBoxLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FlexBoxLayout/FlexBoxLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexBoxLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlexBoxLayout/FlexBoxLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FlexBoxLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EE590DC07147650A1359BFB1176CDDC /* Build configuration list for PBXNativeTarget "FlexBoxLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EB2964BB26268A3B1A6D7C0B083B3BB /* Debug */,
+				FD481114065F788DAA24AE24D21FF41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA536B4B8E7BDFF11EB29AEFB205D504 /* Build configuration list for PBXNativeTarget "Pods-FlexBoxLayout_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D005010C83EC7129D883DFF4C1129B0A /* Debug */,
+				2E9B74FD5D6DAD1D5324B3D23E70830E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDAF3B101CEFAFA639154DF67F00CAEC /* Build configuration list for PBXNativeTarget "Pods-FlexBoxLayout_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BB6D1B8F700CF5DC570A7647478471D /* Debug */,
+				E233F64C15B0403B59E99411E7C5C0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

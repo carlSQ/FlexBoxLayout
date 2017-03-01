@@ -127,6 +127,8 @@ void YGSetMesure(FBLayout *layout) {
 
 @property(nonatomic, readonly, assign) CGRect frame;
 
+@property(nonatomic, assign) CGSize mesureSize;
+
 @end
 
 @implementation FBLayout

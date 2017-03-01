@@ -70,7 +70,8 @@ static NSString *kCellIdentifier = @"fb_kCellIdentifier";
   
   UITableViewCell *cell = [self dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
   UIView *cellContentView = [self fb_cacheContentView:indexPath];
-  
+  cell.fb_drawsAsynchronously = YES;
+  cellContentView.fb_drawsAsynchronously = YES;
   cell.selectionStyle = cellContentView.fb_selectionStyle;
   cell.backgroundColor = cellContentView.backgroundColor;
   cell.clipsToBounds = cellContentView.clipsToBounds;
