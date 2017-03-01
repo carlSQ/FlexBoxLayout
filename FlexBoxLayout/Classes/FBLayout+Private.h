@@ -23,6 +23,8 @@
 
 @property(nonatomic, assign) CGSize mesureSize;
 
+@property(atomic) BOOL asynchronously;
+
 - (NSArray *)allChildren;
 
 - (void)addChild:(FBLayout *)layout;

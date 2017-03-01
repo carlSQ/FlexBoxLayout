@@ -125,6 +125,8 @@ void YGSetMesure(FBLayout *layout) {
 
 @property(nonatomic, readonly, assign) YGNodeRef fbNode;
 
+@property(atomic) BOOL asynchronously;
+
 @property(nonatomic, readonly, assign) CGRect frame;
 
 @property(nonatomic, assign) CGSize mesureSize;
@@ -140,6 +142,13 @@ void YGSetMesure(FBLayout *layout) {
     _styleNames = [NSMutableArray array];
   }
   return self;
+}
+
+- (void)setAsynchronously:(BOOL)asynchronously {
+  _asynchronously = asynchronously;
+  for (FBLayout* child in self.children) {
+    child.asynchronously = asynchronously;
+  }
 }
 
 - (void)setContext:(id)context {
