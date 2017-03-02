@@ -1,4 +1,4 @@
-# FlebBoxLayout
+# FlexBoxLayout
 
 [![CI Status](http://img.shields.io/travis/LPD-iOS/CSSLayout.svg?style=flat)](https://travis-ci.org/carlSQ/FBLayout)
 [![Version](https://img.shields.io/cocoapods/v/FlexBoxLayout.svg?style=flat)](http://cocoapods.org/pods/FlexBoxLayout)
