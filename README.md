@@ -16,7 +16,7 @@
 
 
 ## Demo
-![Demo Overview](https://github.com/LPD-iOS/FlexBoxLayout/tree/master/Example/Example/show.gif)
+![Demo Overview](https://github.com/LPD-iOS/FlexBoxLayout/blob/master/Example/Example/show.gif)
 
 ## Cell layout in Demo
 
