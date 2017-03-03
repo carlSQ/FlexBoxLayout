@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B4F7D4F1E5B15B500EA6EDD /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D391E5B15B500EA6EDD /* data.json */; };
-		1B4F7D501E5B15B500EA6EDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D3A1E5B15B500EA6EDD /* InfoPlist.strings */; };
-		1B4F7D511E5B15B500EA6EDD /* FBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D3D1E5B15B500EA6EDD /* FBAppDelegate.m */; };
-		1B4F7D521E5B15B500EA6EDD /* FBFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D3F1E5B15B500EA6EDD /* FBFeedModel.m */; };
-		1B4F7D531E5B15B500EA6EDD /* FBFeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D411E5B15B500EA6EDD /* FBFeedView.m */; };
-		1B4F7D541E5B15B500EA6EDD /* FBFPSGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D431E5B15B500EA6EDD /* FBFPSGraph.m */; };
-		1B4F7D551E5B15B500EA6EDD /* FBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D451E5B15B500EA6EDD /* FBTableViewController.m */; };
-		1B4F7D561E5B15B500EA6EDD /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D471E5B15B500EA6EDD /* FBViewController.m */; };
-		1B4F7D571E5B15B500EA6EDD /* FlexBoxLayout-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D481E5B15B500EA6EDD /* FlexBoxLayout-Info.plist */; };
-		1B4F7D581E5B15B500EA6EDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D4A1E5B15B500EA6EDD /* Images.xcassets */; };
-		1B4F7D591E5B15B500EA6EDD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D4B1E5B15B500EA6EDD /* Launch Screen.storyboard */; };
-		1B4F7D5A1E5B15B500EA6EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F7D4C1E5B15B500EA6EDD /* main.m */; };
-		1B4F7D5B1E5B15B500EA6EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D4D1E5B15B500EA6EDD /* Main.storyboard */; };
-		1B4F7D5C1E5B15B500EA6EDD /* show.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1B4F7D4E1E5B15B500EA6EDD /* show.gif */; };
+		1B504DC51E699709005F39BA /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B504DAF1E699709005F39BA /* data.json */; };
+		1B504DC61E699709005F39BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B504DB01E699709005F39BA /* InfoPlist.strings */; };
+		1B504DC71E699709005F39BA /* FBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B504DB31E699709005F39BA /* FBAppDelegate.m */; };
+		1B504DC81E699709005F39BA /* FBFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B504DB51E699709005F39BA /* FBFeedModel.m */; };
+		1B504DC91E699709005F39BA /* FBFeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B504DB71E699709005F39BA /* FBFeedView.m */; };
+		1B504DCA1E699709005F39BA /* FBFPSGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B504DB91E699709005F39BA /* FBFPSGraph.m */; };
+		1B504DCB1E699709005F39BA /* FBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B504DBB1E699709005F39BA /* FBTableViewController.m */; };
+		1B504DCC1E699709005F39BA /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B504DBD1E699709005F39BA /* FBViewController.m */; };
+		1B504DCD1E699709005F39BA /* FlexBoxLayout-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B504DBE1E699709005F39BA /* FlexBoxLayout-Info.plist */; };
+		1B504DCE1E699709005F39BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B504DC01E699709005F39BA /* Images.xcassets */; };
+		1B504DCF1E699709005F39BA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B504DC11E699709005F39BA /* Launch Screen.storyboard */; };
+		1B504DD01E699709005F39BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B504DC21E699709005F39BA /* main.m */; };
+		1B504DD11E699709005F39BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B504DC31E699709005F39BA /* Main.storyboard */; };
+		1B504DD21E699709005F39BA /* show.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1B504DC41E699709005F39BA /* show.gif */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -47,27 +47,27 @@
 /* Begin PBXFileReference section */
 		068C0B79AF1323F8E288905F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		18D4B89CF6E54D1B702F9867 /* Pods-CSSLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSLayout_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSLayout_Example/Pods-CSSLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1B4F7D391E5B15B500EA6EDD /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		1B4F7D3B1E5B15B500EA6EDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1B4F7D3C1E5B15B500EA6EDD /* FBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBAppDelegate.h; sourceTree = "<group>"; };
-		1B4F7D3D1E5B15B500EA6EDD /* FBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBAppDelegate.m; sourceTree = "<group>"; };
-		1B4F7D3E1E5B15B500EA6EDD /* FBFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFeedModel.h; sourceTree = "<group>"; };
-		1B4F7D3F1E5B15B500EA6EDD /* FBFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFeedModel.m; sourceTree = "<group>"; };
-		1B4F7D401E5B15B500EA6EDD /* FBFeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFeedView.h; sourceTree = "<group>"; };
-		1B4F7D411E5B15B500EA6EDD /* FBFeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFeedView.m; sourceTree = "<group>"; };
-		1B4F7D421E5B15B500EA6EDD /* FBFPSGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFPSGraph.h; sourceTree = "<group>"; };
-		1B4F7D431E5B15B500EA6EDD /* FBFPSGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFPSGraph.m; sourceTree = "<group>"; };
-		1B4F7D441E5B15B500EA6EDD /* FBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTableViewController.h; sourceTree = "<group>"; };
-		1B4F7D451E5B15B500EA6EDD /* FBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTableViewController.m; sourceTree = "<group>"; };
-		1B4F7D461E5B15B500EA6EDD /* FBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBViewController.h; sourceTree = "<group>"; };
-		1B4F7D471E5B15B500EA6EDD /* FBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBViewController.m; sourceTree = "<group>"; };
-		1B4F7D481E5B15B500EA6EDD /* FlexBoxLayout-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FlexBoxLayout-Info.plist"; sourceTree = "<group>"; };
-		1B4F7D491E5B15B500EA6EDD /* FlexBoxLayout-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlexBoxLayout-Prefix.pch"; sourceTree = "<group>"; };
-		1B4F7D4A1E5B15B500EA6EDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1B4F7D4B1E5B15B500EA6EDD /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		1B4F7D4C1E5B15B500EA6EDD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1B4F7D4D1E5B15B500EA6EDD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		1B4F7D4E1E5B15B500EA6EDD /* show.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = show.gif; sourceTree = "<group>"; };
+		1B504DAF1E699709005F39BA /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		1B504DB11E699709005F39BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B504DB21E699709005F39BA /* FBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBAppDelegate.h; sourceTree = "<group>"; };
+		1B504DB31E699709005F39BA /* FBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBAppDelegate.m; sourceTree = "<group>"; };
+		1B504DB41E699709005F39BA /* FBFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFeedModel.h; sourceTree = "<group>"; };
+		1B504DB51E699709005F39BA /* FBFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFeedModel.m; sourceTree = "<group>"; };
+		1B504DB61E699709005F39BA /* FBFeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFeedView.h; sourceTree = "<group>"; };
+		1B504DB71E699709005F39BA /* FBFeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFeedView.m; sourceTree = "<group>"; };
+		1B504DB81E699709005F39BA /* FBFPSGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFPSGraph.h; sourceTree = "<group>"; };
+		1B504DB91E699709005F39BA /* FBFPSGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFPSGraph.m; sourceTree = "<group>"; };
+		1B504DBA1E699709005F39BA /* FBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTableViewController.h; sourceTree = "<group>"; };
+		1B504DBB1E699709005F39BA /* FBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTableViewController.m; sourceTree = "<group>"; };
+		1B504DBC1E699709005F39BA /* FBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBViewController.h; sourceTree = "<group>"; };
+		1B504DBD1E699709005F39BA /* FBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBViewController.m; sourceTree = "<group>"; };
+		1B504DBE1E699709005F39BA /* FlexBoxLayout-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FlexBoxLayout-Info.plist"; sourceTree = "<group>"; };
+		1B504DBF1E699709005F39BA /* FlexBoxLayout-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlexBoxLayout-Prefix.pch"; sourceTree = "<group>"; };
+		1B504DC01E699709005F39BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B504DC11E699709005F39BA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1B504DC21E699709005F39BA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B504DC31E699709005F39BA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1B504DC41E699709005F39BA /* show.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = show.gif; sourceTree = "<group>"; };
 		28FD6B95245F63FD5FE35E42 /* Pods_CSSLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSSLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		292FC21B24FA1B08B43F517C /* Pods-CSSLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSSLayout_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSSLayout_Tests/Pods-CSSLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3212EEC1552C4000D2191436 /* Pods-FlexBoxLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexBoxLayout_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexBoxLayout_Example/Pods-FlexBoxLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,32 +120,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B4F7D381E5B15B500EA6EDD /* Example for FlexBoxLayout */ = {
+		1B504DAE1E699709005F39BA /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				1B4F7D391E5B15B500EA6EDD /* data.json */,
-				1B4F7D3A1E5B15B500EA6EDD /* InfoPlist.strings */,
-				1B4F7D3C1E5B15B500EA6EDD /* FBAppDelegate.h */,
-				1B4F7D3D1E5B15B500EA6EDD /* FBAppDelegate.m */,
-				1B4F7D3E1E5B15B500EA6EDD /* FBFeedModel.h */,
-				1B4F7D3F1E5B15B500EA6EDD /* FBFeedModel.m */,
-				1B4F7D401E5B15B500EA6EDD /* FBFeedView.h */,
-				1B4F7D411E5B15B500EA6EDD /* FBFeedView.m */,
-				1B4F7D421E5B15B500EA6EDD /* FBFPSGraph.h */,
-				1B4F7D431E5B15B500EA6EDD /* FBFPSGraph.m */,
-				1B4F7D441E5B15B500EA6EDD /* FBTableViewController.h */,
-				1B4F7D451E5B15B500EA6EDD /* FBTableViewController.m */,
-				1B4F7D461E5B15B500EA6EDD /* FBViewController.h */,
-				1B4F7D471E5B15B500EA6EDD /* FBViewController.m */,
-				1B4F7D481E5B15B500EA6EDD /* FlexBoxLayout-Info.plist */,
-				1B4F7D491E5B15B500EA6EDD /* FlexBoxLayout-Prefix.pch */,
-				1B4F7D4A1E5B15B500EA6EDD /* Images.xcassets */,
-				1B4F7D4B1E5B15B500EA6EDD /* Launch Screen.storyboard */,
-				1B4F7D4C1E5B15B500EA6EDD /* main.m */,
-				1B4F7D4D1E5B15B500EA6EDD /* Main.storyboard */,
-				1B4F7D4E1E5B15B500EA6EDD /* show.gif */,
+				1B504DAF1E699709005F39BA /* data.json */,
+				1B504DB01E699709005F39BA /* InfoPlist.strings */,
+				1B504DB21E699709005F39BA /* FBAppDelegate.h */,
+				1B504DB31E699709005F39BA /* FBAppDelegate.m */,
+				1B504DB41E699709005F39BA /* FBFeedModel.h */,
+				1B504DB51E699709005F39BA /* FBFeedModel.m */,
+				1B504DB61E699709005F39BA /* FBFeedView.h */,
+				1B504DB71E699709005F39BA /* FBFeedView.m */,
+				1B504DB81E699709005F39BA /* FBFPSGraph.h */,
+				1B504DB91E699709005F39BA /* FBFPSGraph.m */,
+				1B504DBA1E699709005F39BA /* FBTableViewController.h */,
+				1B504DBB1E699709005F39BA /* FBTableViewController.m */,
+				1B504DBC1E699709005F39BA /* FBViewController.h */,
+				1B504DBD1E699709005F39BA /* FBViewController.m */,
+				1B504DBE1E699709005F39BA /* FlexBoxLayout-Info.plist */,
+				1B504DBF1E699709005F39BA /* FlexBoxLayout-Prefix.pch */,
+				1B504DC01E699709005F39BA /* Images.xcassets */,
+				1B504DC11E699709005F39BA /* Launch Screen.storyboard */,
+				1B504DC21E699709005F39BA /* main.m */,
+				1B504DC31E699709005F39BA /* Main.storyboard */,
+				1B504DC41E699709005F39BA /* show.gif */,
 			);
-			path = "Example for FlexBoxLayout";
+			path = Example;
 			sourceTree = "<group>";
 		};
 		5CAF783DFE8EA55D73A1D59A /* Pods */ = {
@@ -166,7 +166,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				1B4F7D381E5B15B500EA6EDD /* Example for FlexBoxLayout */,
+				1B504DAE1E699709005F39BA /* Example */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -315,13 +315,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B4F7D571E5B15B500EA6EDD /* FlexBoxLayout-Info.plist in Resources */,
-				1B4F7D581E5B15B500EA6EDD /* Images.xcassets in Resources */,
-				1B4F7D4F1E5B15B500EA6EDD /* data.json in Resources */,
-				1B4F7D5B1E5B15B500EA6EDD /* Main.storyboard in Resources */,
-				1B4F7D591E5B15B500EA6EDD /* Launch Screen.storyboard in Resources */,
-				1B4F7D5C1E5B15B500EA6EDD /* show.gif in Resources */,
-				1B4F7D501E5B15B500EA6EDD /* InfoPlist.strings in Resources */,
+				1B504DCD1E699709005F39BA /* FlexBoxLayout-Info.plist in Resources */,
+				1B504DCE1E699709005F39BA /* Images.xcassets in Resources */,
+				1B504DC51E699709005F39BA /* data.json in Resources */,
+				1B504DD11E699709005F39BA /* Main.storyboard in Resources */,
+				1B504DCF1E699709005F39BA /* Launch Screen.storyboard in Resources */,
+				1B504DD21E699709005F39BA /* show.gif in Resources */,
+				1B504DC61E699709005F39BA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,13 +433,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B4F7D531E5B15B500EA6EDD /* FBFeedView.m in Sources */,
-				1B4F7D551E5B15B500EA6EDD /* FBTableViewController.m in Sources */,
-				1B4F7D561E5B15B500EA6EDD /* FBViewController.m in Sources */,
-				1B4F7D511E5B15B500EA6EDD /* FBAppDelegate.m in Sources */,
-				1B4F7D541E5B15B500EA6EDD /* FBFPSGraph.m in Sources */,
-				1B4F7D5A1E5B15B500EA6EDD /* main.m in Sources */,
-				1B4F7D521E5B15B500EA6EDD /* FBFeedModel.m in Sources */,
+				1B504DC91E699709005F39BA /* FBFeedView.m in Sources */,
+				1B504DCB1E699709005F39BA /* FBTableViewController.m in Sources */,
+				1B504DCC1E699709005F39BA /* FBViewController.m in Sources */,
+				1B504DC71E699709005F39BA /* FBAppDelegate.m in Sources */,
+				1B504DCA1E699709005F39BA /* FBFPSGraph.m in Sources */,
+				1B504DD01E699709005F39BA /* main.m in Sources */,
+				1B504DC81E699709005F39BA /* FBFeedModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,10 +462,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1B4F7D3A1E5B15B500EA6EDD /* InfoPlist.strings */ = {
+		1B504DB01E699709005F39BA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1B4F7D3B1E5B15B500EA6EDD /* en */,
+				1B504DB11E699709005F39BA /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -572,8 +572,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = CNS46A8385;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example for FlexBoxLayout/FlexBoxLayout-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Example for FlexBoxLayout/FlexBoxLayout-Info.plist";
+				GCC_PREFIX_HEADER = "Example/FlexBoxLayout-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/FlexBoxLayout-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -590,8 +590,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = CNS46A8385;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Example for FlexBoxLayout/FlexBoxLayout-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Example for FlexBoxLayout/FlexBoxLayout-Info.plist";
+				GCC_PREFIX_HEADER = "Example/FlexBoxLayout-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/FlexBoxLayout-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -138,9 +138,8 @@
 
 - (void)fb_asyApplyLayoutWithSize:(CGSize)size {
   [FBAsyLayoutTransaction addCalculateTransaction:^{
-    _fb_layout.asynchronously = YES;
+
     [_fb_layout calculateLayoutWithSize:size];
-    _fb_layout.asynchronously = NO;
   } complete:^{
     _frame = _fb_layout.frame;
     [self fb_applyLayoutToViewHierachy];
