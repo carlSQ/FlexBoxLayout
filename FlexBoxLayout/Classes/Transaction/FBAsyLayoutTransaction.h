@@ -19,5 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)addCalculateTransaction:(dispatch_block_t)transaction
                        complete:(nullable dispatch_block_t)complete;
 
++ (void)addDisplayTransaction:(dispatch_block_t)transaction
+                     complete:(dispatch_block_t)complete;
+
 @end
 NS_ASSUME_NONNULL_END

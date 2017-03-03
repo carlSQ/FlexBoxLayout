@@ -50,6 +50,7 @@
   [self addSubview:_usernameLabel];
   
   _timeLabel = [UILabel new];
+  _timeLabel.textAlignment = NSTextAlignmentRight;
   [self addSubview:_timeLabel];
 }
 
@@ -70,47 +71,35 @@
 - (void)layoutView {
   
   [self fb_makeLayout:^(FBLayout *layout) {
-    layout.flexDirection.equalTo(@(FBFlexDirectionColumn));
-    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(0, 15, 0, 15));
-    layout.alignItems.equalTo(@(FBAlignFlexStart));
+    layout.flexDirection.equalTo(@(FBFlexDirectionColumn)).margin.equalToEdgeInsets(UIEdgeInsetsMake(0, 15, 0, 15)).alignItems.equalTo(@(FBAlignFlexStart));
   }];
   
   [_titleLabel fb_makeLayout:^(FBLayout *layout) {
-    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0));
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0)).wrapContent();
   }];
   
-  [_titleLabel fb_wrapContent];
   
   [_contentLabel fb_makeLayout:^(FBLayout *layout) {
-    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0));
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0)).wrapContent();
   }];
-  [_contentLabel fb_wrapContent];
   
   [_contentImageView fb_makeLayout:^(FBLayout *layout) {
-    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0));
-  }];
-  [_contentImageView fb_wrapContent];
-  
-
-  [_usernameLabel fb_wrapContent];
-  
-  [_timeLabel fb_wrapContent];
-  
-  FBLayoutDiv *usernameDiv = [FBLayoutDiv layoutDivWithFlexDirection:FBFlexDirectionRow justifyContent:FBJustifyFlexStart alignItems:FBAlignFlexStart children:@[_usernameLabel]];
-  [usernameDiv fb_makeLayout:^(FBLayout * _Nonnull layout) {
-    layout.flexGrow.equalTo(@(1.0));
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0)).wrapContent();
   }];
   
-  FBLayoutDiv *timeDiv = [FBLayoutDiv layoutDivWithFlexDirection:FBFlexDirectionRow justifyContent:FBJustifyFlexEnd alignItems:FBAlignFlexEnd children:@[_timeLabel]];
-  [timeDiv fb_makeLayout:^(FBLayout * _Nonnull layout) {
-    layout.flexGrow.equalTo(@(1.0));
+  [_usernameLabel fb_makeLayout:^(FBLayout *layout) {
+    layout.wrapContent().flexGrow.equalTo(@(1.0));
+  }];
+ 
+  [_timeLabel fb_makeLayout:^(FBLayout *layout) {
+      layout.wrapContent().flexGrow.equalTo(@(1.0));
   }];
   
-  FBLayoutDiv *div = [FBLayoutDiv layoutDivWithFlexDirection:FBFlexDirectionRow justifyContent:FBJustifySpaceBetween alignItems:FBAlignFlexStart children:@[usernameDiv,timeDiv]];
-
+  FBLayoutDiv *div = [FBLayoutDiv layoutDivWithFlexDirection:FBFlexDirectionRow ];
   [div fb_makeLayout:^(FBLayout *layout) {
-    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0));
+    layout.flexDirection.equalTo(@(FBFlexDirectionRow)).justifyContent.equalTo(@(FBJustifySpaceBetween)).alignItems.equalTo(@(FBAlignFlexStart)).margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0));
   }];
+  div.fb_children = @[_usernameLabel,_timeLabel];
   
   self.fb_children =@[_titleLabel,_contentLabel,_contentImageView,div];
 }

@@ -9,6 +9,7 @@
 #import "FBLayout+Private.h"
 #import "FBLayoutProtocol.h"
 #import "Yoga.h"
+#import "FBLayoutDiv.h"
 
 NSString *FBDirectiontAttributeName = @"FBDirectiontAttributeName";
 
@@ -125,7 +126,11 @@ void YGSetMesure(FBLayout *layout) {
 
 @property(nonatomic, readonly, assign) YGNodeRef fbNode;
 
+@property(atomic) BOOL asynchronously;
+
 @property(nonatomic, readonly, assign) CGRect frame;
+
+@property(nonatomic, assign) CGSize mesureSize;
 
 @end
 
@@ -138,6 +143,13 @@ void YGSetMesure(FBLayout *layout) {
     _styleNames = [NSMutableArray array];
   }
   return self;
+}
+
+- (void)setAsynchronously:(BOOL)asynchronously {
+  _asynchronously = asynchronously;
+  for (FBLayout* child in self.children) {
+    child.asynchronously = asynchronously;
+  }
 }
 
 - (void)setContext:(id)context {
@@ -155,6 +167,34 @@ void YGSetMesure(FBLayout *layout) {
                     FBRoundPixelValue(YGNodeLayoutGetTop(_fbNode)),
                     FBRoundPixelValue(YGNodeLayoutGetWidth(_fbNode)),
                     FBRoundPixelValue(YGNodeLayoutGetHeight(_fbNode)));
+}
+
+- (FBViewLayoutCache *)layouCache {
+  
+  FBViewLayoutCache *layoutCache = [FBViewLayoutCache new];
+  layoutCache.frame = ((id<FBLayoutProtocol>)self.context).frame;
+  NSMutableArray *childrenLayoutCache = [NSMutableArray arrayWithCapacity:self.allChildren.count];
+  for (FBLayout *childLayout in self.allChildren) {
+    [childrenLayoutCache addObject:[childLayout layouCache]];
+  }
+  layoutCache.childrenCache = [childrenLayoutCache copy];
+  return layoutCache;
+}
+
+
+- (void)applyLayoutCache:(FBViewLayoutCache *)layoutCache {
+  id<FBLayoutProtocol> view = self.context;
+  view.frame = layoutCache.frame;
+  if (view.fb_children.count != layoutCache.childrenCache.count) {
+    return;
+  }
+  
+  for (int i =0; i<layoutCache.childrenCache.count; i++) {
+    FBViewLayoutCache* childLayoutCache = layoutCache.childrenCache[i];
+    id<FBLayoutProtocol> childView = view.fb_children[i];
+    [childView.fb_layout applyLayoutCache:childLayoutCache];
+  }
+  
 }
 
 #pragma mark - children
@@ -214,6 +254,7 @@ void YGSetMesure(FBLayout *layout) {
                         size.height,
                         YGNodeStyleGetDirection(_fbNode));
 }
+
 
 #pragma mark - FB styles
 
@@ -563,6 +604,14 @@ do {\
     [self.styleNames removeAllObjects];
     return self;
   };
+}
+
+- (FBLayout * (^)())wrapContent {
+  return ^FBLayout* () {
+    YGSetMesure(self);
+    return self;
+  };
+
 }
 
 @end

@@ -59,6 +59,7 @@
   [self.tableView fb_setCellContnetViewBlockForIndexPath:^UIView *(NSIndexPath *indexPath) {
     return [[FBFeedView alloc]initWithModel:weakSelf.sections[indexPath.section][indexPath.row]];
   }];
+  
   [self.tableView reloadData];
 }
 

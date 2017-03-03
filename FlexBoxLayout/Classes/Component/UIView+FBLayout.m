@@ -9,6 +9,7 @@
 #import "UIView+FBLayout.h"
 #import <objc/runtime.h>
 #import "FBAsyLayoutTransaction.h"
+#import "FBLayer.h"
 
 extern void YGSetMesure(FBLayout *layout);
 
@@ -99,7 +100,16 @@ const CGFloat fb_undefined = YGUndefined;
 }
 
 - (void)fb_wrapContent {
+  [self fb_layout].mesureSize = [self sizeThatFits:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX)];
   YGSetMesure([self fb_layout]);
+}
+
+- (void)setFb_drawsAsynchronously:(BOOL)fb_drawsAsynchronously {
+  self.layer.drawsAsynchronously = fb_drawsAsynchronously;
+}
+
+- (BOOL)fb_drawsAsynchronously {
+  return self.layer.drawsAsynchronously;
 }
 
 

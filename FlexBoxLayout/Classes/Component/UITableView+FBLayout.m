@@ -13,7 +13,14 @@
 
 static NSString *kCellIdentifier = @"fb_kCellIdentifier";
 
+#define CACHE_CONTENT_VIEW objc_getAssociatedObject(self, @selector(fb_cacheContentView:))
+
+#define CACHE_LAYOUT objc_getAssociatedObject(self, @"fb_cacheLayout")
+
+static NSInteger contentViewTag = 6868;
+
 @implementation UITableView (FBLayout)
+
 
 + (void)load {
   
@@ -47,12 +54,66 @@ static NSString *kCellIdentifier = @"fb_kCellIdentifier";
   return [objc_getAssociatedObject(self, @selector(setFb_constrainedWidth:)) doubleValue];;
 }
 
+- (void)setFb_CacheLayout:(BOOL)fb_CacheLayout {
+  
+  if (fb_CacheLayout) {
+    self.fb_CacheContentView = NO;
+  } else {
+    NSMutableArray <NSMutableArray *>*cacheLayout = CACHE_LAYOUT;
+    [cacheLayout removeAllObjects];
+  }
+  objc_setAssociatedObject(self, _cmd, @(fb_CacheLayout), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
+}
+
+- (BOOL)fb_CacheLayout {
+  return [objc_getAssociatedObject(self, @selector(setFb_CacheLayout:)) boolValue];;
+
+}
+
+
+- (void)setFb_CacheContentView:(BOOL)fb_CacheContentView {
+  if (fb_CacheContentView) {
+    self.fb_CacheLayout = NO;
+  } else {
+     NSMutableArray <NSMutableArray *>*cacheContentViews = CACHE_CONTENT_VIEW;
+    [cacheContentViews removeAllObjects];
+  }
+  objc_setAssociatedObject(self, _cmd, @(fb_CacheContentView), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
+}
+
+- (BOOL)fb_CacheContentView {
+  return objc_getAssociatedObject(self, @selector(setFb_CacheContentView:)) ? [ objc_getAssociatedObject(self, @selector(setFb_CacheContentView:)) boolValue] :YES;
+}
+
 - (CGFloat)fb_heightForIndexPath:(NSIndexPath *)indexPath {
+  NSMutableArray <NSMutableArray *>*cacheLayout = CACHE_LAYOUT;
+  FBViewLayoutCache *viewLayoutCache = nil;
+  if (self.fb_CacheLayout) {
+    if (cacheLayout.count > indexPath.section) {
+      NSArray* sectionCacheViews = cacheLayout[indexPath.section];
+      
+      if (sectionCacheViews.count > indexPath.row) {
+        viewLayoutCache = sectionCacheViews[indexPath.row];
+      }
+      
+    }
+    if (viewLayoutCache) {
+     return viewLayoutCache.frame.size.height;
+    }
+  }
+
   return [self fb_cacheContentView:indexPath].frame.size.height;
 }
 
 - (UITableViewCell *)fb_cellForIndexPath:(NSIndexPath *)indexPath {
   return [self fb_cacheCellForIndexPath:indexPath];
+}
+
+- (UIView *)fb_contentViewForIndexPath:(NSIndexPath *)indexPath {
+  UITableViewCell *cell = [self cellForRowAtIndexPath:indexPath];
+  return [cell.contentView viewWithTag:contentViewTag];
 }
 
 - (void)fb_setCellContnetViewBlockForIndexPath:(FBCellBlock)cellBlock {
@@ -70,7 +131,8 @@ static NSString *kCellIdentifier = @"fb_kCellIdentifier";
   
   UITableViewCell *cell = [self dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
   UIView *cellContentView = [self fb_cacheContentView:indexPath];
-  
+  cell.fb_drawsAsynchronously = YES;
+  cellContentView.fb_drawsAsynchronously = YES;
   cell.selectionStyle = cellContentView.fb_selectionStyle;
   cell.backgroundColor = cellContentView.backgroundColor;
   cell.clipsToBounds = cellContentView.clipsToBounds;
@@ -79,113 +141,192 @@ static NSString *kCellIdentifier = @"fb_kCellIdentifier";
   return cell;
 }
 
-#define CACHE_CONTENT_VIEW objc_getAssociatedObject(self, @selector(fb_cacheContentView:))
 
 - (UIView *)fb_cacheContentView:(NSIndexPath *)indexPath {
   
   NSMutableArray <NSMutableArray *>*cacheContentViews = CACHE_CONTENT_VIEW;
+  NSMutableArray <NSMutableArray *>*cacheLayout = CACHE_LAYOUT;
   
   if (!cacheContentViews) {
     cacheContentViews = [NSMutableArray array];
     objc_setAssociatedObject(self, _cmd, cacheContentViews, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fb_removeAllCache) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
+  }
+  
+  if (!cacheLayout) {
+    cacheLayout = [NSMutableArray array];
+    objc_setAssociatedObject(self, @"fb_cacheLayout", cacheLayout, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
   }
   
   UIView * cellContentView = nil;
   NSMutableArray* sectionContentViews = nil;
   
-  if (cacheContentViews.count > indexPath.section) {
-    
-    sectionContentViews = cacheContentViews[indexPath.section];
-    
-    if (sectionContentViews.count > indexPath.row) {
-      cellContentView = sectionContentViews[indexPath.row];
+  if (self.fb_CacheContentView) {
+    if (cacheContentViews.count > indexPath.section) {
+      
+      sectionContentViews = cacheContentViews[indexPath.section];
+      
+      if (sectionContentViews.count > indexPath.row) {
+        cellContentView = sectionContentViews[indexPath.row];
+      }
+      
+    } else {
+      
+      NSAssert(cacheContentViews.count == indexPath.section, @"%@ section is error",@(indexPath.section));
+      
+      cacheContentViews[indexPath.section] = [NSMutableArray array];
+      
     }
-    
-  } else {
-    
-    NSAssert(cacheContentViews.count == indexPath.section, @"%@ section is error",@(indexPath.section));
-    
-    cacheContentViews[indexPath.section] = [NSMutableArray array];
-    
   }
   
+
   if (!cellContentView || [cellContentView isEqual:[NSNull null]]) {
     
     FBCellBlock cellBlock = objc_getAssociatedObject(self, @selector(fb_setCellContnetViewBlockForIndexPath:));
     
     if (cellBlock) {
       cellContentView = cellBlock(indexPath);
-      [cellContentView fb_applyLayouWithSize:CGSizeMake(self.fb_constrainedWidth?:self.frame.size.width, fb_undefined)];
+      FBViewLayoutCache *viewLayoutCache = nil;
+      if (self.fb_CacheLayout) {
+        if (cacheLayout.count > indexPath.section) {
+          NSArray* sectionCacheViews = cacheLayout[indexPath.section];
+          
+          if (sectionCacheViews.count > indexPath.row) {
+            viewLayoutCache = sectionCacheViews[indexPath.row];
+          }
+          
+        } else {
+          
+          NSAssert(cacheLayout.count == indexPath.section, @"%@ section is error",@(indexPath.section));
+          
+          cacheLayout[indexPath.section] = [NSMutableArray array];
+          
+        }
+      }
+      if (viewLayoutCache) {
+        [cellContentView.fb_layout applyLayoutCache:viewLayoutCache];
+      } else {
+        [cellContentView fb_applyLayouWithSize:CGSizeMake(self.fb_constrainedWidth?:self.frame.size.width, fb_undefined)];
+        if (self.fb_CacheLayout) {
+          [cacheLayout[indexPath.section] insertObject:[cellContentView.fb_layout layouCache] atIndex:indexPath.row];
+        }
+      }
+
     } else {
       cellContentView = [UIView new];
     }
     
-    [cacheContentViews[indexPath.section] insertObject:cellContentView atIndex:indexPath.row];
+    
+    if (self.fb_CacheContentView) {
+      [cacheContentViews[indexPath.section] insertObject:cellContentView atIndex:indexPath.row];
+    }
     
   }
+  
+  cellContentView.tag = contentViewTag;
   
   return cellContentView;
 }
 
+- (void)fb_removeAllCache {
+  [self fb_removeAllCacheContentViews];
+}
+
 
 - (void)fb_removeAllCacheContentViews {
-  NSMutableArray *cacheContentViews = CACHE_CONTENT_VIEW;
-  [cacheContentViews removeAllObjects];
+  [CACHE_CONTENT_VIEW removeAllObjects];
+  [CACHE_LAYOUT removeAllObjects];
 }
 
 - (void)fb_removeCacheContentViewsAtSection:(NSUInteger)section {
-  NSMutableArray *cacheContentViews = CACHE_CONTENT_VIEW;
-  [cacheContentViews removeObjectAtIndex:section];
+  if (self.fb_CacheContentView) {
+    [CACHE_CONTENT_VIEW removeObjectAtIndex:section];
+  } else if (self.fb_CacheLayout) {
+    [CACHE_LAYOUT removeObjectAtIndex:section];
+  }
 }
 
 - (void)fb_removeCacheContentViewAtIndexPath:(NSIndexPath *)indexPath {
-  NSMutableArray *cacheContentViews = CACHE_CONTENT_VIEW;
-  [cacheContentViews[indexPath.section] removeObjectAtIndex:indexPath.row];
+  if (self.fb_CacheContentView) {
+    [CACHE_CONTENT_VIEW[indexPath.section] removeObjectAtIndex:indexPath.row];
+  } else if(self.fb_CacheLayout) {
+    [CACHE_LAYOUT[indexPath.section] removeObjectAtIndex:indexPath.row];
+  }
 }
 
 - (void)fb_addCacheContentViewsAtSection:(NSUInteger)section {
-  NSMutableArray *cacheContentViews = CACHE_CONTENT_VIEW;
-  [cacheContentViews insertObject:[NSMutableArray array] atIndex:section];
+  
+  if (self.fb_CacheContentView) {
+    [CACHE_CONTENT_VIEW insertObject:[NSMutableArray array] atIndex:section];
+  } else if(self.fb_CacheLayout) {
+    [CACHE_LAYOUT insertObject:[NSMutableArray array] atIndex:section];
+  }
+  
 }
 
 - (void)fb_addCacheContentViewsAtIndexPath:(NSIndexPath *)indexPath {
-  NSMutableArray *cacheContentViews = CACHE_CONTENT_VIEW;
-  [cacheContentViews[indexPath.section] insertObject:[NSNull null] atIndex:indexPath.row];
+  if (self.fb_CacheContentView) {
+    [CACHE_CONTENT_VIEW[indexPath.section] insertObject:[NSNull null] atIndex:indexPath.row];
+  } else if(self.fb_CacheLayout) {
+    [CACHE_LAYOUT[indexPath.section] insertObject:[NSNull null] atIndex:indexPath.row];
+  }
+
 }
 
 - (void)fb_reloadCacheContentViewsAtSection:(NSUInteger)section {
-  NSMutableArray *cacheContentViews = CACHE_CONTENT_VIEW;
-  [cacheContentViews[section] removeAllObjects];
+  if (self.fb_CacheContentView) {
+    [CACHE_CONTENT_VIEW[section] removeAllObjects];
+  } else if (self.fb_CacheLayout) {
+    [CACHE_LAYOUT[section] removeAllObjects];
+  }
 }
 
 - (void)fb_reloadCacheContentViewsAtIndexPath:(NSIndexPath *)indexPath {
-  NSMutableArray *cacheContentViews = CACHE_CONTENT_VIEW;
-  [cacheContentViews[indexPath.section] replaceObjectAtIndex:indexPath.row withObject:[NSNull null]];
+  if (self.fb_CacheContentView) {
+    [CACHE_CONTENT_VIEW[indexPath.section] replaceObjectAtIndex:indexPath.row withObject:[NSNull null]];
+  } else if (self.fb_CacheLayout) {
+    [CACHE_LAYOUT[indexPath.section] replaceObjectAtIndex:indexPath.row withObject:[NSNull null]];
+  }
 }
 
 - (void)fb_moveCacheContentViewsSection:(NSInteger)section toSection:(NSInteger)newSection {
-  NSMutableArray *cacheContentViews = CACHE_CONTENT_VIEW;
-  [cacheContentViews exchangeObjectAtIndex:section withObjectAtIndex:newSection];
+  if (self.fb_CacheContentView) {
+    [CACHE_CONTENT_VIEW exchangeObjectAtIndex:section withObjectAtIndex:newSection];
+  } else if(self.fb_CacheLayout) {
+    [CACHE_LAYOUT exchangeObjectAtIndex:section withObjectAtIndex:newSection];
+  }
 }
 
 - (void)fb_moveCacheContentViewsAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath {
   
-  NSMutableArray *cacheContentViews = CACHE_CONTENT_VIEW;
+  if (self.fb_CacheContentView) {
+    
+    UIView *view1 = CACHE_CONTENT_VIEW[indexPath.section][indexPath.row];
+    
+    UIView *view2 = CACHE_CONTENT_VIEW[newIndexPath.section][newIndexPath.row];
+    
+    CACHE_CONTENT_VIEW[indexPath.section][indexPath.row] = view2;
+    
+    CACHE_CONTENT_VIEW[newIndexPath.section][newIndexPath.row] = view1;
+    
+  } else if (self.fb_CacheLayout) {
+    
+    UIView *view1 = CACHE_LAYOUT[indexPath.section][indexPath.row];
+    
+    UIView *view2 = CACHE_LAYOUT[newIndexPath.section][newIndexPath.row];
+    
+    CACHE_LAYOUT[indexPath.section][indexPath.row] = view2;
+    
+    CACHE_LAYOUT[newIndexPath.section][newIndexPath.row] = view1;
+  }
   
-  UIView *view1 = cacheContentViews[indexPath.section][indexPath.row];
-  
-  UIView *view2 = cacheContentViews[newIndexPath.section][newIndexPath.row];
-  
-  cacheContentViews[indexPath.section][indexPath.row] = view2;
-  
-  cacheContentViews[newIndexPath.section][newIndexPath.row] = view1;
+
   
 }
 
 - (void)fb_configContentView:(UIView *)contentView forCell:(UITableViewCell *)cell{
-  for (UIView *view in cell.contentView.subviews) {
-    [view removeFromSuperview];
-  }
+  UIView *removedView = [cell.contentView viewWithTag:contentViewTag];
+  [removedView removeFromSuperview];
   [cell.contentView addSubview:contentView];
 }
 
@@ -256,6 +397,10 @@ static NSString *kCellIdentifier = @"fb_kCellIdentifier";
 - (void)fb_moveRowAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath {
   [self fb_moveCacheContentViewsAtIndexPath:indexPath toIndexPath:newIndexPath];
   [self fb_moveRowAtIndexPath:indexPath toIndexPath:newIndexPath];
+}
+
+- (void)dealloc {
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

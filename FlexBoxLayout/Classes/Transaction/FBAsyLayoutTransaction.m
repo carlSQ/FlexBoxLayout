@@ -102,6 +102,36 @@ static void _messageGroupRunLoopObserverCallback(CFRunLoopObserverRef observer, 
   
 }
 
+#define MAX_CONCURRENT_COUNT 8
+
+static dispatch_semaphore_t FBConcurrentSemaphore;
+
+static dispatch_queue_t display_creation_queue() {
+  static dispatch_queue_t dispalyQueue = NULL;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    dispalyQueue = dispatch_queue_create("flexbox.display", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_set_target_queue(dispalyQueue, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0));
+  });
+  return dispalyQueue;
+}
+
+static void display_create_task_safely(dispatch_block_t displayBlock, dispatch_block_t complete) {
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    NSUInteger processorCount = [NSProcessInfo processInfo].activeProcessorCount;
+    NSUInteger maxConcurrentCount = processorCount <= MAX_CONCURRENT_COUNT ? processorCount : MAX_CONCURRENT_COUNT;
+    FBConcurrentSemaphore = dispatch_semaphore_create(maxConcurrentCount);
+  });
+  
+  dispatch_async(display_creation_queue(), ^{
+    dispatch_semaphore_wait(FBConcurrentSemaphore, DISPATCH_TIME_FOREVER);
+    displayBlock();
+    enqueue(complete);
+    dispatch_semaphore_signal(FBConcurrentSemaphore);
+  });
+}
+
 
 @implementation FBAsyLayoutTransaction
 
@@ -140,6 +170,11 @@ static void _messageGroupRunLoopObserverCallback(CFRunLoopObserverRef observer, 
 + (void)addCalculateTransaction:(dispatch_block_t)transaction
                        complete:(dispatch_block_t)complete {
   calculate_create_task_safely(transaction, complete);
+}
+
++ (void)addDisplayTransaction:(dispatch_block_t)transaction
+                     complete:(dispatch_block_t)complete {
+  display_create_task_safely(transaction, complete);
 }
 
 @end

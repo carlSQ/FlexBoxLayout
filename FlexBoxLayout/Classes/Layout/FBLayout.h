@@ -141,6 +141,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (FBLayout * (^)(UIEdgeInsets attr))equalToEdgeInsets;
 
+- (FBLayout * (^)())wrapContent;
+
 
 - (void)setDirection:(FBDirection)direction;
 

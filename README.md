@@ -1,12 +1,12 @@
 # FlexBoxLayout
 
-[![CI Status](http://img.shields.io/travis/LPD-iOS/CSSLayout.svg?style=flat)](https://travis-ci.org/carlSQ/FBLayout)
+[![CI Status](http://img.shields.io/travis/LPD-iOS/FlexBoxLayout.svg?style=flat)](https://travis-ci.org/carlSQ/FlexBoxLayout)
 [![Version](https://img.shields.io/cocoapods/v/FlexBoxLayout.svg?style=flat)](http://cocoapods.org/pods/FlexBoxLayout)
 [![License](https://img.shields.io/cocoapods/l/FlexBoxLayout.svg?style=flat)](http://cocoapods.org/pods/FlexBoxLayout)
 [![Platform](https://img.shields.io/cocoapods/p/FlexBoxLayout.svg?style=flat)](http://cocoapods.org/pods/FlexBoxLayout)
 
 ## Overview
-![Demo Overview](https://github.com/carlSQ/CSSLayout/blob/master/Example/Example for FlexBoxLayout/show.gif)
+![Demo Overview](https://github.com/carlSQ/FlexBoxLayout/blob/master/Example/Example for FlexBoxLayout/show.gif)
 
 ## Example
 

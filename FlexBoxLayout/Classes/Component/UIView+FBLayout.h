@@ -12,11 +12,14 @@
 
 @interface UIView (FBLayout)<FBLayoutProtocol>
 
+@property(nonatomic) BOOL fb_drawsAsynchronously;
+
 
 /**
   fit view size to content size
  */
 - (void)fb_wrapContent;
+
 
 
 /**

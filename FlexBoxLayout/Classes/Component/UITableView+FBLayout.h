@@ -22,6 +22,21 @@ typedef UIView *_Nonnull (^FBCellBlock)(NSIndexPath *indexPath);
 @property(nonatomic) CGFloat fb_constrainedWidth;
 
 
+
+/**
+ cache layout
+ */
+@property(nonatomic) BOOL fb_CacheLayout;
+
+
+
+/**
+ cache content view cannot be together with fb_CacheLayout at the same time
+
+ */
+@property(nonatomic) BOOL fb_CacheContentView;
+
+
 /**
  get the height of cell
  @param indexPath
@@ -32,7 +47,6 @@ typedef UIView *_Nonnull (^FBCellBlock)(NSIndexPath *indexPath);
 
 /**
  get the cell of indexPath
-
  @param indexPath
  @return
  */
@@ -44,6 +58,20 @@ typedef UIView *_Nonnull (^FBCellBlock)(NSIndexPath *indexPath);
  @param cellBlock
  */
 - (void)fb_setCellContnetViewBlockForIndexPath:(FBCellBlock)cellBlock;
+
+
+/**
+ content view
+ @param indexPath indexPath
+ @return nil if cell is not visible or index path is out of range
+ */
+- (UIView *)fb_contentViewForIndexPath:(NSIndexPath *)indexPath;
+
+
+/**
+ remove all cache
+ */
+- (void)fb_removeAllCache;
 
 @end
 

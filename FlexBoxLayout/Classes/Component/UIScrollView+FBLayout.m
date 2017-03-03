@@ -38,7 +38,10 @@
   [self fb_layoutSubviews];
   FBLayoutDiv *contentDiv = [self fb_contentDiv];
   if (contentDiv) {
-    self.contentSize = contentDiv.frame.size;
+    self.contentSize = (CGSize){
+      .width = contentDiv.frame.size.width > self.frame.size.width ? contentDiv.frame.size.width : self.frame.size.width,
+      .height = contentDiv.frame.size.height > self.frame.size.height ? contentDiv.frame.size.height: self.frame.size.height,
+    };
   }
 }
 
