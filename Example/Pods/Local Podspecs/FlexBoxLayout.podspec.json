@@ -1,6 +1,6 @@
 {
   "name": "FlexBoxLayout",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "summary": "iOS Flexbox layout",
   "description": "iOS Flexbox layout.",
   "homepage": "https://github.com/carlSQ/CSSLayout",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/carlSQ/CSSLayout.git",
-    "tag": "0.4.0"
+    "tag": "0.5.0"
   },
   "platforms": {
     "ios": "7.0"

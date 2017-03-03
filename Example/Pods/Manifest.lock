@@ -1,5 +1,5 @@
 PODS:
-  - FlexBoxLayout (0.4.0)
+  - FlexBoxLayout (0.5.0)
 
 DEPENDENCIES:
   - FlexBoxLayout (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FlexBoxLayout: b81986157b2750addcc50d7b040a691b157eb66a
+  FlexBoxLayout: ac1cefcb8d27f6342f28aa1708e40399e638ab01
 
 PODFILE CHECKSUM: 563595e05458b8ce7ab28f8ac979ece9951b1a2d
 

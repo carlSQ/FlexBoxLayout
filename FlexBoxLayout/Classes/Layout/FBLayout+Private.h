@@ -8,6 +8,7 @@
 
 #import "FBLayout.h"
 #import "Yoga.h"
+#import "FBViewLayoutCache.h"
 
 @interface FBLayout (Private)
 
@@ -24,6 +25,10 @@
 @property(nonatomic, assign) CGSize mesureSize;
 
 @property(atomic) BOOL asynchronously;
+
+- (FBViewLayoutCache *)layouCache;
+
+- (void)applyLayoutCache:(FBViewLayoutCache *)layoutCache;
 
 - (NSArray *)allChildren;
 

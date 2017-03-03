@@ -22,7 +22,6 @@
 
 
 
-
 /**
  set view layout properties
 
