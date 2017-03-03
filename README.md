@@ -5,8 +5,63 @@
 [![License](https://img.shields.io/cocoapods/l/FlexBoxLayout.svg?style=flat)](http://cocoapods.org/pods/FlexBoxLayout)
 [![Platform](https://img.shields.io/cocoapods/p/FlexBoxLayout.svg?style=flat)](http://cocoapods.org/pods/FlexBoxLayout)
 
-## Overview
-![Demo Overview](https://github.com/carlSQ/FlexBoxLayout/blob/master/Example/Example for FlexBoxLayout/show.gif)
+## Introduce
+
+* flexbox layout
+* 链式调用，布局方便
+* 虚拟视图Div
+* TableView 支持自动高度、布局缓存，contentView缓存，和自动cache 失效机制
+* ScrollView 支持自适应contentSize
+* 异步计算布局
+
+
+## Demo
+![Demo Overview](https://github.com/LPD-iOS/FlexBoxLayout/tree/master/Example/Example%20for%20FlexBoxLayout/show.gif)
+
+## Cell layout in Demo
+
+```objc
+
+- (void)layoutView {
+
+  [self fb_makeLayout:^(FBLayout *layout) {
+    layout.flexDirection.equalTo(@(FBFlexDirectionColumn)).margin.equalToEdgeInsets(UIEdgeInsetsMake(0, 15, 0, 15)).alignItems.equalTo(@(FBAlignFlexStart));
+  }];
+
+  [_titleLabel fb_makeLayout:^(FBLayout *layout) {
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0)).wrapContent();
+  }] ;
+  
+
+  [_contentLabel fb_makeLayout:^(FBLayout *layout) {
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0)).wrapContent();
+  }];
+
+  [_contentImageView fb_makeLayout:^(FBLayout *layout) {
+    layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0)).wrapContent();
+  }];
+
+  [_usernameLabel fb_makeLayout:^(FBLayout *layout) {
+    layout.wrapContent().flexGrow.equalTo(@(1.0));
+  }];
+
+  [_timeLabel fb_makeLayout:^(FBLayout *layout) {
+    layout.wrapContent().flexGrow.equalTo(@(1.0));
+  }];
+
+  FBLayoutDiv *div = [FBLayoutDiv layoutDivWithFlexDirection:FBFlexDirectionRow ];
+
+  [div fb_makeLayout:^(FBLayout *layout) {
+  layout.flexDirection.equalTo(@(FBFlexDirectionRow)).justifyContent.equalTo(@(FBJustifySpaceBetween)).alignItems.equalTo(@(FBAlignFlexStart)).margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0));
+  }];
+
+  div.fb_children = @[_usernameLabel,_timeLabel];
+
+  self.fb_children =@[_titleLabel,_contentLabel,_contentImageView,div];
+}
+
+```
+
 
 ## Example
 
