@@ -83,8 +83,8 @@ static NSInteger contentViewTag = 6868;
 
 }
 
-- (BOOL)fb_CacheContentView {
-  return objc_getAssociatedObject(self, @selector(setFb_CacheContentView:)) ? [ objc_getAssociatedObject(self, @selector(setFb_CacheContentView:)) boolValue] :YES;
+- (BOOL)fb_cacheContentView {
+  return objc_getAssociatedObject(self, @selector(setFb_cacheContentView:)) ? [ objc_getAssociatedObject(self, @selector(setFb_cacheContentView:)) boolValue] :YES;
 }
 
 - (CGFloat)fb_heightForIndexPath:(NSIndexPath *)indexPath {
@@ -161,7 +161,7 @@ static NSInteger contentViewTag = 6868;
   UIView * cellContentView = nil;
   NSMutableArray* sectionContentViews = nil;
   
-  if (self.fb_CacheContentView) {
+  if (self.fb_cacheContentView) {
     if (cacheContentViews.count > indexPath.section) {
       
       sectionContentViews = cacheContentViews[indexPath.section];
@@ -217,7 +217,7 @@ static NSInteger contentViewTag = 6868;
     }
     
     
-    if (self.fb_CacheContentView) {
+    if (self.fb_cacheContentView) {
       [cacheContentViews[indexPath.section] insertObject:cellContentView atIndex:indexPath.row];
     }
     
@@ -239,7 +239,7 @@ static NSInteger contentViewTag = 6868;
 }
 
 - (void)fb_removeCacheContentViewsAtSection:(NSUInteger)section {
-  if (self.fb_CacheContentView) {
+  if (self.fb_cacheContentView) {
     [CACHE_CONTENT_VIEW removeObjectAtIndex:section];
   } else if (self.fb_cacheLayout) {
     [CACHE_LAYOUT removeObjectAtIndex:section];
@@ -247,7 +247,7 @@ static NSInteger contentViewTag = 6868;
 }
 
 - (void)fb_removeCacheContentViewAtIndexPath:(NSIndexPath *)indexPath {
-  if (self.fb_CacheContentView) {
+  if (self.fb_cacheContentView) {
     [CACHE_CONTENT_VIEW[indexPath.section] removeObjectAtIndex:indexPath.row];
   } else if(self.fb_cacheLayout) {
     [CACHE_LAYOUT[indexPath.section] removeObjectAtIndex:indexPath.row];
@@ -256,7 +256,7 @@ static NSInteger contentViewTag = 6868;
 
 - (void)fb_addCacheContentViewsAtSection:(NSUInteger)section {
   
-  if (self.fb_CacheContentView) {
+  if (self.fb_cacheContentView) {
     [CACHE_CONTENT_VIEW insertObject:[NSMutableArray array] atIndex:section];
   } else if(self.fb_cacheLayout) {
     [CACHE_LAYOUT insertObject:[NSMutableArray array] atIndex:section];
@@ -265,7 +265,7 @@ static NSInteger contentViewTag = 6868;
 }
 
 - (void)fb_addCacheContentViewsAtIndexPath:(NSIndexPath *)indexPath {
-  if (self.fb_CacheContentView) {
+  if (self.fb_cacheContentView) {
     [CACHE_CONTENT_VIEW[indexPath.section] insertObject:[NSNull null] atIndex:indexPath.row];
   } else if(self.fb_cacheLayout) {
     [CACHE_LAYOUT[indexPath.section] insertObject:[NSNull null] atIndex:indexPath.row];
@@ -274,7 +274,7 @@ static NSInteger contentViewTag = 6868;
 }
 
 - (void)fb_reloadCacheContentViewsAtSection:(NSUInteger)section {
-  if (self.fb_CacheContentView) {
+  if (self.fb_cacheContentView) {
     [CACHE_CONTENT_VIEW[section] removeAllObjects];
   } else if (self.fb_cacheLayout) {
     [CACHE_LAYOUT[section] removeAllObjects];
@@ -282,7 +282,7 @@ static NSInteger contentViewTag = 6868;
 }
 
 - (void)fb_reloadCacheContentViewsAtIndexPath:(NSIndexPath *)indexPath {
-  if (self.fb_CacheContentView) {
+  if (self.fb_cacheContentView) {
     [CACHE_CONTENT_VIEW[indexPath.section] replaceObjectAtIndex:indexPath.row withObject:[NSNull null]];
   } else if (self.fb_cacheLayout) {
     [CACHE_LAYOUT[indexPath.section] replaceObjectAtIndex:indexPath.row withObject:[NSNull null]];
@@ -290,7 +290,7 @@ static NSInteger contentViewTag = 6868;
 }
 
 - (void)fb_moveCacheContentViewsSection:(NSInteger)section toSection:(NSInteger)newSection {
-  if (self.fb_CacheContentView) {
+  if (self.fb_cacheContentView) {
     [CACHE_CONTENT_VIEW exchangeObjectAtIndex:section withObjectAtIndex:newSection];
   } else if(self.fb_cacheLayout) {
     [CACHE_LAYOUT exchangeObjectAtIndex:section withObjectAtIndex:newSection];
@@ -299,7 +299,7 @@ static NSInteger contentViewTag = 6868;
 
 - (void)fb_moveCacheContentViewsAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath {
   
-  if (self.fb_CacheContentView) {
+  if (self.fb_cacheContentView) {
     
     UIView *view1 = CACHE_CONTENT_VIEW[indexPath.section][indexPath.row];
     
