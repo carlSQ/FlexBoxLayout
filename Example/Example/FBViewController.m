@@ -54,9 +54,9 @@
   
   
   FBLayoutDiv *div1 = [FBLayoutDiv layoutDivWithFlexDirection:FBFlexDirectionColumn
-                                                 justifyContent:FBJustifySpaceBetween
-                                                     alignItems:FBAlignCenter
-                                                       children:@[child1, child2,child3]];
+                                               justifyContent:FBJustifySpaceBetween
+                                                   alignItems:FBAlignCenter
+                                                     children:@[child1, child2,child3]];
   
   
   
@@ -95,9 +95,9 @@
   }];
   
   FBLayoutDiv *div2 =[FBLayoutDiv layoutDivWithFlexDirection:FBFlexDirectionColumn
-                                                justifyContent:FBJustifySpaceAround
-                                                    alignItems:FBAlignCenter
-                                                      children:@[child5,child6,child7,child8]];
+                                              justifyContent:FBJustifySpaceAround
+                                                  alignItems:FBAlignCenter
+                                                    children:@[child5,child6,child7,child8]];
   [div2 fb_makeLayout:^(FBLayout *layout) {
     layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(20, 0, 0, 0));
     layout.width.equalTo(@(150));
@@ -109,16 +109,13 @@
   [contentView addSubview:child8];
   
   FBLayoutDiv *root = [FBLayoutDiv layoutDivWithFlexDirection:FBFlexDirectionRow
-                                                 justifyContent:FBJustifySpaceAround
-                                                     alignItems:FBAlignCenter
-                                                       children:@[div1,div2]];
+                                               justifyContent:FBJustifySpaceAround
+                                                   alignItems:FBAlignCenter
+                                                     children:@[div1,div2]];
   
   contentView.fb_contentDiv = root;
   
   [root fb_asyApplyLayoutWithSize:[UIScreen mainScreen].bounds.size];
-  
-
-
   
 }
 
