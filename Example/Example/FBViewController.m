@@ -68,11 +68,9 @@
   
   UIView *child5 = [UIView new];
   child5.backgroundColor = [UIColor blueColor];
-  
-  child5.fbStyles = @{FBWidthAttributeName:@(50),
-                       FBHeightAttributeName:@(50),
-                       FBMarginAttributeName:[NSValue valueWithUIEdgeInsets:UIEdgeInsetsMake(0, 0, 10, 0)],
-                       FBFlexGrowAttributeName:@1.0};
+  [child5 fb_makeLayout:^(FBLayout *layout) {
+    layout.width.height.equalTo(@(50)).margin.equalToEdgeInsets(UIEdgeInsetsMake(0, 0, 10, 0)).flexGrow.equalTo(@1.0);
+  }];
   
   UIView *child6 = [UIView new];
   child6.backgroundColor = [UIColor greenColor];

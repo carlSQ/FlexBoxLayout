@@ -18,16 +18,13 @@
 		29EA6036315515639EB99F2697C5472B /* FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DF6CAE03D28CECDEC29BE508898BC /* FBLayout.m */; };
 		2DD7B74DC140290BFACE4F07E0F5FE1D /* FBViewLayoutCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F0C80F7A340D51110B01DFC43E8116 /* FBViewLayoutCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3667DD1D7290C8FE50F8C512EDC19722 /* UIView+CellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A7A634576CC7F9299C41F801010ABC /* UIView+CellStyle.m */; };
-		456DFDB59089AFAA2A0CF8330AD996BE /* FBLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 177F7A2E6A41F96E8668A6368F86F588 /* FBLayer.m */; };
 		4A6D58896A1AEC5BDF13FA1D4704A5D9 /* FBViewLayoutCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC8BEF54CC28ABFC14019E3ABA1960 /* FBViewLayoutCache.m */; };
-		4B09201880E735C5C314949246F3FD1F /* FBSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A4E6845423AC0168A8CB204315E33 /* FBSentinel.m */; };
 		4F9914A956668A77A635E6130FE73302 /* FlexBoxLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36626C1DDBD9A3A99161CFB983523EFB /* FlexBoxLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		592965C0879A36766C820D99C1E194B0 /* YGNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E4C5910E2C20FDAF7D48144F1BF44D4 /* YGNodeList.c */; };
 		6579310FAF1B85093993E05785382D40 /* FBAsyLayoutTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E78493B31140CBBF8F2DF4015A7304A5 /* FBAsyLayoutTransaction.m */; };
 		700285DCD05A13614EFA48FC7F1196C5 /* FBLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF123EC952E7C3600CB17FC1337DFCB /* FBLayout+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92120844BB11D9261970398ADAA2C4D2 /* Pods-FlexBoxLayout_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAAD176CF890EF4FF992414450204767 /* Pods-FlexBoxLayout_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		957ADAA150D448B6295D0333DFE294DA /* FlexBoxLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E830DFFF0A15E9B140B29A48CEB988CA /* FlexBoxLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9992BC19B1380DC2D24AEAC08EC5E5BD /* FBSentinel.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6ACB5694B72826EBF043738EBB1EB4 /* FBSentinel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C9EF063E05064AC26458CAFDC18FF29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		9E47EBDC5A9D0435CB0680BE7A2EEA02 /* UIView+FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 708C68A48ED61070E37DF7D706F0D8DC /* UIView+FBLayout.m */; };
 		A03880F95437AD3EC8C85E88CA46F1B7 /* UITableView+FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D7AB66B62F29676BBB16BAF9F6C05E /* UITableView+FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,7 +33,6 @@
 		A866D6B206CFABCBC2EF7B7910E33986 /* FlexBoxLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F66BF5054C5C6CDBECC3F5F1C83CEA /* FlexBoxLayout-dummy.m */; };
 		AD14AB6C9924D2B636AECB9CC64A6874 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		B3E910B89DA922D27CBBC0DC3B38ABA0 /* YGNodeList.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC65D05C9BCFFD875DF3118A4F62A00 /* YGNodeList.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B614F76052AA07A7FB8720890435D157 /* FBLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E66C99970053B90C46E310056200E08 /* FBLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC8B43F901B6D723B9C7D163E37580A0 /* Yoga.c in Sources */ = {isa = PBXBuildFile; fileRef = 16A79719ADD9A254769517E1F9873802 /* Yoga.c */; };
 		BCCB77265BD8BF81E8E34C5535B085BE /* YGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9E401B6C5C36D9836705021447484F /* YGEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C357814E862C610C61BB18E6C23900DB /* Pods-FlexBoxLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9BE7063CD0336BA363A0E6C1CC9153 /* Pods-FlexBoxLayout_Example-dummy.m */; };
@@ -61,11 +57,9 @@
 		03D7AB66B62F29676BBB16BAF9F6C05E /* UITableView+FBLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+FBLayout.h"; sourceTree = "<group>"; };
 		09FFE3CB2868E2B3E114ACB11B0E1E6B /* Pods-FlexBoxLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexBoxLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		0C9084A67D7B86FC58E270D2AABAAE78 /* FlexBoxLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlexBoxLayout-prefix.pch"; sourceTree = "<group>"; };
-		0E66C99970053B90C46E310056200E08 /* FBLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBLayer.h; sourceTree = "<group>"; };
 		0F9BE7063CD0336BA363A0E6C1CC9153 /* Pods-FlexBoxLayout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlexBoxLayout_Example-dummy.m"; sourceTree = "<group>"; };
 		15A7A634576CC7F9299C41F801010ABC /* UIView+CellStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+CellStyle.m"; sourceTree = "<group>"; };
 		16A79719ADD9A254769517E1F9873802 /* Yoga.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = Yoga.c; sourceTree = "<group>"; };
-		177F7A2E6A41F96E8668A6368F86F588 /* FBLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBLayer.m; sourceTree = "<group>"; };
 		18F571556FE3405314C44469081FC5D3 /* FBLayoutDiv.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBLayoutDiv.m; sourceTree = "<group>"; };
 		1BC65D05C9BCFFD875DF3118A4F62A00 /* YGNodeList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YGNodeList.h; sourceTree = "<group>"; };
 		1CD6D16632DFCE1B636C44A4D39618C1 /* FBLayoutProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBLayoutProtocol.h; sourceTree = "<group>"; };
@@ -96,7 +90,6 @@
 		7E4C5910E2C20FDAF7D48144F1BF44D4 /* YGNodeList.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = YGNodeList.c; sourceTree = "<group>"; };
 		817D348E5B50DF3A8DE35504ED28D286 /* Pods-FlexBoxLayout_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlexBoxLayout_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		8A421BA62AFE1C7B8D1699FAD43DD6CC /* Yoga.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Yoga.h; sourceTree = "<group>"; };
-		8C5A4E6845423AC0168A8CB204315E33 /* FBSentinel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBSentinel.m; sourceTree = "<group>"; };
 		8F4959EAED01689B386DC3C0BB87E704 /* Pods-FlexBoxLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlexBoxLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		937AD994045D0ADEAF541561B0169CBA /* FBAsyLayoutTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBAsyLayoutTransaction.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -108,7 +101,6 @@
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D15AFF48731F154597B110BC3FAAE139 /* YGMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YGMacros.h; sourceTree = "<group>"; };
 		D74DF5226816EB01C4A7DABD9D0FCF48 /* FlexBoxLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlexBoxLayout.xcconfig; sourceTree = "<group>"; };
-		DB6ACB5694B72826EBF043738EBB1EB4 /* FBSentinel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBSentinel.h; sourceTree = "<group>"; };
 		DC9E401B6C5C36D9836705021447484F /* YGEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YGEnums.h; sourceTree = "<group>"; };
 		DD72CDDD3D1420A4A75174336C718820 /* Pods-FlexBoxLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FlexBoxLayout_Tests.modulemap"; sourceTree = "<group>"; };
 		E78493B31140CBBF8F2DF4015A7304A5 /* FBAsyLayoutTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBAsyLayoutTransaction.m; sourceTree = "<group>"; };
@@ -312,12 +304,8 @@
 		EED9D5A2DBF699B6ECE682445FDB5156 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				0E66C99970053B90C46E310056200E08 /* FBLayer.h */,
-				177F7A2E6A41F96E8668A6368F86F588 /* FBLayer.m */,
 				60D45F0EE99C5484F47A07723B9E4983 /* FBLayoutDiv.h */,
 				18F571556FE3405314C44469081FC5D3 /* FBLayoutDiv.m */,
-				DB6ACB5694B72826EBF043738EBB1EB4 /* FBSentinel.h */,
-				8C5A4E6845423AC0168A8CB204315E33 /* FBSentinel.m */,
 				631EB36F6E664B7681E5E0C0AC97C15B /* UIScrollView+FBLayout.h */,
 				F7FE71FFCEC9F0CC5BEF2E4AFD96DADC /* UIScrollView+FBLayout.m */,
 				03D7AB66B62F29676BBB16BAF9F6C05E /* UITableView+FBLayout.h */,
@@ -338,13 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FAE3891B76A6A635F9CC51FB2B5289 /* FBAsyLayoutTransaction.h in Headers */,
-				B614F76052AA07A7FB8720890435D157 /* FBLayer.h in Headers */,
 				700285DCD05A13614EFA48FC7F1196C5 /* FBLayout+Private.h in Headers */,
 				CA4B9FC588A3CD50473C5C0511AEE135 /* FBLayout.h in Headers */,
 				03C67F88BA3684E9AE7450002DE38453 /* FBLayoutDiv.h in Headers */,
 				ED08A456B90976BA874C7DD7FD6F7E98 /* FBLayoutProtocol.h in Headers */,
 				ED08A456B90976BA874C7DD7FD6F7E98 /* FBLayoutProtocol.h in Headers */,
-				9992BC19B1380DC2D24AEAC08EC5E5BD /* FBSentinel.h in Headers */,
 				2DD7B74DC140290BFACE4F07E0F5FE1D /* FBViewLayoutCache.h in Headers */,
 				4F9914A956668A77A635E6130FE73302 /* FlexBoxLayout-umbrella.h in Headers */,
 				957ADAA150D448B6295D0333DFE294DA /* FlexBoxLayout.h in Headers */,
@@ -472,10 +458,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6579310FAF1B85093993E05785382D40 /* FBAsyLayoutTransaction.m in Sources */,
-				456DFDB59089AFAA2A0CF8330AD996BE /* FBLayer.m in Sources */,
 				29EA6036315515639EB99F2697C5472B /* FBLayout.m in Sources */,
 				C9A923F839FC29B82504258A8D0D62E9 /* FBLayoutDiv.m in Sources */,
-				4B09201880E735C5C314949246F3FD1F /* FBSentinel.m in Sources */,
 				4A6D58896A1AEC5BDF13FA1D4704A5D9 /* FBViewLayoutCache.m in Sources */,
 				A866D6B206CFABCBC2EF7B7910E33986 /* FlexBoxLayout-dummy.m in Sources */,
 				1E65E6B0B760EFF91A883229E8C18E34 /* UIScrollView+FBLayout.m in Sources */,

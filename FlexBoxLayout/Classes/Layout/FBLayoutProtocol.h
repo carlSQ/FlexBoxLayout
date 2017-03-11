@@ -10,48 +10,6 @@
 #import "FBLayout.h"
 #import "FBLayout+Private.h"
 
-UIKIT_EXTERN NSString *FBDirectiontAttributeName;
-
-UIKIT_EXTERN NSString *FBFlexDirectionAttributeName;
-
-UIKIT_EXTERN NSString *FBJustifyContentAttributeName;
-
-UIKIT_EXTERN NSString *FBAlignContentAttributeName;
-
-UIKIT_EXTERN NSString *FBAlignItemsAttributeName;
-
-UIKIT_EXTERN NSString *FBAlignSelfAttributeName;
-
-UIKIT_EXTERN NSString *FBPositionTypeAttributeName;
-
-UIKIT_EXTERN NSString *FBFlexWrapAttributeName;
-
-UIKIT_EXTERN NSString *FBFlexGrowAttributeName;
-
-UIKIT_EXTERN NSString *FBFlexShrinkAttributeName;
-
-UIKIT_EXTERN NSString *FBFlexBasisAttributeName;
-
-UIKIT_EXTERN NSString *FBPositionAttributeName; // UIEdge
-
-UIKIT_EXTERN NSString *FBMarginAttributeName; // UIEdge
-
-UIKIT_EXTERN NSString *FBPaddingAttributeName; //UIEdge
-
-UIKIT_EXTERN NSString *FBWidthAttributeName;
-
-UIKIT_EXTERN NSString *FBHeightAttributeName;
-
-UIKIT_EXTERN NSString *FBMinWidthAttributeName;
-
-UIKIT_EXTERN NSString *FBMinHeightAttributeName;
-
-UIKIT_EXTERN NSString *FBMaxWidthAttributeName;
-
-UIKIT_EXTERN NSString *FBMaxHeightAttributeName;
-
-UIKIT_EXTERN NSString *FBAspectRatioAttributeName;
-
 extern const CGSize fb_undefinedSize; 
 
 extern const CGFloat fb_undefined;

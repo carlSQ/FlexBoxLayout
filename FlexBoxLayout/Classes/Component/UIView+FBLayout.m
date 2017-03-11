@@ -9,7 +9,6 @@
 #import "UIView+FBLayout.h"
 #import <objc/runtime.h>
 #import "FBAsyLayoutTransaction.h"
-#import "FBLayer.h"
 
 extern void YGSetMesure(FBLayout *layout);
 

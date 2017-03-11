@@ -11,48 +11,6 @@
 #import "Yoga.h"
 #import "FBLayoutDiv.h"
 
-NSString *FBDirectiontAttributeName = @"FBDirectiontAttributeName";
-
-NSString *FBFlexDirectionAttributeName = @"FBFlexDirectionAttributeName";
-
-NSString *FBJustifyContentAttributeName = @"FBJustifyContentAttributeName";
-
-NSString *FBAlignContentAttributeName = @"FBAlignContentAttributeName";
-
-NSString *FBAlignItemsAttributeName = @"FBAlignItemsAttributeName";
-
-NSString *FBAlignSelfAttributeName = @"FBAlignSelfAttributeName";
-
-NSString *FBPositionTypeAttributeName = @"FBPositionTypeAttributeName";
-
-NSString *FBFlexWrapAttributeName = @"FBFlexWrapAttributeName";
-
-NSString *FBFlexGrowAttributeName = @"FBFlexGrowAttributeName";
-
-NSString *FBFlexShrinkAttributeName = @"FBFlexShrinkAttributeName";
-
-NSString *FBFlexBasisAttributeName = @"FBFlexBasisAttributeName";
-
-NSString *FBPositionAttributeName = @"FBPositionAttributeName";
-
-NSString *FBMarginAttributeName = @"FBMarginAttributeName";
-
-NSString *FBPaddingAttributeName = @"FBPaddingAttributeName";
-
-NSString *FBWidthAttributeName = @"FBWidthAttributeName";
-
-NSString *FBHeightAttributeName = @"FBHeightAttributeName";
-
-NSString *FBMinWidthAttributeName = @"FBMinWidthAttributeName";
-
-NSString *FBMinHeightAttributeName = @"FBMinHeightAttributeName";
-
-NSString *FBMaxWidthAttributeName = @"FBMaxWidthAttributeName";
-
-NSString *FBMaxHeightAttributeName = @"FBMaxHeightAttributeName";
-
-NSString *FBAspectRatioAttributeName = @"FBAspectRatioAttributeName";
-
 static CGFloat FBRoundPixelValue(CGFloat value)
 {
   static CGFloat scale;

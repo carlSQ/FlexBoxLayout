@@ -54,32 +54,32 @@ static NSInteger contentViewTag = 6868;
   return [objc_getAssociatedObject(self, @selector(setFb_constrainedWidth:)) doubleValue];;
 }
 
-- (void)setFb_CacheLayout:(BOOL)fb_CacheLayout {
+- (void)setFb_cacheLayout:(BOOL)fb_cacheLayout {
   
-  if (fb_CacheLayout) {
-    self.fb_CacheContentView = NO;
+  if (fb_cacheLayout) {
+    self.fb_cacheContentView = NO;
   } else {
     NSMutableArray <NSMutableArray *>*cacheLayout = CACHE_LAYOUT;
     [cacheLayout removeAllObjects];
   }
-  objc_setAssociatedObject(self, _cmd, @(fb_CacheLayout), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+  objc_setAssociatedObject(self, _cmd, @(fb_cacheLayout), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
 }
 
-- (BOOL)fb_CacheLayout {
-  return [objc_getAssociatedObject(self, @selector(setFb_CacheLayout:)) boolValue];;
+- (BOOL)fb_cacheLayout {
+  return [objc_getAssociatedObject(self, @selector(setFb_cacheLayout:)) boolValue];;
 
 }
 
 
-- (void)setFb_CacheContentView:(BOOL)fb_CacheContentView {
-  if (fb_CacheContentView) {
-    self.fb_CacheLayout = NO;
+- (void)setFb_cacheContentView:(BOOL)fb_cacheContentView {
+  if (fb_cacheContentView) {
+    self.fb_cacheLayout = NO;
   } else {
      NSMutableArray <NSMutableArray *>*cacheContentViews = CACHE_CONTENT_VIEW;
     [cacheContentViews removeAllObjects];
   }
-  objc_setAssociatedObject(self, _cmd, @(fb_CacheContentView), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+  objc_setAssociatedObject(self, _cmd, @(fb_cacheContentView), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
 }
 
@@ -90,7 +90,7 @@ static NSInteger contentViewTag = 6868;
 - (CGFloat)fb_heightForIndexPath:(NSIndexPath *)indexPath {
   NSMutableArray <NSMutableArray *>*cacheLayout = CACHE_LAYOUT;
   FBViewLayoutCache *viewLayoutCache = nil;
-  if (self.fb_CacheLayout) {
+  if (self.fb_cacheLayout) {
     if (cacheLayout.count > indexPath.section) {
       NSArray* sectionCacheViews = cacheLayout[indexPath.section];
       
@@ -187,7 +187,7 @@ static NSInteger contentViewTag = 6868;
     if (cellBlock) {
       cellContentView = cellBlock(indexPath);
       FBViewLayoutCache *viewLayoutCache = nil;
-      if (self.fb_CacheLayout) {
+      if (self.fb_cacheLayout) {
         if (cacheLayout.count > indexPath.section) {
           NSArray* sectionCacheViews = cacheLayout[indexPath.section];
           
@@ -207,7 +207,7 @@ static NSInteger contentViewTag = 6868;
         [cellContentView.fb_layout applyLayoutCache:viewLayoutCache];
       } else {
         [cellContentView fb_applyLayouWithSize:CGSizeMake(self.fb_constrainedWidth?:self.frame.size.width, fb_undefined)];
-        if (self.fb_CacheLayout) {
+        if (self.fb_cacheLayout) {
           [cacheLayout[indexPath.section] insertObject:[cellContentView.fb_layout layouCache] atIndex:indexPath.row];
         }
       }
@@ -241,7 +241,7 @@ static NSInteger contentViewTag = 6868;
 - (void)fb_removeCacheContentViewsAtSection:(NSUInteger)section {
   if (self.fb_CacheContentView) {
     [CACHE_CONTENT_VIEW removeObjectAtIndex:section];
-  } else if (self.fb_CacheLayout) {
+  } else if (self.fb_cacheLayout) {
     [CACHE_LAYOUT removeObjectAtIndex:section];
   }
 }
@@ -249,7 +249,7 @@ static NSInteger contentViewTag = 6868;
 - (void)fb_removeCacheContentViewAtIndexPath:(NSIndexPath *)indexPath {
   if (self.fb_CacheContentView) {
     [CACHE_CONTENT_VIEW[indexPath.section] removeObjectAtIndex:indexPath.row];
-  } else if(self.fb_CacheLayout) {
+  } else if(self.fb_cacheLayout) {
     [CACHE_LAYOUT[indexPath.section] removeObjectAtIndex:indexPath.row];
   }
 }
@@ -258,7 +258,7 @@ static NSInteger contentViewTag = 6868;
   
   if (self.fb_CacheContentView) {
     [CACHE_CONTENT_VIEW insertObject:[NSMutableArray array] atIndex:section];
-  } else if(self.fb_CacheLayout) {
+  } else if(self.fb_cacheLayout) {
     [CACHE_LAYOUT insertObject:[NSMutableArray array] atIndex:section];
   }
   
@@ -267,7 +267,7 @@ static NSInteger contentViewTag = 6868;
 - (void)fb_addCacheContentViewsAtIndexPath:(NSIndexPath *)indexPath {
   if (self.fb_CacheContentView) {
     [CACHE_CONTENT_VIEW[indexPath.section] insertObject:[NSNull null] atIndex:indexPath.row];
-  } else if(self.fb_CacheLayout) {
+  } else if(self.fb_cacheLayout) {
     [CACHE_LAYOUT[indexPath.section] insertObject:[NSNull null] atIndex:indexPath.row];
   }
 
@@ -276,7 +276,7 @@ static NSInteger contentViewTag = 6868;
 - (void)fb_reloadCacheContentViewsAtSection:(NSUInteger)section {
   if (self.fb_CacheContentView) {
     [CACHE_CONTENT_VIEW[section] removeAllObjects];
-  } else if (self.fb_CacheLayout) {
+  } else if (self.fb_cacheLayout) {
     [CACHE_LAYOUT[section] removeAllObjects];
   }
 }
@@ -284,7 +284,7 @@ static NSInteger contentViewTag = 6868;
 - (void)fb_reloadCacheContentViewsAtIndexPath:(NSIndexPath *)indexPath {
   if (self.fb_CacheContentView) {
     [CACHE_CONTENT_VIEW[indexPath.section] replaceObjectAtIndex:indexPath.row withObject:[NSNull null]];
-  } else if (self.fb_CacheLayout) {
+  } else if (self.fb_cacheLayout) {
     [CACHE_LAYOUT[indexPath.section] replaceObjectAtIndex:indexPath.row withObject:[NSNull null]];
   }
 }
@@ -292,7 +292,7 @@ static NSInteger contentViewTag = 6868;
 - (void)fb_moveCacheContentViewsSection:(NSInteger)section toSection:(NSInteger)newSection {
   if (self.fb_CacheContentView) {
     [CACHE_CONTENT_VIEW exchangeObjectAtIndex:section withObjectAtIndex:newSection];
-  } else if(self.fb_CacheLayout) {
+  } else if(self.fb_cacheLayout) {
     [CACHE_LAYOUT exchangeObjectAtIndex:section withObjectAtIndex:newSection];
   }
 }
@@ -309,7 +309,7 @@ static NSInteger contentViewTag = 6868;
     
     CACHE_CONTENT_VIEW[newIndexPath.section][newIndexPath.row] = view1;
     
-  } else if (self.fb_CacheLayout) {
+  } else if (self.fb_cacheLayout) {
     
     UIView *view1 = CACHE_LAYOUT[indexPath.section][indexPath.row];
     

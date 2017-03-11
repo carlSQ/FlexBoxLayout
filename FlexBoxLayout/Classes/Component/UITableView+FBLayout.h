@@ -26,7 +26,7 @@ typedef UIView *_Nonnull (^FBCellBlock)(NSIndexPath *indexPath);
 /**
  cache layout
  */
-@property(nonatomic) BOOL fb_CacheLayout;
+@property(nonatomic) BOOL fb_cacheLayout;
 
 
 
@@ -34,7 +34,7 @@ typedef UIView *_Nonnull (^FBCellBlock)(NSIndexPath *indexPath);
  cache content view cannot be together with fb_CacheLayout at the same time
 
  */
-@property(nonatomic) BOOL fb_CacheContentView;
+@property(nonatomic) BOOL fb_cacheContentView;
 
 
 /**
