@@ -28,6 +28,7 @@
   if (self = [super init]) {
     _fb_layout = [FBLayout new];
     _fb_layout.context = self;
+    _fb_children = [NSMutableArray array];
   }
   return self;
 }
@@ -85,7 +86,6 @@
 }
 
 - (void)fb_addChildren:(NSArray<id<FBLayoutProtocol>> *)children {
-  NSAssert([children conformsToProtocol:NSProtocolFromString(@"FBLayoutProtocol")], @"child %@ has no conformsToProtocol FBLayoutProtocol", self);
   NSMutableArray *newChildren = [[self fb_children] mutableCopy];
   [newChildren addObjectsFromArray:children];
   self.fb_children = newChildren;

@@ -55,7 +55,6 @@ const CGFloat fb_undefined = YGUndefined;
 }
 
 - (void)fb_addChildren:(NSArray<id<FBLayoutProtocol>> *)children {
-  NSAssert([children conformsToProtocol:NSProtocolFromString(@"FBLayoutProtocol")], @"child %@ has no conformsToProtocol FBLayoutProtocol", self);
   NSMutableArray *newChildren = [[self fb_children] mutableCopy];
   [newChildren addObjectsFromArray:children];
   self.fb_children = newChildren;
@@ -83,7 +82,7 @@ const CGFloat fb_undefined = YGUndefined;
 }
 
 - (NSArray *)fb_children {
-  return objc_getAssociatedObject(self, _cmd);
+  return objc_getAssociatedObject(self, _cmd) ?:[NSMutableArray array];
 }
 
 - (void)fb_setFlexDirection:(FBFlexDirection)direction

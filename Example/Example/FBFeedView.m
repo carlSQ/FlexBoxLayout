@@ -70,9 +70,6 @@
 
 - (void)layoutView {
   
-  [self fb_makeLayout:^(FBLayout *layout) {
-    layout.flexDirection.equalTo(@(FBFlexDirectionColumn)).margin.equalToEdgeInsets(UIEdgeInsetsMake(0, 15, 0, 15)).alignItems.equalTo(@(FBAlignFlexStart));
-  }];
   
   [_titleLabel fb_makeLayout:^(FBLayout *layout) {
     layout.margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0)).wrapContent();
@@ -97,11 +94,13 @@
   
   FBLayoutDiv *div = [FBLayoutDiv layoutDivWithFlexDirection:FBFlexDirectionRow ];
   [div fb_makeLayout:^(FBLayout *layout) {
-    layout.flexDirection.equalTo(@(FBFlexDirectionRow)).justifyContent.equalTo(@(FBJustifySpaceBetween)).alignItems.equalTo(@(FBAlignFlexStart)).margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0));
+    layout.flexDirection.equalTo(@(FBFlexDirectionRow)).justifyContent.equalTo(@(FBJustifySpaceBetween)).alignItems.equalTo(@(FBAlignFlexStart)).margin.equalToEdgeInsets(UIEdgeInsetsMake(10, 0, 0, 0)).children(@[_usernameLabel,_timeLabel]);
   }];
-  div.fb_children = @[_usernameLabel,_timeLabel];
   
-  self.fb_children =@[_titleLabel,_contentLabel,_contentImageView,div];
+  [self fb_makeLayout:^(FBLayout *layout) {
+    layout.flexDirection.equalTo(@(FBFlexDirectionColumn)).margin.equalToEdgeInsets(UIEdgeInsetsMake(0, 15, 0, 15)).alignItems.equalTo(@(FBAlignFlexStart)).children(@[_titleLabel,_contentLabel,_contentImageView,div]);
+  }];
+  
 }
 
 @end

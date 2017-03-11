@@ -143,54 +143,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (FBLayout * (^)())wrapContent;
 
-
-- (void)setDirection:(FBDirection)direction;
-
-- (void)setFlexDirection:(FBFlexDirection)flexDirection;
-
-- (void)setJustifyContent:(FBJustify)justifyContent;
-
-- (void)setAlignContent:(FBAlign)alignContent;
-
-- (void)setAlignItems:(FBAlign)alignItems;
-
-- (void)setAlignSelf:(FBAlign)alignSelf;
-
-- (void)setPositionType:(FBPositionType)positionType;
-
-- (void)setFlexWrap:(FBWrap)flexWrap;
-
-- (void)setFlexGrow:(CGFloat)flexGrow;
-
-- (void)setFlexShrink:(CGFloat)flexShrink;
-
-- (void)setFlexBasis:(CGFloat)flexBasis;
-
-- (void)setPosition:(CGFloat)position forEdge:(FBEdge)edge;
-
-- (void)setMargin:(CGFloat)margin forEdge:(FBEdge)edge;
-
-- (void)setPadding:(CGFloat)padding forEdge:(FBEdge)edge;
-
-- (void)setWidth:(CGFloat)width;
-
-- (void)setHeight:(CGFloat)height;
-
-- (void)setSize:(CGSize)size;
-
-- (void)setMinWidth:(CGFloat)minWidth;
-
-- (void)setMinHeight:(CGFloat)minHeight;
-
-- (void)setMinSize:(CGSize)minSize;
-
-- (void)setMaxWidth:(CGFloat)maxWidth;
-
-- (void)setMaxHeight:(CGFloat)maxHeight;
-
-- (void)setMaxSize:(CGSize)maxSize;
-
-- (void)setAspectRatio:(CGFloat)aspectRatio;
+- (FBLayout * (^)(NSArray*))children;
 
 @end
 

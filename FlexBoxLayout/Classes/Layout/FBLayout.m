@@ -112,9 +112,9 @@ void YGSetMesure(FBLayout *layout) {
   }
 }
 
-@interface FBLayout()
-
-@property(nonatomic, strong) NSMutableArray *children;
+@interface FBLayout() {
+   NSMutableArray *_children;
+}
 
 @property(nonatomic, strong) NSMutableArray *styleNames;
 
@@ -603,6 +603,13 @@ do {\
     return self;
   };
 
+}
+
+- (FBLayout * (^)(NSArray* children))children {
+  return ^FBLayout* (NSArray* children) {
+    [((id<FBLayoutProtocol>)self.context) fb_addChildren:children];
+    return self;
+  };
 }
 
 @end
