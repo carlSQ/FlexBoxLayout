@@ -118,13 +118,13 @@ void YGSetMesure(FBLayout *layout) {
                     FBRoundPixelValue(YGNodeLayoutGetHeight(_fbNode)));
 }
 
-- (FBViewLayoutCache *)layouCache {
+- (FBViewLayoutCache *)layoutCache {
   
   FBViewLayoutCache *layoutCache = [FBViewLayoutCache new];
   layoutCache.frame = ((id<FBLayoutProtocol>)self.context).frame;
   NSMutableArray *childrenLayoutCache = [NSMutableArray arrayWithCapacity:self.allChildren.count];
   for (FBLayout *childLayout in self.allChildren) {
-    [childrenLayoutCache addObject:[childLayout layouCache]];
+    [childrenLayoutCache addObject:[childLayout layoutCache]];
   }
   layoutCache.childrenCache = [childrenLayoutCache copy];
   return layoutCache;
@@ -138,7 +138,7 @@ void YGSetMesure(FBLayout *layout) {
     return;
   }
   
-  for (int i =0; i<layoutCache.childrenCache.count; i++) {
+  for (int i = 0; i < layoutCache.childrenCache.count; i++) {
     FBViewLayoutCache* childLayoutCache = layoutCache.childrenCache[i];
     id<FBLayoutProtocol> childView = view.fb_children[i];
     [childView.fb_layout applyLayoutCache:childLayoutCache];

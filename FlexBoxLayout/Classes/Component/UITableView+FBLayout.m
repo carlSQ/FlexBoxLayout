@@ -208,7 +208,7 @@ static NSInteger contentViewTag = 6868;
       } else {
         [cellContentView fb_applyLayouWithSize:CGSizeMake(self.fb_constrainedWidth?:self.frame.size.width, fb_undefined)];
         if (self.fb_cacheLayout) {
-          [cacheLayout[indexPath.section] insertObject:[cellContentView.fb_layout layouCache] atIndex:indexPath.row];
+          [cacheLayout[indexPath.section] insertObject:[cellContentView.fb_layout layoutCache] atIndex:indexPath.row];
         }
       }
 
