@@ -30,7 +30,7 @@
   NSUInteger _minFPS;
   NSUInteger _length;
   NSUInteger _height;
-  CADisplayLink *_uiDisplayLink;
+  CADisplayLink *_uiDisplayLink; // leak to do
 }
 
 - (instancetype)initWithFrame:(CGRect)frame color:(UIColor *)color {

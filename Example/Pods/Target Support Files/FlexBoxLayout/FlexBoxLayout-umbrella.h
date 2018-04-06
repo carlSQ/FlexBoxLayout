@@ -1,9 +1,16 @@
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
 
-#import "FBLayer.h"
 #import "FBLayoutDiv.h"
-#import "FBLayoutProtocol.h"
-#import "FBSentinel.h"
 #import "UIScrollView+FBLayout.h"
 #import "UITableView+FBLayout.h"
 #import "UIView+CellStyle.h"
