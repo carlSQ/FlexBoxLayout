@@ -51,11 +51,20 @@ static YGSize YGMeasureView(
   const CGFloat constrainedHeight = (heightMode == YGMeasureModeUndefined) ? CGFLOAT_MAX: height;
   
   UIView *view = (__bridge UIView*) YGNodeGetContext(node);
-  const CGSize sizeThatFits = [view sizeThatFits:(CGSize) {
-    .width = constrainedWidth,
-    .height = constrainedHeight,
-  }];
-  
+  __block CGSize sizeThatFits;
+  if ([[NSThread currentThread] isMainThread]) {
+    sizeThatFits = [view sizeThatFits:(CGSize) {
+      .width = constrainedWidth,
+      .height = constrainedHeight,
+    }];
+  } else {
+    dispatch_sync(dispatch_get_main_queue(), ^{
+      sizeThatFits = [view sizeThatFits:(CGSize) {
+        .width = constrainedWidth,
+        .height = constrainedHeight,
+      }];
+    });
+  }
   return (YGSize) {
     .width = YGSanitizeMeasurement(constrainedWidth, sizeThatFits.width, widthMode),
     .height = YGSanitizeMeasurement(constrainedHeight, sizeThatFits.height, heightMode),
