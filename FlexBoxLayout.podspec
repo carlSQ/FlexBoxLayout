@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name             = 'FlexBoxLayout'
-  s.version          = '0.8.0'
+  s.version          = '0.9.0'
   s.summary          = 'iOS Flexbox layout'
 
   s.description      = <<-DESC
