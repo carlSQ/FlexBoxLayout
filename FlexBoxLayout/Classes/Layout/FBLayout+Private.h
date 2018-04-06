@@ -24,7 +24,7 @@
 
 @property(nonatomic, assign) CGSize mesureSize;
 
-- (FBViewLayoutCache *)layouCache;
+- (FBViewLayoutCache *)layoutCache;
 
 - (void)applyLayoutCache:(FBViewLayoutCache *)layoutCache;
 
